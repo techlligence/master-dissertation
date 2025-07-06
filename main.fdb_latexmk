@@ -1,20 +1,20 @@
 # Fdb version 4
-["biber main"] 1751812390.28725 "main.bcf" "main.bbl" "main" 1751812393.01845 0
-  "main.bcf" 1751812392.86808 108620 9074a3cbccf933b01e1a0e406e87f1ec "pdflatex"
+["biber main"] 1751832359.5415 "main.bcf" "main.bbl" "main" 1751836597.95634 0
+  "main.bcf" 1751836597.73354 108620 9074a3cbccf933b01e1a0e406e87f1ec "pdflatex"
   "sample.bib" 1642741283 423 68b8f6cb50917872bb3a29f3e28dd3c7 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["makeindex main.idx"] 1751812390.09677 "main.idx" "main.ind" "main" 1751812393.01266 0
-  "main.idx" 1751812392.86898 1344 7d3fae3e30b9342978d92b66a92187e3 "pdflatex"
+["makeindex main.idx"] 1751836402.16664 "main.idx" "main.ind" "main" 1751836597.95615 0
+  "main.idx" 1751836597.73699 1347 e02cee0d1df5c7636a633c3a0f86e0c2 "pdflatex"
   (generated)
   "main.ilg"
   "main.ind"
   (rewritten before read)
-["pdflatex"] 1751812391.09438 "/home/louis/repos/master-dissertation/main.tex" "main.pdf" "main" 1751812393.01287 2
+["pdflatex"] 1751836595.13332 "/home/louis/repos/master-dissertation/main.tex" "main.pdf" "main" 1751836597.95674 0
   "/etc/texmf/web2c/texmf.cnf" 1748975385.63222 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/louis/repos/master-dissertation/main.tex" 1751812083.10377 28194 1bffe07279b27b5d13e573d4f403e4d6 ""
+  "/home/louis/repos/master-dissertation/main.tex" 1751833599.2461 28427 25fd01df5e5696637e0c58905e1de915 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/avantgar/pagd8r.tfm" 1136768653 4840 6a894dde946186de9a64269f0edd24e5 ""
@@ -257,23 +257,21 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1741904018 41538 c016915c1d51223b6dbbfe27341748a8 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1748976576 5467255 9a64d1b40e0b893fc5588ecce9d8accf ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1748976621 3349235 fa8942aaf3d611a1222fe9552769e560 ""
-  "Chapters/Chapter_Introduction.aux" 1751812392.45041 4783 ec3e2e327bcc1721012999c7d94e1b3c "pdflatex"
-  "Chapters/Chapter_Introduction.tex" 1751812371.60341 154 d3cfb70ae1a75cd3c9328c8d29ad458e ""
+  "Chapters/Chapter_Introduction.aux" 1751836597.10789 5025 962322afaa8e153b74c7551ccfe18aca "pdflatex"
+  "Chapters/Chapter_Introduction.tex" 1751836591.7622 3799 df2aa23233bad6dcaf1c20ea5ee7c7fb ""
   "Images/background.pdf" 1751811620.53307 70238 d98f92a53e9dfc36c67ad2970f69d804 ""
   "Images/creodocs_logo.pdf" 1631832916 53612 ef0ff49bbb82d1f6f4dc0ed64db5e31d ""
-  "Images/orange1.jpg" 1643142098 283287 61c5996d25d4b43c0b134a24fe0e77c7 ""
   "Images/orange2.jpg" 1643142115 158800 1a62e512d8231388f6c96a9eb2a124eb ""
-  "Images/orange3.jpg" 1643142132 163089 478f46331115e18b4a694b6aa5a7544f ""
   "LegrandOrangeBook.cls" 1751812387.82771 34774 1c9f83d3afcddbabf8523c0fda306eff ""
-  "main.aux" 1751812392.86008 19206 81b506385c5bec1126661aa8c59c286d "pdflatex"
-  "main.bbl" 1751812391.06937 3461 1c7620aa3598dddb7fda5c9738da57d9 "biber main"
-  "main.ind" 1751812390.28508 1384 c01286fdc6cd7437e78e9c22e51e22a6 "makeindex main.idx"
-  "main.lof" 1751812392.86908 338 d7b2d498b5e8b9cac3de03dfd32cb83e "pdflatex"
-  "main.lot" 1751812392.86908 332 516afa21c4e452daa8428e237ed445fc "pdflatex"
-  "main.ptc" 1751812392.86908 3582 8d9eb64dd11f6b26afe8ae41706ad448 "pdflatex"
-  "main.run.xml" 1751812392.86898 2301 c6fb4726f4c7f5faa3ec80affb097320 "pdflatex"
-  "main.tex" 1751812083.10377 28194 1bffe07279b27b5d13e573d4f403e4d6 ""
-  "main.toc" 1751812392.86908 3537 82c660c84d94769e914476f1a11e0352 "pdflatex"
+  "main.aux" 1751836597.71854 19858 2eb798a89f28b3681dcd0f90d0d29014 "pdflatex"
+  "main.bbl" 1751832360.73145 3461 1c7620aa3598dddb7fda5c9738da57d9 "biber main"
+  "main.ind" 1751836402.38294 1389 0ba0fe028d7ed09615816aae0d15babe "makeindex main.idx"
+  "main.lof" 1751836597.73699 338 d7b2d498b5e8b9cac3de03dfd32cb83e "pdflatex"
+  "main.lot" 1751836597.73699 332 516afa21c4e452daa8428e237ed445fc "pdflatex"
+  "main.ptc" 1751836597.73699 3742 c17c20d6a7d740deef7c34497ba682f3 "pdflatex"
+  "main.run.xml" 1751836597.73699 2301 f06af3099c978185a0ac5347b2a69dfa "pdflatex"
+  "main.tex" 1751833599.2461 28427 25fd01df5e5696637e0c58905e1de915 ""
+  "main.toc" 1751836597.73699 3697 27d7f7dea6ac8168b7cf7a597b2c2d92 "pdflatex"
   (generated)
   "Chapters/Chapter_Introduction.aux"
   "main.aux"

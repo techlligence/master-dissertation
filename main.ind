@@ -1,65 +1,65 @@
 \begin{theindex}
 
-  \item chapter:introduction, \hyperpage{9}
-  \item Citation, \hyperpage{15}
-  \item Corollaries, \hyperpage{20}
+  \item chapter:introduction, \hyperpage{11}
+  \item Citation, \hyperpage{17}
+  \item Corollaries, \hyperpage{22}
 
   \indexspace
 
-  \item Definitions, \hyperpage{19}
+  \item Definitions, \hyperpage{21}
 
   \indexspace
 
-  \item Examples, \hyperpage{21}
-    \subitem Equation, \hyperpage{21}
-    \subitem Text, \hyperpage{21}
-  \item Exercises, \hyperpage{21}
+  \item Examples, \hyperpage{23}
+    \subitem Equation, \hyperpage{23}
+    \subitem Text, \hyperpage{23}
+  \item Exercises, \hyperpage{23}
 
   \indexspace
 
-  \item Figure, \hyperpage{23}
+  \item Figure, \hyperpage{25}
 
   \indexspace
 
-  \item Links, \hyperpage{15}
-  \item Lists, \hyperpage{15}
-    \subitem Bullet Points, \hyperpage{16}
-    \subitem Descriptions and Definitions, \hyperpage{16}
-    \subitem Numbered List, \hyperpage{15}
+  \item Links, \hyperpage{17}
+  \item Lists, \hyperpage{17}
+    \subitem Bullet Points, \hyperpage{18}
+    \subitem Descriptions and Definitions, \hyperpage{18}
+    \subitem Numbered List, \hyperpage{17}
 
   \indexspace
 
-  \item Notations, \hyperpage{20}
+  \item Notations, \hyperpage{22}
 
   \indexspace
 
-  \item Problems, \hyperpage{21}
-  \item Propositions, \hyperpage{20}
-    \subitem Several Equations, \hyperpage{20}
+  \item Problems, \hyperpage{23}
+  \item Propositions, \hyperpage{22}
+    \subitem Several Equations, \hyperpage{22}
+    \subitem Single Line, \hyperpage{23}
+
+  \indexspace
+
+  \item Remarks, \hyperpage{22}
+
+  \indexspace
+
+  \item sec:publication\_from\_resulting\_work, \hyperpage{12}
+  \item Sectioning, \hyperpage{13}
+    \subitem Paragraphs, \hyperpage{14}
+    \subitem Sections, \hyperpage{13}
+    \subitem Subsections, \hyperpage{13}
+    \subitem Subsubsections, \hyperpage{14}
+
+  \indexspace
+
+  \item Table, \hyperpage{25}
+  \item Theorems, \hyperpage{21}
+    \subitem Several Equations, \hyperpage{21}
     \subitem Single Line, \hyperpage{21}
 
   \indexspace
 
-  \item Remarks, \hyperpage{20}
-
-  \indexspace
-
-  \item sec:publication_from_resulting_work, \hyperpage{9}
-  \item Sectioning, \hyperpage{11}
-    \subitem Paragraphs, \hyperpage{12}
-    \subitem Sections, \hyperpage{11}
-    \subitem Subsections, \hyperpage{11}
-    \subitem Subsubsections, \hyperpage{12}
-
-  \indexspace
-
-  \item Table, \hyperpage{23}
-  \item Theorems, \hyperpage{19}
-    \subitem Several Equations, \hyperpage{19}
-    \subitem Single Line, \hyperpage{19}
-
-  \indexspace
-
-  \item Vocabulary, \hyperpage{21}
+  \item Vocabulary, \hyperpage{23}
 
 \end{theindex}

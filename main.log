@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.6.3)  6 JUL 2025 16:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.6.3)  6 JUL 2025 23:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1187,11 +1187,6 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 
 [2]
-<Images/orange1.jpg, id=35, 1644.1425pt x 734.745pt>
-File: Images/orange1.jpg Graphic file (type jpg)
-<use Images/orange1.jpg>
-Package pdftex.def Info: Images/orange1.jpg  used on input line 123.
-(pdftex.def)             Requested size: 597.50787pt x 267.01932pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 123.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
@@ -1206,20 +1201,17 @@ LaTeX Font Info:    Font shape `T1/pag/b/n' in size <17.28> not available
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 17.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
 
-Overfull \hbox (390.95769pt too wide) detected at line 17
+Overfull \hbox (390.95769pt too wide) detected at line 19
 [][][][][][] [][][][][][] 
  []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [3
 
- <./Images/orange1.jpg>]
+]
 
 [4])
 \tf@toc=\write6
@@ -1231,12 +1223,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [6
 
-]
-File: Images/orange1.jpg Graphic file (type jpg)
-<use Images/orange1.jpg>
-Package pdftex.def Info: Images/orange1.jpg  used on input line 125.
-(pdftex.def)             Requested size: 597.50787pt x 267.01932pt.
- (./main.lof)
+] (./main.lof)
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
@@ -1246,12 +1233,7 @@ Package pdftex.def Info: Images/orange1.jpg  used on input line 125.
 
 [8
 
-]
-File: Images/orange1.jpg Graphic file (type jpg)
-<use Images/orange1.jpg>
-Package pdftex.def Info: Images/orange1.jpg  used on input line 127.
-(pdftex.def)             Requested size: 597.50787pt x 267.01932pt.
- (./main.lot)
+] (./main.lot)
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
@@ -1266,35 +1248,33 @@ Package pdftex.def Info: Images/orange1.jpg  used on input line 127.
 
  (./Chapters/Chapter_Introduction.tex
 Chapter 1.
-<Images/orange2.jpg, id=263, 1300.86pt x 602.25pt>
-File: Images/orange2.jpg Graphic file (type jpg)
-<use Images/orange2.jpg>
-Package pdftex.def Info: Images/orange2.jpg  used on input line 1.
-(pdftex.def)             Requested size: 597.50787pt x 276.62482pt.
-)
+
 
 [11
 
 
- <./Images/orange2.jpg>]
+])
 
-[12
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[12]
+Chapter 2.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 156.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 156.
+
+
+[13
 
 
 
 ]
-Chapter 2.
-File: Images/orange2.jpg Graphic file (type jpg)
-<use Images/orange2.jpg>
-Package pdftex.def Info: Images/orange2.jpg  used on input line 150.
-(pdftex.def)             Requested size: 597.50787pt x 276.62482pt.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 154.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 154.
-
-
-[13]
 Underfull \vbox (badness 2735) has occurred while \output is active []
 
 
@@ -1321,15 +1301,11 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 ]
 Chapter 3.
-File: Images/orange2.jpg Graphic file (type jpg)
-<use Images/orange2.jpg>
-Package pdftex.def Info: Images/orange2.jpg  used on input line 184.
-(pdftex.def)             Requested size: 597.50787pt x 276.62482pt.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 220.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 222.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
@@ -1349,9 +1325,9 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 [18]
 \c@ttl@toc@part=\count491
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <220> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 260.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 262.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <30> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 260.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 262.
  (./main.ptc)
 
 [19
@@ -1360,39 +1336,35 @@ LaTeX Font Info:    Font shape `T1/pag/b/n' in size <30> not available
 
 [20]
 Chapter 4.
-File: Images/orange2.jpg Graphic file (type jpg)
-<use Images/orange2.jpg>
-Package pdftex.def Info: Images/orange2.jpg  used on input line 266.
-(pdftex.def)             Requested size: 597.50787pt x 276.62482pt.
-Package mdframed Info: mdframed works in twoside mode on input line 274.
+Package mdframed Info: mdframed works in twoside mode on input line 276.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 274.
+(mdframed)              on input line 276.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 274.
-Package mdframed Info: mdframed works in twoside mode on input line 286.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 276.
+Package mdframed Info: mdframed works in twoside mode on input line 288.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 286.
-Package mdframed Info: mdframed works in twoside mode on input line 296.
+(mdframed)              on input line 288.
+Package mdframed Info: mdframed works in twoside mode on input line 298.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 296.
+(mdframed)              on input line 298.
 
 
 [21
 
 ]
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <6> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 310.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 312.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 325.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 327.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 325.
-Package mdframed Info: mdframed works in twoside mode on input line 332.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 327.
+Package mdframed Info: mdframed works in twoside mode on input line 334.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 332.
+(mdframed)              on input line 334.
 
 
 
@@ -1403,10 +1375,10 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
 [22]
-Package mdframed Info: mdframed works in twoside mode on input line 381.
+Package mdframed Info: mdframed works in twoside mode on input line 383.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 381.
+(mdframed)              on input line 383.
 
 
 
@@ -1422,22 +1394,17 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 ]
 Chapter 5.
-<Images/orange3.jpg, id=416, 1409.265pt x 666.49pt>
-File: Images/orange3.jpg Graphic file (type jpg)
-<use Images/orange3.jpg>
-Package pdftex.def Info: Images/orange3.jpg  used on input line 413.
-(pdftex.def)             Requested size: 597.50787pt x 282.5782pt.
 
 
-[25 <./Images/orange3.jpg>]
-<Images/creodocs_logo.pdf, id=423, 833.50496pt x 170.09146pt>
+[25]
+<Images/creodocs_logo.pdf, id=428, 833.50496pt x 170.09146pt>
 File: Images/creodocs_logo.pdf Graphic file (type pdf)
 <use Images/creodocs_logo.pdf>
-Package pdftex.def Info: Images/creodocs_logo.pdf  used on input line 459.
+Package pdftex.def Info: Images/creodocs_logo.pdf  used on input line 461.
 (pdftex.def)             Requested size: 213.39568pt x 43.54533pt.
 File: Images/creodocs_logo.pdf Graphic file (type pdf)
 <use Images/creodocs_logo.pdf>
-Package pdftex.def Info: Images/creodocs_logo.pdf  used on input line 468.
+Package pdftex.def Info: Images/creodocs_logo.pdf  used on input line 470.
 (pdftex.def)             Requested size: 426.79135pt x 87.09326pt.
 
 
@@ -1457,23 +1424,6 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 [28
 
 ] (./main.ind
-./main.ind:47: Missing $ inserted.
-<inserted text> 
-                $
-l.47   \item sec:publication_
-                             from_resulting_work, \hyperpage{9}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./main.ind:48: Missing $ inserted.
-<inserted text> 
-                $
-l.48   \item
-             Sectioning, \hyperpage{11}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
 
 
 
@@ -1486,15 +1436,16 @@ you left one out. Proceed, with fingers crossed.
 
 ]
 Appendix A.
+<Images/orange2.jpg, id=493, 1300.86pt x 602.25pt>
 File: Images/orange2.jpg Graphic file (type jpg)
 <use Images/orange2.jpg>
-Package pdftex.def Info: Images/orange2.jpg  used on input line 524.
+Package pdftex.def Info: Images/orange2.jpg  used on input line 526.
 (pdftex.def)             Requested size: 597.50787pt x 276.62482pt.
 
 
 [31
 
-]
+ <./Images/orange2.jpg>]
 
 [32
 
@@ -1502,7 +1453,7 @@ Package pdftex.def Info: Images/orange2.jpg  used on input line 524.
 Appendix B.
 File: Images/orange2.jpg Graphic file (type jpg)
 <use Images/orange2.jpg>
-Package pdftex.def Info: Images/orange2.jpg  used on input line 532.
+Package pdftex.def Info: Images/orange2.jpg  used on input line 534.
 (pdftex.def)             Requested size: 597.50787pt x 276.62482pt.
 \tf@ptc=\write9
 \openout9 = `main.ptc'.
@@ -1514,31 +1465,23 @@ Package pdftex.def Info: Images/orange2.jpg  used on input line 532.
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34701 strings out of 473197
- 642565 string characters out of 5718606
- 1495724 words of memory out of 5000000
- 56837 multiletter control sequences out of 15000+600000
- 706280 words of font info for 430 fonts, out of 8000000 for 9000
+ 34715 strings out of 473197
+ 642465 string characters out of 5718606
+ 1495847 words of memory out of 5000000
+ 56824 multiletter control sequences out of 15000+600000
+ 707380 words of font info for 447 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,15n,101p,1039b,1352s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,15n,101p,1218b,1352s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/avantgar/uagd8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/avantgar/uagk8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/avantgar/uagko8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (33 pages, 893268 bytes).
+Output written on main.pdf (33 pages, 453007 bytes).
 PDF statistics:
- 713 PDF objects out of 1000 (max. 8388607)
- 569 compressed objects within 6 object streams
- 116 named destinations out of 1000 (max. 500000)
- 168790 words of extra memory for PDF output out of 184870 (max. 10000000)
+ 725 PDF objects out of 1000 (max. 8388607)
+ 581 compressed objects within 6 object streams
+ 118 named destinations out of 1000 (max. 500000)
+ 168796 words of extra memory for PDF output out of 184870 (max. 10000000)
 
