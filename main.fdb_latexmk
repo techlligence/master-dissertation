@@ -1,20 +1,20 @@
 # Fdb version 4
-["biber main"] 1751832359.5415 "main.bcf" "main.bbl" "main" 1751836597.95634 0
-  "main.bcf" 1751836597.73354 108620 9074a3cbccf933b01e1a0e406e87f1ec "pdflatex"
+["biber main"] 1751832359.5415 "main.bcf" "main.bbl" "main" 1751836838.57815 0
+  "main.bcf" 1751836838.35464 108620 9074a3cbccf933b01e1a0e406e87f1ec "pdflatex"
   "sample.bib" 1642741283 423 68b8f6cb50917872bb3a29f3e28dd3c7 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["makeindex main.idx"] 1751836402.16664 "main.idx" "main.ind" "main" 1751836597.95615 0
-  "main.idx" 1751836597.73699 1347 e02cee0d1df5c7636a633c3a0f86e0c2 "pdflatex"
+["makeindex main.idx"] 1751836402.16664 "main.idx" "main.ind" "main" 1751836838.57783 0
+  "main.idx" 1751836838.35715 1347 e02cee0d1df5c7636a633c3a0f86e0c2 "pdflatex"
   (generated)
   "main.ilg"
   "main.ind"
   (rewritten before read)
-["pdflatex"] 1751836595.13332 "/home/louis/repos/master-dissertation/main.tex" "main.pdf" "main" 1751836597.95674 0
+["pdflatex"] 1751836834.8083 "/home/louis/repos/master-dissertation/main.tex" "main.pdf" "main" 1751836838.57875 0
   "/etc/texmf/web2c/texmf.cnf" 1748975385.63222 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/louis/repos/master-dissertation/main.tex" 1751833599.2461 28427 25fd01df5e5696637e0c58905e1de915 ""
+  "/home/louis/repos/master-dissertation/main.tex" 1751836812.66725 28568 470753b03312125532dfe9f6c6bd4dae ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/avantgar/pagd8r.tfm" 1136768653 4840 6a894dde946186de9a64269f0edd24e5 ""
@@ -179,6 +179,9 @@
   "/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty" 1579038678 6078 f1cb470c9199e7110a27851508ed7a5c ""
   "/usr/share/texlive/texmf-dist/tex/latex/changepage/changepage.sty" 1256071977 4523 a9044e2dc40e764dac60d2acda7ae919 ""
   "/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty" 1720383029 12726 67708fc852a887b2ba598148f60c3756 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg" 1429144587 7068 06f8d141725d114847527a66439066b6 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def" 1712263026 22135 0975a49eeaed232aa861e9425ffb2e7c ""
+  "/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty" 1712263026 62767 e79d6d7a989e7da62dcf3d0a65c1faee ""
   "/usr/share/texlive/texmf-dist/tex/latex/emptypage/emptypage.sty" 1272668230 1524 7aa6e808cbd25977ee4abad01b013964 ""
   "/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty" 1738874546 52272 63d293bc0d496619edb57585740861a2 ""
   "/usr/share/texlive/texmf-dist/tex/latex/epigraph/epigraph.sty" 1578002819 4602 e947be1727d6ac747322008f8359ee17 ""
@@ -196,6 +199,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty" 1717359999 2671 70891d50dac933918b827d326687c6e8 ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx" 1667332637 2885 9c645d672ae17285bba324998918efd8 ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty" 1717359999 4023 2c9f39712cf7b43d3eb93a8bbd5c8f67 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty" 1575499774 7133 b94bbacbee6e4fdccdc7f810b2aec370 ""
   "/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty" 1580250785 17914 4c28a13fc3d975e6e81c9bea1d697276 ""
   "/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def" 1730838014 48154 82da9991b9f0390b3a9d3af6c8618af4 ""
   "/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty" 1730838014 222112 c22dbd2288f89f7ba942ac22f7d00f11 ""
@@ -257,21 +261,21 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1741904018 41538 c016915c1d51223b6dbbfe27341748a8 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1748976576 5467255 9a64d1b40e0b893fc5588ecce9d8accf ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1748976621 3349235 fa8942aaf3d611a1222fe9552769e560 ""
-  "Chapters/Chapter_Introduction.aux" 1751836597.10789 5025 962322afaa8e153b74c7551ccfe18aca "pdflatex"
+  "Chapters/Chapter_Introduction.aux" 1751836837.48318 5025 962322afaa8e153b74c7551ccfe18aca "pdflatex"
   "Chapters/Chapter_Introduction.tex" 1751836591.7622 3799 df2aa23233bad6dcaf1c20ea5ee7c7fb ""
   "Images/background.pdf" 1751811620.53307 70238 d98f92a53e9dfc36c67ad2970f69d804 ""
   "Images/creodocs_logo.pdf" 1631832916 53612 ef0ff49bbb82d1f6f4dc0ed64db5e31d ""
   "Images/orange2.jpg" 1643142115 158800 1a62e512d8231388f6c96a9eb2a124eb ""
-  "LegrandOrangeBook.cls" 1751812387.82771 34774 1c9f83d3afcddbabf8523c0fda306eff ""
-  "main.aux" 1751836597.71854 19858 2eb798a89f28b3681dcd0f90d0d29014 "pdflatex"
+  "LegrandOrangeBook.cls" 1751836834.454 34329 e97f69618e68b01c0fffffce4b3fec91 ""
+  "main.aux" 1751836838.34064 19858 ba3964bc4a398e506030b12463c13977 "pdflatex"
   "main.bbl" 1751832360.73145 3461 1c7620aa3598dddb7fda5c9738da57d9 "biber main"
   "main.ind" 1751836402.38294 1389 0ba0fe028d7ed09615816aae0d15babe "makeindex main.idx"
-  "main.lof" 1751836597.73699 338 d7b2d498b5e8b9cac3de03dfd32cb83e "pdflatex"
-  "main.lot" 1751836597.73699 332 516afa21c4e452daa8428e237ed445fc "pdflatex"
-  "main.ptc" 1751836597.73699 3742 c17c20d6a7d740deef7c34497ba682f3 "pdflatex"
-  "main.run.xml" 1751836597.73699 2301 f06af3099c978185a0ac5347b2a69dfa "pdflatex"
-  "main.tex" 1751833599.2461 28427 25fd01df5e5696637e0c58905e1de915 ""
-  "main.toc" 1751836597.73699 3697 27d7f7dea6ac8168b7cf7a597b2c2d92 "pdflatex"
+  "main.lof" 1751836838.35715 338 d7b2d498b5e8b9cac3de03dfd32cb83e "pdflatex"
+  "main.lot" 1751836838.35715 332 516afa21c4e452daa8428e237ed445fc "pdflatex"
+  "main.ptc" 1751836838.35715 3742 c17c20d6a7d740deef7c34497ba682f3 "pdflatex"
+  "main.run.xml" 1751836838.35715 2301 f06af3099c978185a0ac5347b2a69dfa "pdflatex"
+  "main.tex" 1751836812.66725 28568 470753b03312125532dfe9f6c6bd4dae ""
+  "main.toc" 1751836838.35715 3697 27d7f7dea6ac8168b7cf7a597b2c2d92 "pdflatex"
   (generated)
   "Chapters/Chapter_Introduction.aux"
   "main.aux"

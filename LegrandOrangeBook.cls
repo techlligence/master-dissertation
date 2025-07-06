@@ -116,27 +116,6 @@
 ]{titlesec} % Required for modifying sections
 
 %-------------------------------------------
-\newcommand{\quotebox}[2]
-{
-  \begin{center}
-    % \fcolorbox{white}{ocre!30!white}{
-      \begin{minipage}{0.9\linewidth}\vspace{10pt}
-        \center
-        \begin{minipage}
-			{0.8\linewidth}
-			{\space\Huge``}
-			{\setlength{\parindent}{1.5em}#1}
-			{\hspace{1.5em}\break\null\Huge\hfill''} 
-
-			{\setlength{\parindent}{1.5em}--- #2}
-			{\vspace{5pt}}
-        \end{minipage}
-        \smallbreak
-      \end{minipage}
-    % }
-\end{center}
-}
-
 % Command to create and output the parts pages
 \newcommand{\outputpartpage}[2]{
 	\begin{tikzpicture}[remember picture, overlay]
