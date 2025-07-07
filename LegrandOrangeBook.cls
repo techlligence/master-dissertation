@@ -433,8 +433,8 @@
 
 \usepackage[
 	backend=biber, % Use the biber engine for compiling the bibliography
-	bibstyle=numeric, % Main bibliography style
-	citestyle=numeric, % In-text citation style
+	bibstyle=authoryear, % Main bibliography style
+	citestyle=authoryear, % In-text citation style
 	sorting=nyt, % Sort references in the bibliography by name, then year, then title
 	sortcites=true, % If multiple citekeys are passed to a citation command, sort them in the citation
 	abbreviate=false, % Suppress abbreviations such as "Ed." for Editor
@@ -722,6 +722,19 @@
 		\hspace{-2.5pt}%
 		\begin{tikzpicture}[overlay]
 			\node[draw=ocre!60,line width=1pt,circle,fill=ocre!25,font=\sffamily\bfseries,inner sep=3pt,outer sep=0pt] at (-15pt,0pt){\textcolor{ocre}{R}}; % Orange R in a circle
+		\end{tikzpicture}
+	\advance\baselineskip -1pt% Reduce line spacing
+}{%
+	\end{adjustwidth}
+}
+
+\newenvironment{researchquestion}[1]{%
+	\par\small % Reduce font size for remarks
+	\vspace{4pt} % Vertical whitespace
+	\begin{adjustwidth}{35pt}{25pt} % Left and right padding
+		\hspace{-2.5pt}%
+		\begin{tikzpicture}[overlay]
+			\node[draw=ocre!60,line width=1pt,circle,fill=ocre!25,font=\sffamily\bfseries,inner sep=3pt,outer sep=0pt] at (-15pt,0pt){\textcolor{ocre}{R#1}}; % Orange R in a circle
 		\end{tikzpicture}
 	\advance\baselineskip -1pt% Reduce line spacing
 }{%
