@@ -731,10 +731,10 @@
 \newenvironment{researchquestion}[1]{%
 	\par\small % Reduce font size for remarks
 	\vspace{4pt} % Vertical whitespace
-	\begin{adjustwidth}{35pt}{25pt} % Left and right padding
+	\begin{adjustwidth}{50pt}{0pt} % Left and right padding
 		\hspace{-2.5pt}%
 		\begin{tikzpicture}[overlay]
-			\node[draw=ocre!60,line width=1pt,circle,fill=ocre!25,font=\sffamily\bfseries,inner sep=3pt,outer sep=0pt] at (-15pt,0pt){\textcolor{ocre}{R#1}}; % Orange R in a circle
+			\node[draw=ocre!60,line width=1pt,circle,fill=ocre!25,font=\sffamily\bfseries,inner sep=3pt,outer sep=0pt] at (-30pt,-9pt){\textcolor{ocre}{RQ#1}}; % Orange R in a circle
 		\end{tikzpicture}
 	\advance\baselineskip -1pt% Reduce line spacing
 }{%
