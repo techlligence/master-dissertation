@@ -108,6 +108,8 @@
 %	SECTION STYLING
 %----------------------------------------------------------------------------------------
 
+\newcommand{\parbreak}{\vspace{1\baselineskip}}
+
 \setcounter{secnumdepth}{3} % Number sections down to subsubsections, a value of 2 will number to subsections only and 1 to sections only
 
 \usepackage[
