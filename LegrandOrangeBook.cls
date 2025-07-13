@@ -108,7 +108,7 @@
 %	SECTION STYLING
 %----------------------------------------------------------------------------------------
 
-\newcommand{\parbreak}{\vspace{1\baselineskip}}
+\newcommand{\parbreak}{\par\vspace{0.75\baselineskip}}
 
 \setcounter{secnumdepth}{3} % Number sections down to subsubsections, a value of 2 will number to subsections only and 1 to sections only
 
@@ -501,7 +501,7 @@
 	colorlinks=true, % Whether to color links (a thin box is output around links if this is false)
 	%hidelinks, % Hide the default boxes around links
 	urlcolor=ocre, % Color for \url and \href links
-	linkcolor=black, % Color for \ref/\nameref links
+	linkcolor=ocre, % Color for \ref/\nameref links
 	citecolor=ocre, % Color for reference citations like \cite{}
 	hyperindex=true, % Adds links from the page numbers in the index to the relevant page
 	linktoc=all, % Link from section names and page numbers in the table of contents
