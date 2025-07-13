@@ -103,9 +103,11 @@ Mutation in contrast to crossover introduces randomness in the algorithm by alte
 \end{figure}
 
 \parbreak\noindent \textbf{Gaussian mutation} is applied to real valued chromosomes whereby a random gene is selected and a Gaussian distribution applied by means of the function below where $x_{i}^{i}$ is the offspring, $\sigma$ is a fixed parameter for all variables, $[b_{i}, a_{i}]$ represents the range of random gene, $erf^{-1}$ represents the inverse of $erf$ which is the Gauss error function, defined by $erf(y) = \frac{2}{\sqrt{\pi}}\int^{y}_{0}e^{-t^2}dt$ (\cite{bell2022applicationsgaussianmutationself}, \cite{gaussianMutation}). Gaussian mutation allows for controlled but continuous alterations.
-\begin{equation}
-	x_{i}^{'} = \sqrt{2} \sigma(b_{i} - a_{i}) erf^{-1}(u^{'}i)
-\end{equation}
+\begin{ceqn}
+	\begin{equation}
+		x_{i}^{'} = \sqrt{2} \sigma(b_{i} - a_{i}) erf^{-1}(u^{'}i)
+	\end{equation}	
+\end{ceqn}
 
 \parbreak\noindent \textbf{Inversion mutation} selects a subset of genes and inverts the position as shown in Figure \ref{fig:inversion}. This mutation scheme is useful in combinatorial optimisation problems where the specific arrangement of elements matters such as the travelling salesman problem (\cite{intelligentOptimization}).
 	
@@ -127,9 +129,11 @@ Mutation in contrast to crossover introduces randomness in the algorithm by alte
 Selection occurs in an evolutionary process in two instances - parent selection and survivor selection. Parent selection has its primary purpose in distinguishing individuals based on their quality in order to allow better individuals to become parents of the next generation (\cite{handsOnGeneticAlgorithms}). Survivor selection, similar to parent selection, aims to distinguish individuals apart based on quality. Parent selection occurs before variation operators are applied while survivor selection occurs after offspring are produced and evaluated against the fitness function (\cite{book_introduction_to_evolutionary_computing}). This selection mechanism mimics the natural selection seen in nature where animals with desirable traits have increased likelihood of producing better offspring - akin to this, candidate solutions with better fitness scores are more likely to produce better quality offspring to solve the objective at hand. An effective selection mechanism will ensure that there is a balance between promoting high-quality solutions whilst maintaining population diversity ideally driving the EA towards a global optimum. Below are common selection mechanisms that are typically used within evolutionary algorithms:
 
 \parbreak\noindent \textbf{Fitness-proportionate selection} which is one of the simplest yet most renowned selection methods. In this selection approach, each candidate solution's probability of being selected is proportional to its fitness score relative to the total fitness of the population (\cite{shukla2015comparative}). Mathematically, the probability that each individual is selected is given by the formula below where $f_x$ is the fitness of individual $x$ (\cite{shukla2015comparative}).
-\begin{equation}
-	p_x = \frac{f_x}{\sum^{n}_{i=1}f_i}
-\end{equation}
+\begin{ceqn}
+	\begin{equation}
+		p_x = \frac{f_x}{\sum^{n}_{i=1}f_i}
+	\end{equation}
+\end{ceqn}
 This selection mechanism is computationally efficient ($O(n)$ complexity) and ensures that fitter individuals are more likely to survive and reproduce while still giving less fit individuals the chance to contribute and preserve genetic diversity thereby preventing stagnation. The most common implementation of this approach is \textit{roulette-wheel selection}, which assigns selection probabilities analogously to slots on a roulette wheel such that higher fitness solutions occupy larger wheel segments and thus have greater likelihood of being selected. Although this process is simple, this mechanism may suffer from genetic drift if highly fit individuals dominate which results in a loss of diversity in subsequent generations. This approach raises considerations about the \textit{takeover time}, that is, the number of generations required for the best candidate solution's genes to dominate the population under selection pressure alone. Short takeover times indicate strong selection pressure that may lead to premature convergence, while longer takeover times encourage diversity within the population at the cost of slower optimisation.
 
 \parbreak\noindent \textbf{Tournament selection} offers a more controlled selection mechanism which is done by firstly by selecting a subset of individuals based on random sampling. Each subset known as tournaments will have individuals compete and the strongest survive. The size of the subset or tournament impacts the selection pressure - larger tournaments increases the chances that the fittest individuals will dominate while smaller tournaments result in a more diversified selection pool of individuals (\cite{shukla2015comparative}). Tournament selection is computationally efficient ($O(n)$ complexity) and provides a simple way to adjust selection pressure making it a popular choice in EAs (\cite{shukla2015comparative}).
@@ -257,20 +261,24 @@ Differential Evolution (DE) offers a distinctive approach to continuous optimisa
 
 \begin{enumerate}
 	\item For each parent in the population, a trial vector $u_i(t)$ is generated. This trial vector is generated using the following formula:
-	\begin{equation}
-		u_i(t) = x_{i_1} + \beta(x_{i_2}(t) - x_{i_3}(t))
-	\end{equation}
+	\begin{ceqn}
+		\begin{equation}
+			u_i(t) = x_{i_1} + \beta(x_{i_2}(t) - x_{i_3}(t))
+		\end{equation}
+	\end{ceqn}
 
 	where $x_{i_2}(t)$ and $x_{i_3}(t)$ are randomly selected individuals such that $i \neq i_1 \neq i_2 \neq i_3$. $i_2$ and  $i_3$ are chosen based on uniform sampling, and $\beta \in (1, \infty)$ which is a scaling factor for controlling amplification (\cite{storn1995differential})
 
 	\item After obtaining the mutated offspring which is the trial vector, crossover occurs which is implemented as follows:
-	\begin{equation}
-		x_{ij}^{'}(t) =
-		\begin{cases}
-			u_{ij}(t) \:\: if \:\: j\in J \\ 
-			x_{ij}(t) \:\: otherwise
-		\end{cases}
-	\end{equation}
+	\begin{ceqn}
+		\begin{equation}
+			x_{ij}^{'}(t) =
+			\begin{cases}
+				u_{ij}(t) \:\: if \:\: j\in J \\ 
+				x_{ij}(t) \:\: otherwise
+			\end{cases}
+		\end{equation}
+	\end{ceqn}
 
 	where $x_{ij}^{'}$ is gene $j$ of chromosome $i$, and $J$ is the set of chosen perturbation points, which is essentially the set of trial vectors (\cite{storn1995differential}).
 	

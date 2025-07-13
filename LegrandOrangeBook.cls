@@ -535,7 +535,7 @@
 
 	\begin{tikzpicture}[remember picture, overlay]
 		\node [inner sep=0pt] at (current page.center) {#1}; % Background image
-		\node [anchor=center, inner sep=1.25cm, rectangle, fill=ocre!30!white, fill opacity=0.1, text opacity=1, minimum height=0.2\paperheight, minimum width=\paperwidth, text width=0.8\paperwidth] at (current page.center) {#2}; % Title highlight box with title(s) and author(s)
+		\node [anchor=center, inner sep=1.25cm, rectangle, fill=ocre!30!white, fill opacity=0.0, text opacity=1, minimum height=0.2\paperheight, minimum width=\paperwidth, text width=0.8\paperwidth] at (current page.center) {#2}; % Title highlight box with title(s) and author(s)
 	\end{tikzpicture}
 	
 	\newpage
@@ -545,7 +545,7 @@
 %	THEOREM STYLES
 %----------------------------------------------------------------------------------------
 
-\usepackage{amsmath, amsfonts, amssymb, amsthm} % For math equations, theorems, symbols, etc
+\usepackage{amsmath, amsfonts, amssymb, amsthm, nccmath} % For math equations, theorems, symbols, etc
 
 \renewcommand{\qedsymbol}{$\blacksquare$} % Redefine the QED symbol to be a filled square vs. the default unfilled square
 
