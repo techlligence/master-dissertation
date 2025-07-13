@@ -121,7 +121,7 @@
 ~\vfill % Push the text down to the bottom of the page
 
 \noindent \textbf{Acknowledgements} \\
-I would like to sincerely thank my supervisor, Prof Coulter, for his guidance and support throughout this research. His expertise and feedback were invaluable. 
+<TODO> - Add acknowledgements here
 
 
 %----------------------------------------------------------------------------------------
@@ -139,12 +139,6 @@ I would like to sincerely thank my supervisor, Prof Coulter, for his guidance an
 \pagestyle{fancy} % Enable default headers and footers again
 
 \cleardoublepage % Start the following content on a new page
-
-%----------------------------------------------------------------------------------------
-%	PART
-%----------------------------------------------------------------------------------------
-
-\part{Part One}
 
 %----------------------------------------------------------------------------------------
 %	SECTIONING EXAMPLES CHAPTER
@@ -177,10 +171,12 @@ I would like to sincerely thank my supervisor, Prof Coulter, for his guidance an
 \include{Chapters/Chapter_NE}
 %------------------------------------------------
 
-\part{Part Two}
-
-
-\stopcontents[part] % Manually stop the 'part' table of contents here so the previous Part page table of contents doesn't list the following chapters
+%------------------------------------------------
+\chapterimage{}
+\chapterspaceabove{6.75cm}
+\chapterspacebelow{7.25cm} 
+\include{Chapters/Chapter_GEP}
+%------------------------------------------------
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
