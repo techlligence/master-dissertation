@@ -1,19 +1,20 @@
 \chapter{GEP-NEAT}\label{chapter:gep_neat}
-This chapter provides covers GEP-NEAT, a blend between NEAT (covered in Chapter \ref{sec:ne_neat}) and gene expression programming (covered in Chapter \ref{chapter:gep}). An introduction to GEP-NEAT is given in Section \ref{sec:gep_neat_introduction}. The proposed algorithm is explained in-depth in Section \ref{sec:gep_neat_proposed_algorithm}, after which the prototype implementation is discussed in Section \ref{sec:gep_neat_protoype_implementation}. Finally, the prototype is applied to a few problems to benchmark the algorithm's performance in Section \ref{sec:gep_neat_model_validation}.
+This chapter covers GEP-NEAT, a blend between NEAT (covered in Chapter \ref{sec:ne_neat}) and gene expression programming (covered in Chapter \ref{chapter:gep}). An introduction to GEP-NEAT is given in Section \ref{sec:gep_neat_introduction}. The proposed algorithm is explained in-depth in Section \ref{sec:gep_neat_proposed_algorithm}, after which the prototype implementation is discussed in Section \ref{sec:gep_neat_protoype_implementation}. Finally, the prototype is applied to a few problems to benchmark the algorithm's performance in Section \ref{sec:gep_neat_model_validation}.
 
 \section{Introduction}\label{sec:gep_neat_introduction}
-Neuroevolution (Chapter \ref{chapter:neuroevolution}) focuses on finding creative ways to optimize artificial neural networks (ANNs) using evolutionary algorithms (Chapter \ref{chapter_ea}). Unlike the traditional methods such as backpropagation and gradient descent to train neural networks, neuroevolution leverages Darwinian principles to evolve the topology of the neural network along with its weights and biases. NEAT, as explained in Chapter (\ref{sec:ne_neat}), is a powerful method to evolve both the structure and weights of a neural network. One of the most significant challenges NEAT faces is its computational cost due to the topological sort needed when evaluating a neural network sample. In other words, not only is the mapping between the genotype and phenotype a challenging task to overcome, but the forward feeding of values to calculate fitness an expensive task. \bigskip
+As discussed in Chapter \ref{chapter:neuroevolution}, neuroevolution explores innovative strategies for optimising artificial neural networks (ANNs) using evolutionary algorithms (see Chapter \ref{chapter_ea}). Unlike conventional training methods such as backpropagation and gradient descent, which rely on differentiable loss functions and gradient-based updates, neuroevolution leverages Darwinian principles to evolve the topology of the neural network along with its weights and biases. This allows for the discovery of novel topologies, activation functions, and hyperparameters that may not be easily accessible through traditional approaches.
 
-\noindent GEP, and its extension GEP-NN, is an evolutionary algoirthm that combines the genetic algorithms with the powerful representation of genetic programming to solve complex problems, especially tasks that require a non-linear structure such as trees, graphs, etc. GEP's novelty lies in the genotype-phenotype mapping of a chromosome using Karva notation. \bigskip
+\parbreak\noindent A prominent example of this is the NEAT algorithm (Chapter \ref{sec:ne_neat}), which evolves both the structure and weights of neural weights simultaneously. NEAT's speciation mechanism preserves diversity and protects innovative structures during evolution, but one of its main challenges lies in its computational cost, largely due to the need for topological sorting during network evaluation, which makes the genotype-phenotype mapping and forward propagation computationally expensive. Nevertheless, NEAT's ability to operate without requiring differentiable functions makes it particularly well-suited for environments where gradient information is unaccessable.
 
-\noindent GEP-NN, the proposed algorithm, takes inspiration from the expressive power in chromosome representation that GEP provides, and the core principles of NEAT. Among this, GEP-NN adds additional novelty by reconstructing the representation of innovation numbers that NEAT employs. Using the concept of a meme by Richard Dawkins, a new selection and mutation operators are introduced that takes advantage of the innovation numbers which tracks sub-configurations. Additionally, GEP-NN bridges the gap in bias introduction that the original GEP-NN missed and introduces a mechanism on how to embed bias information within the chromosome.
+\parbreak\noindent Building on these ideas, Gene Expression Programming (GEP) and its extension GEP-NN offer alternative evolutionary approaches that combine the global search capabilities of genetic algorithms with the expressive, tree-based representations of genetic programming. GEP introduces a novel genotype-to-phenotype mapping using Karva notation, enabling the evolution of complex, non-linear structures such as expression trees.
+
+\parbreak\noindent The proposed algorithm, GEP-NEAT, integrates the representational power of GEP with the structural evolution principles of NEAT. It introduces several enhancements, including a reworked system for tracking innovation numbers, inspired by Richard Dawkins' concept of the meme. This mechanism enables more effective selection and mutation by identifying and preserving useful substructures across generations. Furthermore, GEP-NEAT addresses a key limitation in earlier GEP-based models by introducing a method for embedding bias information directly into the chromosome, thereby improving the expressiveness and learning capacity of evolved networks.
 
 \section{Proposed Algorithm}\label{sec:gep_neat_proposed_algorithm}
 \subsection{Evolutionary Life Cycle}
-The aim og GEP-NEAT is to combine the expressive power of Karva notation within GEP which ensures syntactically correct programs with the neuroevolutionary principles of NEAT to effectively speciate and evolve an evolutionary population. To begin, both NEAT and GEP both have commonalities of a generic evolutionary flow, that is, create an initial population, represent the chromosome adaquitely, evalute each chromosome's fitness, decide whether to terminate the process and if not, apply genetic operators and repeat the process until the stop conditions are met. Differences lie however in relation to the novelties that each one presents. For example, in NEAT, speciation is encompassed within the evolutionary cycle whereby the historical genes for each generation is tracked in a lookup table by means of an innovation number. This innovation number table is referenced when calculating a compatabiliyt distance in order to speciate chromosomes so that they compete within their own niches (\cite{stanley2002evolving}). GEP on the other hand, orignally follows the basic genetic algorithm flow, however, introduces an abundandt amount of genetic operators to introduce diversity within the genetic pool and allow manifestations of reproducible building blocks to be used within genetic structures (\cite{ferreira2006gene}). GEP-NEAT takes inspiration from both these algorithms to form the framework that is seen in Figure \ref{fig:gep_neat_framework}. \bigskip
+The goal of GEP-NEAT is to integrate the expressive representational capabilities of Karva notation from GEP with the neuroevolutionary mechanisms of NEAT, particularly its speciation and innovation tracking strategies. This hybrid approach aims to evolve neural network populations more effectively by combining the strengths of both paradigms.
 
-\noindent There are commonalities that GEP-NEAT shares with NEAT and GEP-NN, such as the intial stages of creating an intial population and calculating fitness. Futhermore, speciation is insired from NEAT and likewise, the specific genetic operators is inspired from GEP. Steps such as the calculation of innovatyion and meme influence are specfic to GEP-NEAT. In order to properly understand the intracacies of the evolutionary framework depicited in Figure \ref{fig:gep_neat_framework}, it is best to explain from start to finish incrementally.
-
+\parbreak
 \begin{figure}[H] % Use [H] to suppress floating and place the figure/table exactly where it is specified in the text
 	\centering % Horizontally center the figure on the page
 	\includegraphics[width=0.65\textwidth]{Figures/chapter_gep_neat/gep_neat_framework.png} % Include the figure image
@@ -21,9 +22,20 @@ The aim og GEP-NEAT is to combine the expressive power of Karva notation within 
 	\label{fig:gep_neat_framework} % Unique label used for referencing the figure in-text
 \end{figure}
 
-\subsection{Representation}\label{sec:gep_neat_representation}
-NEAT-GEP takes inspiration from the genotype-phenotype mapping that GEP introduces, that is, using Karva notation. There are a few changes amended to the representation, with the fist being the tree style encoding. In traditional GEP, k-expressions are converted to expression trees by reading from left-to-right and top-to-bottom. Seeing that conversion is required to evaluate the expression  tree to calculate fitness, encoding the expression tree in this manner can lead to computational strain during the evolutionary process for large populations and complex linear strings. Mentioned in Chapter \ref{chapter:gep}, otherway of encoding these linear strings include prefix and postfix. P-GEP which embeds linear strings in postfix fashion. In doing so, the traditional GEP genetic operators are more proective for subscrutres which aids in more powerful search capabilities. To illustrate this, Figure \ref{fig:gep_neat_p_gep} shows how the standard karva notation differs from prefix notation with the different subtree configurations highlighted in purple, blue and green. Evidently, when genetic operations are applied to standard karva notation, these subtree configurations are lost, however, when applied to prefix notation, it can preserve subtree configurations. An example of this is when single point crossover is applied with the crossover point between gene 3 and 4.
+\parbreak\noindent At a high level, both NEAT and GEP follow a similar evolutionary cycle, that is, intialising a population, representing chromosomes, evaluating fitness, applying genetic operators, and iterating until a termination condition is met. The two approaches however diverge significantly in their internal mechanisms and innovations. NEAT introduces a sophisticated speciation mechanism, where historical gene information is tracked using innovation numbers. These are stored in a lookup table and used to calculate compatibility distance between individuals, allowing the population to be divided into species that evolve in parallel within their own niches (\cite{stanley2002evolving}).
 
+\parbreak\noindent In contrast, GEP adheres more closely to the traditional genetic algorithm framework but distinguishes itself through a rich set of genetic operators that promote diversity and facilitate the emergence of reusable substructures, or building blocks, within chromosomes (\cite{ferreira2006gene}). Its use of Karva notation ensures syntactically valid expressions, making it particularly well-suited for evolving complex, non-linear representations.
+
+\parbreak\noindent GEP-NEAT draws inspiration from both of these methodologies to form a unified framework, as illustrated in Figure \ref{fig:gep_neat_framework}. It leverages NEAT's innovation tracking and speciation to maintain diversity and protect novel structures, while adopting GEP's flexible chromosome representation to enable the evolution of expressive and structurally diverse neural networks.
+
+\subsection{Representation}\label{sec:gep_neat_representation}
+NEAT-GEP draws inspiration from the genotype-to-phenotype mapping introduced in Gene Expression Programming (GEP), particularly through the use of Karva notation, however, several modifications have been made to enhance the representation, starting with the adoption of prefix tree-style encoding. In traditional GEP, k-expressions are converted into expression trees by reading the linear string from left to right and top to bottom. While this method ensures syntactic correctness, it can become computationally expensive, especially when evaluating large populations or complex expressions since the expression tree must first be constructed from the expression string during each fitness evaluation. 
+
+\parbreak\noindent As discussed in Chapter \ref{chapter:gep}, alternative encoding schemes such as prefix and postfix notation have been explored to address this limitation. On such approach, P-GEP, encodes linear chromosomes in prefix form. This representation improves the preservation of meaningful substructures during operations like crossover and mutation, which in turn supports more efficient and targeted exploration of the search space.
+
+\parbreak\noindent Figure \ref{fig:gep_neat_p_gep} illustrates the differences between standard Karva notation and prefix notation, highlighting how subtrees - shown in purple, blue, and green - are affected by genetic operations. In standard Karva notation, these substructures are often disrupted during crossover, whereas prefix notation allows them to be preserved. For example, when a single-point crossover is applied between gene 3 and 4, the prefix-encoded chromosome maintains the integrity of its subtrees, whereas the same operation on a Karva-encoded chromosome may fragment them.
+
+\parbreak
 \begin{figure}[H] % Use [H] to suppress floating and place the figure/table exactly where it is specified in the text
 	\centering % Horizontally center the figure on the page
 	\includesvg[width=0.80\textwidth]{Figures/chapter_gep_neat/gep_neat_p_gep.svg} % Include the figure image
@@ -31,41 +43,64 @@ NEAT-GEP takes inspiration from the genotype-phenotype mapping that GEP introduc
 	\label{fig:gep_neat_p_gep} % Unique label used for referencing the figure in-text
 \end{figure}
 
-\noindent To best explain how GEP-NEAT chromsoome work, an abritary example will be used throughout the Chapter. Consider a linear string that has a head size of $3$ and a maximum function symbol arity of $3$ with the following arbitrary functions set ${D, T}$ and terminal set ${a, b, c}$. Function symbol $D$ takes 2 inputs while $T$ takes 3. The corresponding tail size would be: $t = h \times (n_{max} - 1) + 1 = 3 \times (3 - 1) + 1 = 7$. A candiate solution would then have length $genome \:\: length = h + t = 2 + 7 = 9$. In the original GEP paper, both a weight and threshold domain was encoded in the linear string. Although a threshold domain is useful in neural networks with simple activation functions such as binary step, they can be quite limiting. For this reason, only a weight domain is encoded in the linear string. The linear string in reference has a weight domain length of $D_w = h \times n_{max} = 3 \times 3 = 9$. A lookup weight array which the weigh values serve as indices and pulls from the weight array may look as follows of size 5: $[-1.2,\:2.3,\:3.2,\:4.4,\:-0.5,\:6.0]$. A sample chromosome may looks follows:
+\parbreak\noindent To illustrate how a GEP-NEAT chromosome is structured and functions, this chapter introduces a Simplified example. Consider a linear chromosome with a head size of $h = 3$ and a maximum function arity of $3$. Let the function set be ${D, T}$, where function $D$ takes two inputs and $T$ takes three, and the terminal set be ${a, b, c}$. According to GEP's formulation, the tail size is calculated using the formula:
+\begin{ceqn}
+	\begin{equation}
+		t = h \times (n_{max} - 1) + 1 = 3 \times (3 - 1) + 1 = 7
+	\end{equation}
+\end{ceqn}
 
-\begin{equation}\label{example:representation}
-    \begin{array}{cccccccccccccccccc}
-        0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
-        D & a & T & a & b & c & a & b & a & 5 & 2 & 4 & 1 & 2 & 3 & 3 & 2 & 6
-    \end{array}
-\end{equation}
+\noindent This results in a genome length of $h + t = 3 + 7 = 10$. In the original GEP formulation, both weight and threshold domains were encoded within the linear string. While threshold domains are useful in networks with binary or step activation functions, they can be restrictive in more expressive architectures. Therefore, in GEP-NEAT, only a weight domain is encoded, allowing for greater flexibility in network behaviour. The weight domain length is defined as:
+\begin{ceqn}
+	\begin{equation}
+		D_w = h \times n_{max} = 3 \times 3 = 9
+	\end{equation}
+\end{ceqn}
 
-\noindent To reiterate, gene 0 to 5 represents the actual expression tree while gene 6 to 8 are buffer symbols. Another short fall of GEP-NN, is that bias nodes do not exist in the implementation. The original research on GEP-NN was applied to problems that was not necessarily impacted significantly by the lack of biasing with the neural network, however, with solution spaces that are much larger, biasing proves to be a much more essential component to avoid performance issues. Therefore, there will be an ammendment to the original GEP-NN algorithm as the first \textbf{novelty} mentioned. In order to encapsulate a biasing within the expression tree, every function symbol will enscapsulate two things:
+\noindent A lookup weight array is used, where each gene in the weight domain serves as an index into this array. For example, a weight array of size $5$ might be defined as:
+\begin{ceqn}
+	\begin{equation}
+		[-1.2, 2.3, 3.2, 4.4, -0.5, 6.0]
+	\end{equation}
+\end{ceqn}
 
+\noindent A sample chromosome constructed using this configuration looks as follows:
+
+\begin{ceqn}
+	\begin{equation}\label{example:representation}
+		\begin{array}{cccccccccccccccccc}
+			0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+			D & a & T & a & b & c & a & b & a & 5 & 2 & 4 & 1 & 2 & 3 & 3 & 2 & 6
+		\end{array}
+	\end{equation}
+\end{ceqn}
+
+\noindent Based on the logic of GEP, to reiterate, genes 0 to 5 represent the actual expression tree, while genes 6 to 8 serve as buffer symbols that ensure syntactic correctness but do no contribute to the functional output. One notable limitation of the original GEP-NN implementation is the absence of bias nodes. While this omission had minimal impact in the original research likely due to the relatively constrained problems it had been applied to, its effect becomes more pronounced in larger and more complex solution spaces. In such cases, the lack of biasing can hinder the network's ability to shift activation thresholds, potentially leading to suboptimal performance. 
+
+\parbreak\noindent To address this shortcoming, the first proposed novelty in GEP-NEAT is the explicit incorporation of bias into the chromosome structure. This is achieved by modifying the expression tree representation such that each function symbol encapsulates two components:
 \begin{itemize}
-    \item \textit{bias enabled} - this stores a boolean value to determine whether a bias is enabled on the function symbol
-    \item \textit{bias weight} - this stores the bias weight
+    \item \textbf{bias enabled}: This stores a boolean value to determine whether a bias is enabled on the function symbol.
+    \item \textbf{bias weight}: This stores the bias weight.
 \end{itemize}
 
-
-\noindent To continue with the example, consider the function symbols in the expression string of Equation \ref{example:representation} to have the following bias information:
+\parbreak\noindent Continuing with the illustrative example, let us now consider the bias values associated with the functional symbols in the expression string presented in Equation \ref{example:representation}:
 \begin{itemize}
-    \item $D$
+    \item Function Symbol \textbf{$D$}
     \begin{itemize}
-        \item \textit{bias enabled}: \textbf{true}
-        \item \textit{bias weight}: \textbf{0.4}
+        \item \textbf{bias enabled}: true
+        \item \textbf{bias weight}: $0.4$
     \end{itemize}
 
-    \item $T$
+    \item Function Symbol \textbf{$T$}
     \begin{itemize}
-        \item \textit{bias enabled}: \textbf{false}
-        \item \textit{bias weight}: \textbf{2.3}
+        \item \textbf{bias enabled}: false
+        \item \textbf{bias weight}: $2.3$
     \end{itemize}
 \end{itemize}
 
+\parbreak\noindent This candidate solution corresponds to the expression tree, and by extension, the neural network depicted in Figure \ref{fig:gep_neat_representation_example_tree}. Similar to the forward propagation process in conventional neural networks, input values are assigned to the terminal $a$, $b$, and $c$, after which the expression tree is evaluated to compute the final network output.
 
-\noindent This candidate solution represents the expression tree and in turn neural network seen in Figure \ref{fig:gep_neat_representation_example_tree}. Just as forward feeding in a traditional neural network works, values are fed into $a$, $b$, $c$ and the expression tree is evaluated in order to obtain the neural network output.
-
+\parbreak
 \begin{figure}[H] % Use [H] to suppress floating and place the figure/table exactly where it is specified in the text
 	\centering % Horizontally center the figure on the page
 	\includesvg[width=0.8\textwidth]{Figures/chapter_gep_neat/gep_neat_representation_example_tree.svg} % Include the figure image
@@ -73,10 +108,13 @@ NEAT-GEP takes inspiration from the genotype-phenotype mapping that GEP introduc
 	\label{fig:gep_neat_representation_example_tree} % Unique label used for referencing the figure in-text
 \end{figure}
 
-\noindent With reference to Figure \ref{fig:gep_neat_representation_example_tree}, the expression tree representation is decoded from the linear string using prefix notation. Although it will be later explained, the weight domain values are assigned in a fashion of depth first and works it way up, in a similar way that that symbolic regression trees get evaluates. In addition to this, each weight value corresponds to its index in the weight lookup array. Lastly, as mentioned, each function symbol has a bias node attached with D having its bias enabled and T having its bias disabled. \bigskip
+\parbreak\noindent As illustrated in Figure \ref{fig:gep_neat_representation_example_tree}, the expression tree is decoded from the linear chromosome using prefix notation. Although a more detailed explanation is provided later in the chapter, it is import to note that weight values from the weight domain are assigned in a depth-first manner, progressing from leaves of the tree upward, similar to the evaluation strategy used in symbolic regression. Each weight value corresponds to an index in the predefined weight lookup array. Additionally, as previously mentioned, each function symbol in the tree is associated with a bias node. In this example the function symbol $D$ has its bias enabled, while $T$ does not, demonstrating how bias can be selectively applied within the network structure.
 
-\noindent Another shortfall the original GEP-NN algorithm had was its limitation in activation functions used. As mentioned, a threshold domain was used for each function symbol and had neuron's output 0 when the weighted sum was below that respective input and 1 otherwise representing a binary step function essentially. In the orignal GEP (and its extension GEP-NN), the only weighted sum functions used was of a linear nature, that is, having 3 function symbols, $D$, $T$, and $Q$, with function arity 2, 3, and 4 respectively. It was proved that the standard version of GEP-NN could not solve symbolic regression and classification problems, however, with the symbols modified such that it could represent the subtraction, multiplication, and division operator, it could overcome this limitation (\cite{improvedGepnn}). This however still not addressed more powerful trasnfer fucntion calculations that traditional neural networks provide. For this reason, the algorithm introduces as the next \textbf{novelty} different activaton functions. At each function symbol, the weighted sum is calcualted, that is,  the addition of all inputs plus the bias. Each function symbol will then encode its own activation function that is applied to this transfer function result. The function set is configurable in the sense that different functiion symbols with different arities is added, each with their own acitvation fucntion. THe idea is that, just as a neural netwrok is designed to make use of particular activation functions, so will GEP-NEAT. In addition to this, the function set cna also be configured to inclulde a wide range of activation function each with different function arities so that the algorithm can \textit{learn} which activation functions to use.
+\parbreak\noindent Another limitation of the original GEP-NN algorithm lies in its restricted use of activation functions. As previously mentioned, the original implementation employed a threshold domain for each function symbol, where a neuron would output $0$ if its weighted sum of its inputs was below the associated threshold, and $1$ otherwise, effectively implementing a binary step function. Additionally, the only weighted sum operations used were linear in nature, represented by symbols such as $D$, $T$, and $Q$, with arities, $2$, $3$, and $4$ respectively.
 
+\parbreak\noindent While this approach was sufficient for the original problem domains, it proved inadequate for more complex tasks such as symbolic regression and classification. Subsequent research demonstrated that by modifying these function symbols to represent arithmetic operations like subtraction, multiplication, and division, the algorithm's expressiveness could be significantly improved (\cite{improvedGepnn}). This however still did not address the broader limitation of lacking non-linear activation functions, which are a fundamental component of modern neural networks.
+
+\parbreak\noindent To overcome this, the next proposed novelty in GEP-NEAT framework is the introduction of configurable activation functions. At each function node, the weighted sum - computed as the sum of all inputs plus the bias - is passed through an activation function specific to that symbol. This allows each function symbol to encode not only its arity and operation but also its own activation behaviour. The function set is fully configurable, enabling the inclusion of a diverse range of activation functions (e.g., sigmoid, tanh, ReLU), each associated with different arities. This design mirrors the flexibility of traditional neural networks, allowing GEP-NEAT to learn which activation functions are most effective for a given problem domain.
 
 \subsection{Initial Population}
 In the original GEP algorithm, Candida mentions that in order to speed up the evolutionary process of finding a suitable candidate, a start-protocol is employed which is that the an intial population is generated until a viable solution is find such that the fitness is not minimum. The purpose of this from GEP's persepctive is that every offspring is part of a lineage from a sole founder as a means to accelerate the exploitation vs exploration scheme \cite{ferreira2006gene}. The obvious implication of this is that there runs a risk of candidate solutions stagnating around local optima. \bigskip
