@@ -117,19 +117,21 @@ NEAT-GEP draws inspiration from the genotype-to-phenotype mapping introduced in 
 \parbreak\noindent To overcome this, the next proposed novelty in GEP-NEAT framework is the introduction of configurable activation functions. At each function node, the weighted sum - computed as the sum of all inputs plus the bias - is passed through an activation function specific to that symbol. This allows each function symbol to encode not only its arity and operation but also its own activation behaviour. The function set is fully configurable, enabling the inclusion of a diverse range of activation functions (e.g., sigmoid, tanh, ReLU), each associated with different arities. This design mirrors the flexibility of traditional neural networks, allowing GEP-NEAT to learn which activation functions are most effective for a given problem domain.
 
 \subsection{Initial Population}
-In the original GEP algorithm, Candida mentions that in order to speed up the evolutionary process of finding a suitable candidate, a start-protocol is employed which is that the an intial population is generated until a viable solution is find such that the fitness is not minimum. The purpose of this from GEP's persepctive is that every offspring is part of a lineage from a sole founder as a means to accelerate the exploitation vs exploration scheme \cite{ferreira2006gene}. The obvious implication of this is that there runs a risk of candidate solutions stagnating around local optima. \bigskip
+\noindent In the original GEP algorithm, Ferreira proposed a start-up protocol designed to accelerate the evolutionary search process by ensuring that the initial population includes at least one viable candidate solution, that is, one with a fitness value above a minimum threshold (\cite{ferreira2006gene}). The rationale behind this approach is to establish a lineage from a single, functional founder, thereby promoting faster convergence through a more directed exploration-exploitation balance. This strategy however introduces a potential drawback, that is, it increases the risk of premature convergence, where the population may stagnate around local optima due to limited initial diversity.
 
-\noindent In the case of NEAT, the concept of starting out minimally is introduced. NEAT does this by generating a population such that there are no hidden nodes forcing the resulting structures to be as minimal as possible. In doing so, the idea is that structural innovations are intended which means that solutions in the lowest dimentional space is searched for which leads to performance gains (\cite{stanley2002evolving}). Mentioned in the original paper of NEAT, typical algorithms don't do this because they run the risk of topological innovations being prematurely killed. NEAT solves this by protecting structural innovations through historical gene tracking by means of innovation numbers. \bigskip
+\parbreak\noindent In contrast, the NEAT algorithm adopts a different philosophy known as starting out minimally mentioned in Chapter \ref{sec:ne_neat}. During intialisation, NEAT generates networks with no hidden nodes, resulting in the simplest possible structures. This minimalist design encourages the discovery of compact and efficient solutions in low-dimensional spaces, which can lead to performance gains (\cite{stanley2002evolving}). A common concern with this approach is that structural innovations such as the addition of new nodes or connections may be lost early in evolution. NEAT addresses this by introducing innovation numbers, which track historical gene changes and enable the algorithm to protect and preserve novel topological features through speciation.
 
-\noindent GEP-NEAT does not inherit the start-up control mechanism that GEP makes use of in order to mitigate the chance that candiate solutions may prematurley stangate around local optima. Instead, GEP-NEAT adapts the \textit{starting out minimally} dependency compoennt NEAT mentions by generating individuals that have only one function symbol which is in the root of the linear chromosome during the intialisation phase. An example of this, is the linear string shown in Equation \ref{example:gep_neat_initial}, and its phentotype representation shown in Figure \ref{fig:gep_neat_initial_example}.
+\parbreak\noindent The proposed GEP-NEAT framework does not adopt GEP's start-up control mechanism. Instead, it incorporates NEAT's minimalist intialisation strategy to mitigate the risk of premature convergence. During the intialisation phase, individuals are generated with only a single function symbol positioned at the root of the linear chromosome. This ensures that the initial population consists of structurally simple candidates, allowing complexity to emerge gradually through evolutionary processes. An example of such an initial chromosome is shown in Equation \ref{example:gep_neat_initial}, with its corresponding phenotype representation illustrated in Figure \ref{fig:gep_neat_initial_example}.
+\begin{ceqn}
+	\begin{equation}\label{example:gep_neat_initial}
+		\begin{array}{cccccccccccccccccc}
+			0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+			D & a & b & a & b & c & a & b & a & 5 & 2 & 4 & 1 & 2 & 3 & 3 & 2 & 6
+		\end{array}
+	\end{equation}
+\end{ceqn}
 
-\begin{equation}\label{example:gep_neat_initial}
-    \begin{array}{cccccccccccccccccc}
-        0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
-        D & a & b & a & b & c & a & b & a & 5 & 2 & 4 & 1 & 2 & 3 & 3 & 2 & 6
-    \end{array}
-\end{equation}
-
+\parbreak
 \begin{figure}[H] % Use [H] to suppress floating and place the figure/table exactly where it is specified in the text
 	\centering % Horizontally center the figure on the page
 	\includesvg[width=0.6\textwidth]{Figures/chapter_gep_neat/gep_neat_initial_example.svg} % Include the figure image
@@ -137,14 +139,16 @@ In the original GEP algorithm, Candida mentions that in order to speed up the ev
 	\label{fig:gep_neat_initial_example} % Unique label used for referencing the figure in-text
 \end{figure}
 
-\noindent In doing so, the initial population generated all have genotypes that represent networks with only a single input and output layer (no hidden layer). This aligns with the reasoning NEAT imposes whereby structural innovations are intended and the simplest solution space is explored first.
-
+\parbreak\noindent As a result, the initial population consists of genotypes that encode networks with only an input and output layer, excluding any hidden layers. This design choice is consistent with NEAT's underlying philosophy, which advocates for beginning the evolutionary process in the simplest possible solution space. By doing so, structural innovations are allowed to emerge gradually, enabling the algorithm to discover increasingly complex and effective architectures over time.
 
 \subsection{Evaluating Candidate Solutions}
-Section \ref{sec:gep_neat_representation} details how candidate solutions represent linear strings in their genotype form and translate using prefix notation into the respective expression tree (neural networks). Converting between genotype and phenotype for complex lienar strings and iteratively over many generations can incur expensive computational efforts. \bigskip
+As outlined in Section \ref{sec:gep_neat_representation}, candidate solutions in GEP-NEAT are represented as linear string in their genotype form and are translated into corresponding expression trees (i.e., neural networks) using prefix notation. While this genotype-to-phenotype mapping is essential for evaluating network behaviour, it can become computationally expensive, particularly when dealing with complex linear strings and large populations across many generations.
 
-\noindent S\_GEP, an extension of P-GEP has the added benefit of evaluating the expression string without the need to convert it to an expression tree. Although there is no research on its use in GEP-NN, the idea to encorate it in GEP-NEAT is that forward feeding values in an expression tree already involves computationally expensive operations, so this would greatly benefit the calculations of fitness when doing this repeatedly throughout many candidate solution samples over many generations. Although S\_GEP was premis was covered in Chapter \ref{sec:gep_current_research}, with the added concept of proper activation functions and biases, the algorithm is changed slightly. Firstly, in order to evaluate the expression tree, values are replaced with the terminal values so that mathematic operation can commence. For example, if the network is being evolved to solve the XOR problem, then their would be 4 test values that would need to be fed into the network, that being, 00, 01, 10, and 11. For each case, the inputs would replace terminal symbols, so for example, a would be the first digit and b the second. The next step would be that the effective gene length is required in order to know what part of the linear string is the coding region. This is calculated using Algorithm \ref{alg:gep_neat_el}.
+\parbreak\noindent To address this challenge, the S\_GEP algorithm, an extension of P-GEP, offers a significant advantage by enabling the evaluation of expression strings without converting them into expression trees. Although S\_GEP has not yet been applied in the context of GEP-NN, its integration into GEP-NEAT is motivated by the need to reduce the computational overhead associated with repeated forward evaluations during fitness calculation. As discussed in Chapter \ref{sec:gep_current_research}, S\_GEP's approach is particularly beneficial when combined with enhancements such as activation functions and bias nodes, which slightly modify the original evaluation process.
 
+\parbreak\noindent In this modified framework, evaluation begins by substituting terminal symbols with actual input values. For instance, when evolving a network to solve the XOR problem, the four input combinations, $00$, $01$, $10$, and $11$, are sequentially fed into the network. Each input replaces the corresponding terminal symbol (e.g., \textit{a} and \textit{b}) in the expression string. To ensure that only the coding region of the chromosome is evaluated, the effective gene length must first be determined. This is computed using the procedure outlined in Algorithm \ref{alg:gep_neat_el}, which identifies the portion of the linear string that contributes to the final output.
+
+\parbreak
 \begin{algorithm}
 	\caption{Effective gene length (adapted from \cite{peng2014improved})}\label{alg:gep_neat_el}
 	\begin{algorithmic}[1]
@@ -163,8 +167,9 @@ Section \ref{sec:gep_neat_representation} details how candidate solutions repres
 \end{algorithmic}
 \end{algorithm}
 
-\noindent Once the effective gene length is known, the linear string can be evaluated using the concept of polish notation as the encoding has been done in prefix notation. The linear string is evaluated using Algorithm \ref{alg:gep_neat_evaluate}.
+\parbreak\noindent Once the effective gene length has been determined, the linear chromosome can be evaluated directly using Polish notation, as the encoding follows a prefix format. This allows for a systematic traversal of the expression string without the need to construct an intermediate expression tree. The evaluation process is carried out using the procedure outlined in Algorithm \ref{alg:gep_neat_evaluate}, which processes the linear string to compute the final output of the candidate solution.
 
+\parbreak
 \begin{algorithm}
 	\caption{GEP-NEAT Evaluation Algorithm (inspired from \cite{peng2014improved})}\label{alg:gep_neat_evaluate}
 	\begin{algorithmic}[1]
@@ -188,11 +193,12 @@ Section \ref{sec:gep_neat_representation} details how candidate solutions repres
 \end{algorithmic}
 \end{algorithm}
 
-\noindent Once the linear string is evaluated, it is then fed into a fitness function to calculate a fitness value. Fitness functions are problem specific, for example, in both NEAT and GEP, the XOR uses the folloiwng fitness function:
-
-\begin{equation}\label{alg:absolute_error}
-    f_{i} = \sum_{j=1}^{C_t}(M-|C_{(i,j)}-T_{(j)}|
-\end{equation}
+\parbreak\noindent Once the linear string has been evaluated, the resulting output is passed into a fitness function to compute a corresponding fitness value. Fitness functions are inherently problem-specific, designed to quantify how well a candidate solution performs in relation to the task at hand. For example, in both NEAT and GEP implementations of the XOR problem, a commonly used fitness function is defined as shown in Equation \ref{alg:absolute_error}.
+\begin{ceqn}
+	\begin{equation}\label{alg:absolute_error}
+		f_{i} = \sum_{j=1}^{C_t}(M-|C_{(i,j)}-T_{(j)}|
+	\end{equation}
+\end{ceqn}
 
 \noindent where:
 \begin{itemize}
@@ -203,13 +209,16 @@ Section \ref{sec:gep_neat_representation} details how candidate solutions repres
     \item $T_{(j)}$ is the target value for case $j$
 \end{itemize}
 
-\noindent Other problems such as the cartpole problem have fitness functions based on a reward scheme whereby for every episode thta the cartpole balances the pole, it receives an abritary incentive reward value and otherwise, a zero value.
+\parbreak\noindent In other problem domain, such as the CartPole balancing task, fitness functions are typically based on a reward-based scheme. In this setup, the agent receives a predefined reward for each time step that the pole remains balanced during an episode. If the pole falls or the episode terminates prematurely, the reward drops to zero. This incentivises the agent to maintain balance for as long as possible, guiding the evolutionary process toward more stable and effective control strategies.
 
 \subsection{Speciation}
-The next step of the algorithm is to do two things, that is, calculate innovation numbers and speciate. NEAT uses innovation numbers to track the historical lineage of genes to in order to preserve innovation, in particular, innovative structures. NEAT assigns innovation numbers by keeping track of a global table and whenever an new, unseen connection between two nodes appear, the global innovation number is incremented. Innovation numbers in this was as seen in Chapter \ref{sec:ne_neat} allows two chromosomes to be compared by calculating how the difference in number of innovation numbers they share and further allows speciation. \bigskip
+The next phase of the algorithm involves two key operations namely, calculating innovation numbers and performing speciation. In the NEAT algorithm, innovation numbers serves as a mechanism to track the historical origin of genes. This tracking is crucial for preserving novel structures during evolution. NEAT maintains a global innovation number table. Whenever a new, previously unseen connection between two nodes is introduces, the global innovation number is incremented and assigned to that connection. This system allows for meaningful comparisons between genomes by identifying matching and non-matching genes based on their innovation numbers. As discussed in Chapter \ref{sec:ne_neat}, this comparison is essential for determining genetic similarity and enabling speciation, grouping similar genomes into species to protect innovation.
 
-\noindent GEP-NEAT adopts the concept of innovation numbers by redefining what they represent. Innovation numbers are redefined to represent sub-tree information. In other words, each subtree represents a unique innovation number. Subtree can then reference reference other innovation numbers. To visually illustrate, refer to Figure \ref{fig:gep_neat_innovation_number}. The tree is traversed in the same manner when evaluating the expression tree. As values are popped onto the stack, each subtree is analysed and checked against a global innovation number lookup table. If the subtree exists in the lookup table, that innovation number is used, otherwise, the subtree is added to the lookup table as a new entry and incremented innovation number value. Algorithm \ref{alg:gep_neat_innovation_number} shows this mechanism.
+\parbreak\noindent GEP-NEAT extends this concept by redefining what innovation numbers represent. Instead of tracking individual connections, GEP-NEAT assigns innovation numbers to entire subtrees within an expression tree. Each unique subtree is treated as a distinct innovation, and thus receives its own innovation number. 
 
+\parbreak\noindent During evaluation, the expression tree is traversed in the same order as it would be during execution. As values are pushed onto the stack, each subtree is examined. The algorithm checks whether the subtree already exists in a global innovation number lookup table. If it does not, the corresponding innovation number is reused. If not, the subtree is added to the table and assigned a new, incremented innovation number. This process is visually illustrated in Figure \ref{fig:gep_neat_innovation_number}, and the detailed mechanism is outlined in Algorithm \ref{alg:gep_neat_innovation_number}.
+
+\parbreak
 \begin{figure}[H] % Use [H] to suppress floating and place the figure/table exactly where it is specified in the text
 	\centering % Horizontally center the figure on the page
 	\includesvg[width=\textwidth]{Figures/chapter_gep_neat/gep_neat_innovation_number.svg} % Include the figure image
@@ -217,6 +226,7 @@ The next step of the algorithm is to do two things, that is, calculate innovatio
 	\label{fig:gep_neat_innovation_number} % Unique label used for referencing the figure in-text
 \end{figure}
 
+\parbreak
 \begin{algorithm}
 	\caption{GEP-NEAT Innovation Number Algorithm}\label{alg:gep_neat_innovation_number}
 	\begin{algorithmic}[1]
@@ -237,8 +247,11 @@ The next step of the algorithm is to do two things, that is, calculate innovatio
 \end{algorithmic}
 \end{algorithm}
 
-\noindent Innovation numbers serves as a system to represent subtree configuration, which in turn can be used to represent entire expression trees. Every expression tree in this regard can be expressed using its \textit{innovation number composition} which is a list comprising of innovation number that make up their tree. Each innovation number with that composition list stores the subtree that the innovation number represents with its respective weights. This would mean that this composition list is keyed on the innovation number with its value being the a tuple representing its subtree and weight respective weights. The \textit{innovation number composition} is calculated using Algorithm \ref{alg:gep_neat_innovation_number_composition}. For example, the \textit{innovation number composition} for the expression tree seen in Figure \ref{fig:gep_neat_innovation_number} has the corresponding \textit{innovation number composition} seen in Figure \ref{fig:gep_neat_innovation_number_composition}.
+\parbreak\noindent Innovation numbers in GEP-NEAT serve as a system for encoding subtree configurations, which can collectively represent entire expression trees. Each expression tree can be described by its innovation number composition, a list of innovation numbers corresponding to the subtrees to the subtrees that make up the tree.
 
+\parbreak\noindent Each innovation number in this composition list is associated with a specific subtree and its corresponding weights. Conceptually, this composition list functions as a mapping - the key is the innovation number, and the value is a tuple containing the subtree structure and its associated weights. This structure representation enables sufficient comparison, storage, and manipulation of expression trees. The process of generating the innovation number is detailed in Algorithm \ref{alg:gep_neat_innovation_number_composition}. For instance, the expression tree illustrated in Figure \ref{fig:gep_neat_innovation_number} has its corresponding number composition shown in Figure \ref{fig:gep_neat_innovation_number_composition}.
+
+\parbreak
 \begin{algorithm}
 	\caption{GEP-NEAT Innovation Number Composition Algorithm}\label{alg:gep_neat_innovation_number_composition}
 	\begin{algorithmic}[1]
@@ -262,6 +275,7 @@ The next step of the algorithm is to do two things, that is, calculate innovatio
 \end{algorithmic}
 \end{algorithm}
 
+\parbreak
 \begin{figure}[H] % Use [H] to suppress floating and place the figure/table exactly where it is specified in the text
 	\centering % Horizontally center the figure on the page
 	\includesvg[width=\textwidth]{Figures/chapter_gep_neat/gep_neat_innovation_number_composition.svg} % Include the figure image
@@ -269,11 +283,12 @@ The next step of the algorithm is to do two things, that is, calculate innovatio
 	\label{fig:gep_neat_innovation_number_composition} % Unique label used for referencing the figure in-text
 \end{figure}
 
-\noindent Similarly to how NEAT can represent a candidate solution entirely in terms of its innovation numbers, so can GEP-NEAT. GEP-NEAT adopts the same speciation mechanism as NEAT, that is, using a compatibility distance function. Inspired from NEAT, GEP-NEAT introduces the following compatibility distance function:
-
-\begin{equation}\label{alg:speciation}
-    \delta = \frac{c_1NM}{N} + c_2\cdot{\overline{W}}
-\end{equation}
+\parbreak\noindent To group similar solutions and protect structural innovations during evolution. GEP-NEAT employs the same speciation mechanism used in NEAT, based on a compatibility distance function. This function measures the genetic similarity between individuals, allowing the algorithm to cluster them into species. Inspired by NEAT, GEP-NEAT introduces its own version of the compatibility distance function, tailored to its subtree-based innovation number system:
+\begin{ceqn}
+	\begin{equation}\label{alg:speciation}
+		\delta = \frac{c_1NM}{N} + c_2\cdot{\overline{W}}
+	\end{equation}
+\end{ceqn}
 
 \noindent where:
 \begin{itemize}
@@ -284,11 +299,14 @@ The next step of the algorithm is to do two things, that is, calculate innovatio
     \item $c_1$ and $c_2$ serve as adjustments in the importance of the two factors
 \end{itemize}
 
-\noindent In the original NEAT paper, although disjoint and excess genes were defined distinctively as two different components, they had no unique implication  as whole. For this reason, GEP-NEAT recognizes matching and non-matching genes. On this note, the average weight works slightly differently. Two genes representing the same subtree configuration can have different weights assosiated between the same connections, hence, in order to calculate the average weight difference:
+\parbreak\noindent In the original NEAT paper, disjoin and excess genes were defines as separate categories of non-matching genes, however, these distinctions did not carry unique implications in terms of how they influenced the algorithm's behaviour. Recognising this, GEP-NEAT simplifies the classification by focusing on two categories, matching and non-matching genes.
 
-\begin{equation}\label{alg:weight_difference}
-    \overline{W} = \frac{\sum_{j=0}^{N}|W_{aj} - W_{bj}|}{N}
-\end{equation}
+\parbreak\noindent A key difference in GEP-NEAT lies in how it handles weight difference between genes. Even when two genes represent the same subtree configuration, they may have different weights associated with the same connections. Therefore, when calculating the average weight difference, GEP-NEAT compares only the weights of matching genes, those that share the same subtree structure. The method for computing this average weight difference is outlines as follows:
+\begin{ceqn}
+	\begin{equation}\label{alg:weight_difference}
+		\overline{W} = \frac{\sum_{j=0}^{N}|W_{aj} - W_{bj}|}{N}
+	\end{equation}
+\end{ceqn}
 
 \noindent where:
 \begin{itemize}
@@ -298,8 +316,7 @@ The next step of the algorithm is to do two things, that is, calculate innovatio
 	\item $W_{bj}$ is the weight of subtree '$b$' of child node $j$
 \end{itemize} 
 
-\noindent The number of matching and non-matching genes can then be calculated easily by converting an expression tree to its \textit{innovation number composition} counterpart, and analysing which genes are in common and which are not. Figure \ref{fig:gep_neat_innovation_number_compare} shows that the matching genes between expression tree 1 and 2 are $\{2\}$, and the non-matching genes are $\{1, 3, 4, 5\}$.
-
+\parbreak
 \begin{figure}[H] % Use [H] to suppress floating and place the figure/table exactly where it is specified in the text
 	\centering % Horizontally center the figure on the page
 	\includesvg[width=\textwidth]{Figures/chapter_gep_neat/gep_neat_innovation_number_compare.svg} % Include the figure image
@@ -307,9 +324,12 @@ The next step of the algorithm is to do two things, that is, calculate innovatio
 	\label{fig:gep_neat_innovation_number_compare} % Unique label used for referencing the figure in-text
 \end{figure}
 
-\noindent Speciation occurs within every evolutionary generation by speciating individuals and follows algorithm \ref{alg:speciation_2}. Essentially, during each generation, the population is shuffled to give every individual an opportunity to be the representative individual of a species (in an attempt to better group individuals in species group). Every individual is then evaluated against every specie's representative individual and provided its compatibility distance is less than the compatibility threshold $\delta_{ct}$, it will then belong to that species. This process continues until every individual is part of a specie group.
+\parbreak\noindent The number of matching and non-matching genes between two expression trees can be determined by first converting each tree into its corresponding innovation number composition. Once in this form, it becomes straightforward to compare the sets of innovation numbers and identify which genes are shared and which are unique to each tree. As illustrated in Figure \ref{fig:gep_neat_innovation_number_compare}, the matching genes between expression tree 1 and expression tree 2 are $\{2\}$, while the non-matching genes are $\{1, 3, 4, 5\}$.
 
-\begin{algorithm}
+\parbreak\noindent Speciation in GEP-NEAT occurs during every evolutionary generation and follows the procedure outlined in Algorithm \ref{alg:speciation_2}. At the start of each generation, the population is randomly shuffled to ensure that every individual has a fair chance of becoming a species representative. This shuffling helps improve the grouping of individuals into species by avoiding bias from fixed representatives.
+
+\parbreak
+\begin{algorithm}[H]
 	\caption{GEP-NEAT Speciation Algorithm}\label{alg:speciation_2}
 	\begin{algorithmic}[1]
 	\item Initialise empty list of \textit{species}
@@ -325,6 +345,8 @@ The next step of the algorithm is to do two things, that is, calculate innovatio
 	\item \quad \quad \quad \quad \textbf{break} to next individual
 \end{algorithmic}
 \end{algorithm}
+
+\parbreak\noindent Each individual in the population is then compared against the representative of every existing species. If the compatibility distance between the individual and a species representative is less than a compatibility threshold $\delta_{ct}$, the individual is assigned to that species. This comparison continues until all individuals have been assigned to a species group. This dynamic grouping mechanism helps maintain diversity and protects innovative structures by allowing similar individuals to evolve together within their respective species.
 
 \subsection{Meme Influence}
 Richard Dawkins is a British evolutionary biologist and best known for his gene-centered view of evolutionary, most famously in his 1976 book \textit{The Selfish Gene}. In this book, Dawkins argues that genes are the primary units of natural selection, driving evolution through replication and competition (\cite{dawkins1981selfish}). Dawkins introduces the term "\textbf{meme}" in the \textit{The Selfish Gene} as a cultural analog to biological genes. A meme is a unit of cultural information such as an idea, behavior, or trend, that spreads from person to person via imitation. Importantly, memes are subject to variation, competition and selection, much like genes that drives evolution. \bigskip
