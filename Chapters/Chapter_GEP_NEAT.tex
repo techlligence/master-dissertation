@@ -349,11 +349,16 @@ The next phase of the algorithm involves two key operations namely, calculating 
 \parbreak\noindent Each individual in the population is then compared against the representative of every existing species. If the compatibility distance between the individual and a species representative is less than a compatibility threshold $\delta_{ct}$, the individual is assigned to that species. This comparison continues until all individuals have been assigned to a species group. This dynamic grouping mechanism helps maintain diversity and protects innovative structures by allowing similar individuals to evolve together within their respective species.
 
 \subsection{Meme Influence}
-Richard Dawkins is a British evolutionary biologist and best known for his gene-centered view of evolutionary, most famously in his 1976 book \textit{The Selfish Gene}. In this book, Dawkins argues that genes are the primary units of natural selection, driving evolution through replication and competition (\cite{dawkins1981selfish}). Dawkins introduces the term "\textbf{meme}" in the \textit{The Selfish Gene} as a cultural analog to biological genes. A meme is a unit of cultural information such as an idea, behavior, or trend, that spreads from person to person via imitation. Importantly, memes are subject to variation, competition and selection, much like genes that drives evolution. \bigskip
+Richard Dawkins, a British evolutionary biologist, is widely known for his gene-centered view of evolution, most notably presented in his 1976 book \textit{The Selfish Gene} (\cite{dawkins1981selfish}). In this work, Dawkins argues that genes are the fundamental units of natural selection, driving evolutionary change through processes of replication and competition. He also introduces the concept of the "meme", a cultural counterpart to biological genes. A meme represents a unit of culture transmission, such as an idea, behaviour, or trend, which spreads through imitation. Like genes, memes undergo variation, competition, and selection, making them subject to evolutionary dynamics.
 
-\noindent Seeing that subtree configurations are tracked by means of  an innovation lookup table throughout the evolutionary cycle, GEP-NEAT takes advantage of this by introducing a new concept called the \textit{meme influence}. The \textit{meme influence} and \textit{innovation number contribution} are two additional attributes tracked within each innovation number and is used to rank sub-tree configurations. This attribute is calculated as shown in Algorithm \ref{alg:meme_influence}. The algorithm works by first calculating what each innovation numbers contribution is with regard to the individuals adjusted fitness (to the specie it belongs to). This is done using Equation \ref{equation:innovation_contribution}. The \textit{innovation contribution} value is then added to the result stored in every innovation number that makes up the individual's innovation number contribution. In doing this, information is being built up to describe which innovation numbers have contributed to the highest fitness according to adjusted fitness within each specie. Equation \ref{equation:innovation_contribution} assumes that each innovation number contributes equally to the success of a candidate individual, however, by tracking and incrementing each innovation numbers contribution collectively by all individuals within the population, innovation numbers that generally form part of higher fit individuals will tend to have higher innovation contributions. After the innovation contribution for every innovation number has been updated, the next step is to normalize these innovation contribution values so that they can be represented in a way that they can be ranked. Each innovation contribution value is then normalised according to Equation \ref{equation:normalise}. With the normalised value calculated, the meme influence value of individual $i$ is calculated using Equation \ref{equation:meme_influence} where $\alpha$ is the decay rate. The meme influence is calculated using a shifting average moving function in order to encourage current trends for a period of time until it fades away (\cite{haynes2012exponential}). The outcome of the meme influence calculation is to provide a mechanism in which innovation numbers can be ranked within every generation.
+\parbreak\noindent Building on this idea, GEP-NEAT levarages its innovation tracking system to introduce a novel concept called meme influence. Since subtree configurations are recorded in a global innovation lookup table throughout the evolutionary process, GEP-NEAT uses this structure to monitor and rank the impact of different subtrees. Two additional attributes are tracked for each innovation number, namely, the innovation number composition, and the meme influence.
 
-\begin{algorithm}
+\parbreak\noindent These attributes help evaluate the significance of each subtree configuration in contributing to the overall fitness of individuals. The process begins by calculating the innovation contribution of each innovation number based on the adjusted fitness of the individual within its species, as described in Equation \ref{equation:innovation_contribution}.
+
+\parbreak\noindent Each innovation number that appears in an individual's composition receives an increment to its contribution score, reflecting its role in producing high-fitness individuals. Although Equation \ref{equation:innovation_contribution} assumes equal contribution from all innovation numbers, aggregating these values across the population allows frequently successful subtrees to accumulate higher scores.
+
+\parbreak
+\begin{algorithm}[H]
 	\caption{GEP-NEAT Meme Influence Algorithm}\label{alg:meme_influence}
 	\begin{algorithmic}[1]
 	\item \textbf{for} specie in species:
@@ -372,22 +377,38 @@ Richard Dawkins is a British evolutionary biologist and best known for his gene-
 \end{algorithmic}
 \end{algorithm}
 
+\parbreak\noindent Once all innovation contributions have been updates, they are normalised using Equation \ref{equation:normalise}, enabling consistent ranking across generations. The meme influence for an individual \textit{i} is then calculated using Equation \ref{equation:meme_influence}, which incorporates a decay rate parameter $\alpha$. This calculation uses shifting average moving function, inspired by the work of Haynes (\cite{haynes2012exponential}), to emphasise current trends while allowing outdated patterns to gradually fade. The result is a dynamic ranking system that identifies which innovation numbers (i.e., subtree configurations) are most influential in driving evolutionary success within each generation.
+
+\parbreak
+\begin{ceqn}
 \begin{equation}\label{equation:innovation_contribution}
     innovation\:contribution = \frac{individual\:adjusted\:fitness}{length(individual\:innovation\:number\:composition)}
 \end{equation}
+\end{ceqn}
 
-\begin{equation}\label{equation:normalise}
-    normalised\:value_i = \frac{innovation\:contribution_i - min\:innovation\:contribution}{max\:innovation\:contribution - min\:innovation\:contribution}
-\end{equation}
+\parbreak
+\begin{ceqn}
+	\begin{equation}\label{equation:normalise}
+		normalised\:value_i = \frac{innovation\:contribution_i - min\:innovation\:contribution}{max\:innovation\:contribution - min\:innovation\:contribution}
+	\end{equation}
+\end{ceqn}
 
-\begin{equation}\label{equation:meme_influence}
-    meme\:influence_i = (\alpha \times normalised\:value) + ((1 - \alpha) \times meme\:influence_i)
-\end{equation}
+\parbreak
+\begin{ceqn}
+	\begin{equation}\label{equation:meme_influence}
+		meme\:influence_i = (\alpha \times normalised\:value) + ((1 - \alpha) \times meme\:influence_i)
+	\end{equation}
+\end{ceqn}
 
 \subsection{Selection}
-Both GEP and NEAT make use of well studied selection operators; NEAT uses tournament selection while GEP makes use of roulette wheel selection. The problem with this kind of selection mechanism is that the only information that the selection operator makes use of is fitness and has no strong relation to the innovation of structures that make up an individual. GEP-NEAT tracks a metric known as the \textit{meme influence} as an additional attribute alongside each innovation number giving a way in which innovation numbers can be ranked. GEP-NEAT introduces a new selection operator called \textit{Meme Influence Roulette Wheel Selection (MIRWS)} which is based on roulette wheel selection with the difference being that the \textit{meme influence} values are used as opposed to raw fitness scores of individuals. The new adjusted fitness scores based on the \textit{meme influence} values are calculated using Algorithm \ref{alg:mirws} and thereafter follows the generic roulette wheel based selection algorithm.
+Both GEP and NEAT utilise well-established selection mechansims in evolutionary computation. NEAT typically employs tournament selection, while GEP uses roulette wheel selection. A limitation of these traditional methods however rely solely on fitness score to guide selection, without considering the structural innovations that contribute to an individual's success.
 
-\begin{algorithm}
+\parbreak\noindent To address this, GEP-NEAT introduces a more nuanced approach by incorporating the meme influence metric, an attribute tracked for each innovation number that reflects its historical contribution to high-performing individuals. This enables the algorithm to rank innovation numbers based on their evolutionary impact. Building on this idea, GEP-NEAT proposes a novel selection operator called Meme Influence Roulette Wheel Selection (MIRWS). While it is inspired by standard roulette wheel selection, the key diffence is that meme influence values are used in place of raw fitness scores. This allows the selection process to favour individuals composed of highly influential subtrees, rather than just those with high fitness in the current generation.
+
+\parbreak\noindent The adjusted fitness scores based on meme influence are computed using Algorithm \ref{alg:mirws} after which the standard roulette wheel selection procedure is applied using these adjusted values.
+
+\parbreak
+\begin{algorithm}[H]
 	\caption{GEP-NEAT Meme Influence Roulette Wheel Selection Algorithm}\label{alg:mirws}
 	\begin{algorithmic}[1]
 	\item \textbf{for} each individual in the population:
