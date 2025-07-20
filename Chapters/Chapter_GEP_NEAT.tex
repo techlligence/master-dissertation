@@ -430,27 +430,89 @@ Both GEP and NEAT utilise well-established selection mechansims in evolutionary 
 \end{algorithm}
 
 \subsection{Genetic Operators}
-Once individuals are selected within every specie during every generation of the evolutionary process, selected individuals undergo an opportunity to undergo mutation and crossover to produce offspring. The following genetic operators are available to GEP-NEAT each with their own mutation/crossover probabilities. 
-Mutation, the most important operator, is implemented in various domains. Since the genotype is largely designed on the premis of Karva notation, a large majority of the mutation operators are adapted from GEP with others based on the introduced concept of meme influence.
+Once individuals are selected from each species during every generation of the evolutionary process, they are given the opportunity to undergo genetic variation through mutation and crossover to produce offspring. GEP-NEAT supports a variety of genetic operators each associated with its own probability.
+
+\parbreak\noindent Among these, mutation is the most critical operator and is implemented across multiple domains that make up the chromosome. Since the genotype in GEP-NEAT is primarily structured using Karva notation, a linear representation of expression trees, many of the mutation operators are adapted from traditional GEP techniques. In addition, GEP-NEAT introduces new mutation strategies that are influenced by the concept of meme influence, allowing the algorithm to bias variance toward subtrees that have historically contributed to higher fitness.
+
+\parbreak\noindent These diverse mutation and crossover mechanisms enable GEP-NEAT to explore the search space effectively while preserving and promoting structure innovations.
 
 \subsubsection{Neuron Mutation}
-This mutation mechanism with mutation rate $\rho_{neuron}$, mutates the neuron portion of the expression string based on n-point mutation where $n$ random genes are chosen within the expression string. If the point of mutation resides on a function symbol, within the root, the resulting mutated gene has to be a function symbol. If the mutation resides anywhere else within the head of the expression tree, the symbol can mutated into either a function or terminal symbol, however, if the mutation point resides within the tail, only a terminal symbol may be chosen.
+This mutation mechanisms, governed by a mutation rate denoted as $\rho_{neuron}$, targets the neuron portion of the expression string using an n-point mutation strategy. In this approach, $n$ random genes are selected within the expression string for mutation.
+
+\parbreak\noindent The behaviour of the mutation depends on the position of the gene within the expression string, which follows the structure of Karva notation:
+\begin{itemize}
+	\item If the mutation point is located at the root (i.e, the first symbol which is a function symbol), the mutated gene must also be a function symbol to preserve syntactic validity.
+	\item If the mutation occurs within the head of the expression string (excluding the root), the gene can be mutated into either a function or a terminal symbol, maintaining flexibility while ensuring structural correctness.
+	\item If the mutation point lies within the tail of the expression string, only terminal symbols are allowed, as this region acts as a buffer.
+\end{itemize}
+
+\parbreak\noindent This structured mutation approach ensures that resulting expression trees remain syntactically valid while introducing meaningful variation into the population.
 
 \subsubsection{Weight Mutation}
-This mutation mechanism with mutation rate $\rho_{weight}$, mutates the weight portion of the expression string based on n-point mutation where random $n$ weight genes are chosen and then mutated such that values are randomly uniformaly chosen from the index size of the weight lookup array.
+This mutation mechanism, controlled by the mutation rate $\rho_{weight}$, targets the weight portion of the expression string using an n-point mutation strategy. In this process, $n$ random weight genes are selected for mutation.
+
+\parbreak\noindent Each selected weight gene is then reassigned a new value, which is randomly and uniformly drawn from the range defined by the index size of the weight lookup array. This ensures that the mutation weights remain valid and introduces a mechanism in which the resulting neural network can test out different weights between neurons.
 
 \subsubsection{Weight Lookup Mutation}
-This mutation mechanism with mutation rate $\rho_{weight\_lookup}$, mutates the weight lookup array based on n-point mutation where random $n$ weight genes are chosen and then mutated according to a uniform distribution.
+This mutation mechanism, governed by the mutation rate $\rho_{weight\_lookup}$, targets the weight lookup array using an n-point mutation strategy. In this process, $n$ random entries within the weight lookup array are selected for mutation.
 
-\subsubsection{Bias Toggle Mutation}
-This mutation mechanism with mutation rate $\rho_{bias\_toggle}$, mutates the \textit{bias toggle} attribute of a randomly chosen function symbol within a chromosome by peforming essentially a bit flip based on true/false logic.
-	
+\parbreak\noindent Each selected weight value is then replaced with a new value, drawn from a uniform distribution, ensuring that the updated weights remain within a valid and diverse range. This mutation allows the algorithm to explore alternative weight configurations, influencing how subtrees are evaluated across individuals.
+
 \subsubsection{Bias Mutation}
-This mutation mechanism with mutation rate $\rho_{bias}$, mutates the \textit{bias value} attribute of a randomly chosen function symbol within a chromosome by performing mutation based on uniform distrbution based on the bias range hyperparameter.
+As previously discussed, the introduction of bias in GEP-NEAT involves two key attributes:
+\begin{itemize}
+	\item A bias toggle, which determines whether bias is enabled for a given function symbol.
+	\item A bias value, which specifies the magnitude or direction of the bias.
+\end{itemize}
 
-\subsubsection{Mutation}
-hello
+\parbreak\noindent Each of these attributes has its own dedicated mutation mechanism:
+\begin{itemize}
+	\item \textbf{Bias Toggle Mutation}: Controlled by the mutation rate $\rho_{bias\_toggle}$, this mutation randomly selected a function symbol within a chromosome and flips the state of its bias toggle. This is effectively a bit-flip operation, switching the toggle between true and false, thereby enabling or disabling the bias for that function.
+	\item \textbf{Bias Value Mutation}: Governed by the mutation rate $\rho_{bias}$, this mutation targets the bias value of a randomly chosen function symbol. The value is then mutated using a uniform distribution. This allows for controlled variability in the strength or direction of the bias applied.
+\end{itemize}
 
+\subsubsection{Inversion}
+Inversion is a genetic operator designed to introduce structural diversity by selecting two points within a chromosome and reversing the sequence of genes between them. This operation aims to explore new regions of the search space that may not be reachable through standard mutation or crossover alone.
+
+\parbreak\noindent GEP-NEAT implements two types of inversion operators, each applied to a different domain of the chromosome:
+\begin{itemize}
+	\item \textbf{Neuron inversion}, with a mutation probability of $\rho_{inversion\_neuron}$, targets the neuron portion of the chromosome.
+	\item \textbf{Weight inversion}, with a mutation probability of $\rho_{inversion\_weight}$, operates on the weight portion.
+\end{itemize}
+
+\parbreak\noindent A critical constraint is enforced during neuron inversion to maintain syntactic correctness. If the first target site selected for inversion is the root of the expression tree, then the second target site must also contain a function symbol. This ensures that the resulting expression remains valid after inversion. If this condition is not met, new target sites are selected until the constraint is satisfied.
+
+\subsubsection{Transposition}
+Transposition is a genetic operator inspired by biological processes, where segments of genetic material known as insertion sequences (IS elements), are relocated to different positions within a chromosome. In GEP-NEAT, transposition is used not only to introduce structural diversity but also to encourage the emergence of repeatable and reusable structures within individuals. This can lead to the discovery of modular building blocks that contribute to evolutionary sucess.
+
+\parbreak\noindent GEP-NEAT implements five types of transposition operators, adapted from traditional GEP:
+\begin{itemize}
+	\item \textbf{IS Transposition}: With a probability of $\rho_{is}$, this operator selects two random target sites within the neuron domain of the expression string. The segment between these sites forms the IS element, which may begin with either a function or terminal symbol. This IS element is then inserted into the head of the expression string (excluding the root), promoting structural variation while maintaining syntactic correctness.
+	\item \textbf{RIS Transposition}: Governed by the probability $\rho_{ris}$, this operator selects a Root Insertion Sequence (RIS) by choosing two target sites such that the first site contains a function symbol. The resulting RIS element is then transposed to the root of the expression string, directly modifying the top-level structure of the expression tree.
+	\item \textbf{Gene Transposition}: With a probability of $\rho_{gis}$, this operator transposes an entire gene from one location in the chromosome to another. This allows for large-scale rearrangements, potentially enabling the reuse of effective gene structures across different contexts.
+	\item \textbf{Weight Transposition}: Controlled by the probability $\rho_{wis}$, this operator selects a Weight Insertion Sequence (WIS) by choosing two random target sites within the weight domain of the chromosome. The WIS segment is then transposed to a new location within the weight domain, allowing for flexible reconfiguration of weight patterns.
+	\item \textbf{Meme Influence Sequence Transposition (MIIST)}: Introduced specifically in GEP-NEAT, this novel operator operates with a mutation rate of $\rho_{miis}$. MIIST is inspired by IS and RIS transposition but leverages the meme influence metric to guide the operation. It works by identifying the highest-performing subtree configuration (i.e., the innovation number with the greatest meme influence) and transposing it into a randomly selected function symbol location within another individual. This mechanism encourages the spread of emergent trends within the population, promoting convergence toward effective building blocks.
+\end{itemize}
+
+\parbreak\noindent By enabling the relocation and reuse of function components, transposition supports the formation of modular, repeatable structures, a key factor in building scalable and generalisable solutions in evolutionary computation.
+
+\subsubsection{Recombination}
+GEP-NEAT, like traditional GEP, is built upon Karva notation, which provides a structured and linear representation of expression trees. One of the key advantages of this representation is that it enables crossover operations to be performed naturally and efficiently. In GEP-NEAT, two primary crossover mechanisms are supported:
+\begin{itemize}
+	\item \textbf{One-Point Crossover}: A crossover mechanism with probability $\rho_{one\_point}$, where a single crossover point is randomly chosen between two parent chromosomes. The genetic material beyond this point is then exchanged between the two individuals, producing two offspring. This process is illustrated in Figure \ref{fig:singlepoint}.
+	\item \textbf{Two-Point Crossover}: A crossover mechanism with probability $\rho_{two\_point}$, where two crossover points are selected, and the segment between them is swapped between the two parents. This allows for more substantial recombination of genetic material. A visual example of this operation is shown in Figure \ref{fig:multipoint}.
+\end{itemize}
+
+\parbreak\noindent These crossover operations can be generalised into n-point crossover, where multiple segments are exchanged, though this is typically treated as a higher-level abstraction. Importantly, GEP-NEAT applies crossover across both domains of the chromosome, that is, the neuron domain and weight domain. To facilitate this, the expression string is organised such that the neuron genes are prefixed, followed by the weight genes as a suffix (forming the fully qualified expression string). This layout ensures that crossover can be performed seamlessly across both domains, preserving the integrity of the genotype while enabling rich genetic variation.
+
+\subsection{Termination Conditions}
+At some point, the evolutionary process must be terminated once a sufficiently refined solution has been found. In evolutionary algorithms, including GEP-NEAT, there are several strategies for determining when to stop the algorithm. In GEP-NEAT, two primary termination conditions are used:
+\begin{itemize}
+	\item \textbf{Maximum Generation Limit}: A predefined limit is set on the number of generations the algorithm is allowed to run. This ensures that the evolutionary process does not continue indefinitely and provides a safeguard against excessive computation.
+	\item \textbf{Fitness-Based Termination}: The algorithm also monitors the best-performing individual in the population. If this individual's fitness meets or exceeds the maximum fitness threshold defined for the problem, the algorithm concludes that an optimal or sufficiently good solution has been found and terminates early.
+\end{itemize}
+
+\parbreak\noindent The evolutionary process halts as soon as either of these conditions is satisfied, ensuring a balance between computational efficiency and solution quality.
 
 \section{Prototype Implementation}\label{sec:gep_neat_protoype_implementation}
 Richard Dawkins, 
