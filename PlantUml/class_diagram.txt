@@ -1,0 +1,130 @@
+@startuml
+Chromosome : +neuron_genes: List[List[Union[FunctionSymbol, TerminalSymbol]]]
+Chromosome : +weight_genes: List[List[WeightSymbol]]
+Chromosome : +weight_genes_lookup: List[List[float]]
+Chromosome : +fitness: float
+Chromosome : +adjusted_fitness: float
+Chromosome : +innovation_number_composition: dict[int, List[tuple[List[str], List[float]]]]
+Chromosome : +clone(self: Chromosome): Chromosome
+
+Chromosome "1" *-- "many" Symbol : contains
+FunctionSymbol "1" *-- "1" ActivationFunction : contains
+Config "1" *-- "1" Problem : contains
+
+Symbol : +value
+
+Symbol <|-- FunctionSymbol
+Symbol <|-- TerminalSymbol
+Symbol <|-- WeightSymbol
+
+FunctionSymbol : +value: str
+FunctionSymbol : +num_of_inputs: int
+FunctionSymbol : +activation_function: Callable
+FunctionSymbol : +bias_enabled: boolean
+FunctionSymbol : +bias_value: float
+FunctionSymbol : +clone(self: FunctionSymbol): FunctionSymbol
+
+TerminalSymbol : +value: str
+TerminalSymbol : +clone(self: TerminalSymbol): TerminalSymbol
+
+WeightSymbol : +value: int
+WeightSymbol : +clone(self: WeightSymbol): WeightSymbol
+
+ActivationFunction : +binary(x: float): float
+ActivationFunction : +neat_sigmoid(x: float): float
+ActivationFunction : +linear(x: float): float
+ActivationFunction : +sigmoid(x: float): float
+ActivationFunction : +tanh(x: float): float
+ActivationFunction : +relu(x: float): float
+
+GeneticOperators : -clone_partial_gene(gene: List[Union[FunctionSymbol | TerminalSymbol | WeightSymbol]]) -> List[Union[FunctionSymbol | TerminalSymbol | WeightSymbol]]: List[Symbol]
+GeneticOperators : +mutate_neuron_gene(chromosome: Chromosome, n_one_point: int): void
+GeneticOperators : +mutate_weight_gene(chromosome: Chromosome, n_one_point: int): void
+GeneticOperators : +mutate_weight_gene_lookup(chromosome: Chromosome, n_one_point: int): void
+GeneticOperators : +inversion_neuron_gene(chromosome: Chromosome): void
+GeneticOperators : +inversion_weight_gene(chromosome: Chromosome): void
+GeneticOperators : +is_transposition(chromosome: Chromosome): void
+GeneticOperators : +weight_transposition(chromosome: Chromosome): void
+GeneticOperators : +ris_transposition(chromosome: Chromosome): void
+GeneticOperators : +gene_transposition(chromosome: Chromosome): void
+GeneticOperators : -reduce_chromosome(expanded_chromosome: List[Union[FunctionSymbol, TerminalSymbol]], chromosome: Chromosome, domain_n: int): Chromosome
+GeneticOperators : +one_point_recombination(parent1: Chromosome, parent2: Chromosome): (Chromosome, Chromosome)
+GeneticOperators : +two_point_recombination(parent1: Chromosome, parent2: Chromosome): (Chromosome, Chromosome)
+GeneticOperators : +mutate_bias_toggle(chromosome: Chromosome): void
+GeneticOperators : +mutate_bias_value(chromosome: Chromosome): void
+GeneticOperators : +miist_transposition(chromosome: Chromosome): void
+
+enum Problem {
+    XOR,
+    Multiplexer,
+    CartPole,
+    MoonLander,
+    ...
+}
+
+Algorithm : -generate_individual(): Chromosome
+Algorithm : -initialize_population(): List[Chromosome]
+Algorithm : -feed_input_values(chromosome: Chromosome, input_values: Dict[str, float]): Chromosome
+Algorithm : -calculate_effective_gene_length(chromosome: Chromosome, domain_index: int): int
+Algorithm : -evaluate_expression_tree_stack(chromosome: Chromosome, domain_index: int): float
+Algorithm : -innovation_number_check_similarity(tree: List, lookup_table: List[Dict[str, Union[List[str], float]]]): int | None
+Algorithm : -calculate_innovation_number(chromosome: Chromosome, lookup_table: List[Dict[str, Union[List[str], float]]]): int
+Algorithm : -calculate_matching_and_non_matching_genes(genome1: List[int], genome2: List[int]): (List[int], List[int])
+Algorithm : -innovation_number_composition_to_list(composition: dict[int, List[tuple[List[str], List[float]]]]): List[int]
+Algorithm : -reorder_tuple(reference_tuple, target_tuple): void
+Algorithm : -calculate_compatibility_distance(chromosome1: Chromosome, chromosome2: Chromosome): float
+Algorithm : -speciate(population: List[Chromosome]): List[List[Chromosome]]
+Algorithm : -roulette_wheel_selection(population: List[Chromosome], number_of_individuals: int): List[Chromosome]
+Algorithm : -meme_influence_roulette_wheel_selection(population: List[Chromosome], number_of_individuals: int, lookup_table: List[Dict[str, Union[List[str], float]]]): List[Chromosome]
+Algorithm : -calculate_fitness_for_xor(candidate_solution: Chromosome): float
+Algorithm : -calculate_fitness_for_cartpole(candidate_solution: Chromosome): float
+Algorithm : -clone_population(population: List[Chromosome]): List[Chromosome]
+Algorithm : -evolve_once(population: List[Chromosome], lookup_table: List[Dict[str, Union[List[str], float]]]): (List[Chromosome], int)
+Algorithm : +evolve_for_n_generation(): void
+Algorithm : -print_population(population: List[Chromosome]): void
+
+
+GraphUtil : -expression_tree_to_node(chromosome: Chromosome, lookup_table: List[Dict[str, Union[List[str], float]]], domain_index: int): Dict
+GraphUtil : -find_innovation_number_by_subtree(tree: List, lookup_table: List[Dict[str, Union[List[str], float]]]): int
+GraphUtil : -random_dark_color()
+GraphUtil : -render_tree(node, label=None, graph=None, parent_id=None, node_id_gen=None, subtree=None): Diagraph.graphviz
+GraphUtil : +expression_tree_to_graphiz(chromosome: Chromosome, lookup_table: List[List[str]]): void
+GraphUtil : +fitness_against_generations(stats_fitness: List[float]): void
+GraphUtil : +species_size_against_generations(stats_species: List[float]): void
+
+Config : +PROBLEM: Problem
+Config : +MEME_INFLUENCE_DECAY_RATE: float
+Config : +NUMBER_OF_RUNS: int
+Config : +NUMBER_OF_GENERATIONS: int
+Config : +HEAD_SIZE: int
+Config : +WEIGHT_LOOKUP_SIZE: int
+Config : +WEIGHT_LOOKUP_RANGE: List[lint]
+Config : +POPULATION_SIZE: int
+Config : +NUMBER_OF_ELITE_INDIVIDUALS: int
+Config : +MUTATION_NEURON_RATE: float
+Config : +MUTATION_WEIGHT_RATE: float
+Config : +MUTATION_WEIGHT_LOOKUP_RATE: float
+Config : +INVERSION_NEURON_RATE: float
+Config : +INVERSION_WEIGHT_RATE: float
+Config : +IS_TRANSPOSITION_RATE: float
+Config : +IS_TRANSPOSITION_ELEMENTS_LENGTH: List[int]
+Config : +WEIGHT_TRANSPOSITION_RATE: float
+Config : +WEIGHT_TRANSPOSITION_IS_ELEMENTS_LENGTH: List[int]
+Config : +RIS_TRANSPOSITION_RATE: float
+Config : +RIS_TRANSPOSITION_ELEMENTS_LENGTH: List[int]
+Config : +MIIST_TRANSPOSITION: float
+Config : +GENE_TRANSPOSITION_RATE: float
+Config : +ONE_POINT_RECOMBINATION_RATE: float
+Config : +TWO_POINT_RECOMBINATION_RATE: float
+Config : +BIAS_TOGGLE_RATE: float
+Config : +BIAS_MUTATION_RATE: float
+Config : +BIAS_RANGE: List[int]
+Config : +C1: float
+Config : +C2: float
+Config : +COMPATIBILITY_THRESHOLD: float
+Config : +NUMBER_OF_DOMAINS: int
+Config : +MAX_FITNESS: float
+Config : +FUNCTION_SET: Float[FunctionSymbol]
+Config : +TERMINAL_SET: Float[TerminalSymbol]
+Config : +NUMBER_OF_EPISODES: int
+@enduml
