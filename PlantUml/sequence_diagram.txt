@@ -1,0 +1,80 @@
+@startuml
+
+actor User as user #f8cecc
+participant ":Config" as config #f8cecc
+
+user -> config: Setup Hyperparameters
+
+participant ":Main" as main #f8cecc
+
+user -> main : Run Python Program
+activate main
+
+participant ":Algorithm" as algorithm #f8cecc
+main -> algorithm : evolve_for_n_generation()
+activate algorithm
+
+loop config.NUMBER_OF_RUNS
+    == Create Initial Population of Chromosomes ==
+    algorithm -> algorithm : initialize_population()
+
+    algorithm -> algorithm : evolve_once(population, lookup_table)
+    activate algorithm #f8cecc
+
+    == Evaluate Each Candidate Solutions Fitness ==
+    loop chromosome in population
+        algorithm -> algorithm : @calculate_fitness(chromosome)
+        == Calculate Innovation Number for Each Candidate Solution ==
+        algorithm -> algorithm : calculate_innovation_number(chromosome, lookup_table)
+    end
+
+    == Speciate Population ==
+    algorithm -> algorithm : speciate(population)
+
+    algorithm -> algorithm : @apply_adjusted_fitness()
+    algorithm -> algorithm : @calculate_total_species_fitness()
+
+    loop specie in species
+        algorithm -> algorithm : @calculate_innovation_contribution()
+        algorithm -> algorithm : @set_fitness_attribution()
+    end
+
+    == Calculate Meme Influence for Each Individual ==
+    algorithm -> algorithm : @calculate_meme_influence(lookup_table)
+
+    loop specie in species
+        algorithm -> algorithm : @calculate_num_offspring_required()
+        algorithm -> algorithm : @get_elite_individuals()
+
+        == Apply Selection Operator ==
+        algorithm -> algorithm : @meme_influence_roulette_wheel_selection(specie, len(specie), lookup_table)
+
+        loop while offspring_population.size() < num_offspring_required - num_elite_individuals
+            algorithm -> algorithm : @choose_random_individual()
+            == Apply Genetic Operators ==
+            algorithm -> algorithm : @apply_genetic_operators()
+            algorithm -> algorithm : @append_mutated_individual_to_new_population()
+        end
+
+        algorithm -> algorithm : @compose_new_population()
+    end
+
+    algorithm -> algorithm : return new_population
+
+    deactivate algorithm
+
+    algorithm -> algorithm : @calculate_stats()
+
+    participant ":GraphUtil" as graphutil #f8cecc
+
+    algorithm -> graphutil : expression_tree_to_graphiz(best_individual, lookup_table)
+    algorithm -> graphutil : fitness_against_generations(stats_fitness)
+    algorithm -> graphutil : species_size_against_generations(stats_species)
+end
+
+
+deactivate algorithm
+user <-- main : Terminate Program
+deactivate main
+
+@enduml
