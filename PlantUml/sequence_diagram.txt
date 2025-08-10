@@ -18,50 +18,56 @@ loop config.NUMBER_OF_RUNS
     == Create Initial Population of Chromosomes ==
     algorithm -> algorithm : initialize_population()
 
-    algorithm -> algorithm : evolve_once(population, lookup_table)
-    activate algorithm #f8cecc
+    loop config.NUMBER_OF_GENERATIONS
 
-    == Evaluate Each Candidate Solutions Fitness ==
-    loop chromosome in population
-        algorithm -> algorithm : @calculate_fitness(chromosome)
-        == Calculate Innovation Number for Each Candidate Solution ==
-        algorithm -> algorithm : calculate_innovation_number(chromosome, lookup_table)
-    end
+        algorithm -> algorithm : evolve_once(population, lookup_table)
+        activate algorithm #f8cecc
 
-    == Speciate Population ==
-    algorithm -> algorithm : speciate(population)
-
-    algorithm -> algorithm : @apply_adjusted_fitness()
-    algorithm -> algorithm : @calculate_total_species_fitness()
-
-    loop specie in species
-        algorithm -> algorithm : @calculate_innovation_contribution()
-        algorithm -> algorithm : @set_fitness_attribution()
-    end
-
-    == Calculate Meme Influence for Each Individual ==
-    algorithm -> algorithm : @calculate_meme_influence(lookup_table)
-
-    loop specie in species
-        algorithm -> algorithm : @calculate_num_offspring_required()
-        algorithm -> algorithm : @get_elite_individuals()
-
-        == Apply Selection Operator ==
-        algorithm -> algorithm : @meme_influence_roulette_wheel_selection(specie, len(specie), lookup_table)
-
-        loop while offspring_population.size() < num_offspring_required - num_elite_individuals
-            algorithm -> algorithm : @choose_random_individual()
-            == Apply Genetic Operators ==
-            algorithm -> algorithm : @apply_genetic_operators()
-            algorithm -> algorithm : @append_mutated_individual_to_new_population()
+        == Evaluate Each Candidate Solutions Fitness ==
+        loop chromosome in population
+            algorithm -> algorithm : @calculate_fitness(chromosome)
+            == Calculate Innovation Number for Each Candidate Solution ==
+            algorithm -> algorithm : calculate_innovation_number(chromosome, lookup_table)
         end
 
-        algorithm -> algorithm : @compose_new_population()
+        == Speciate Population ==
+        algorithm -> algorithm : speciate(population)
+
+        algorithm -> algorithm : @apply_adjusted_fitness()
+        algorithm -> algorithm : @calculate_total_species_fitness()
+
+        loop specie in species
+            algorithm -> algorithm : @calculate_innovation_contribution()
+            algorithm -> algorithm : @set_fitness_attribution()
+        end
+
+        == Calculate Meme Influence for Each Individual ==
+        algorithm -> algorithm : @calculate_meme_influence(lookup_table)
+
+        loop specie in species
+            algorithm -> algorithm : @calculate_num_offspring_required()
+            algorithm -> algorithm : @get_elite_individuals()
+
+            == Apply Selection Operator ==
+            algorithm -> algorithm : @meme_influence_roulette_wheel_selection(specie, len(specie), lookup_table)
+
+            loop while offspring_population.size() < num_offspring_required - num_elite_individuals
+                algorithm -> algorithm : @choose_random_individual()
+                == Apply Genetic Operators ==
+                algorithm -> algorithm : @apply_genetic_operators()
+                algorithm -> algorithm : @append_mutated_individual_to_new_population()
+            end
+
+            algorithm -> algorithm : @compose_new_population()
+        end
+
+        == Termination Condition Met? ==
+        alt termination condition met 
+        algorithm -> algorithm : return new_population
+        deactivate algorithm
+        end
+  
     end
-
-    algorithm -> algorithm : return new_population
-
-    deactivate algorithm
 
     algorithm -> algorithm : @calculate_stats()
 
