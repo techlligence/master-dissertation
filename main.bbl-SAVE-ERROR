@@ -1,0 +1,4198 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{aggarwal2018neural}{book}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=86d11a07b1bfeac58dc68f7a419b3039}{%
+           family={Aggarwal},
+           familyi={A\bibinitperiod},
+           given={Charu\bibnamedelima C},
+           giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{d86c438c39698c3206070ebe3a425511}
+      \strng{fullhash}{d86c438c39698c3206070ebe3a425511}
+      \strng{fullhashraw}{d86c438c39698c3206070ebe3a425511}
+      \strng{bibnamehash}{d86c438c39698c3206070ebe3a425511}
+      \strng{authorbibnamehash}{d86c438c39698c3206070ebe3a425511}
+      \strng{authornamehash}{d86c438c39698c3206070ebe3a425511}
+      \strng{authorfullhash}{d86c438c39698c3206070ebe3a425511}
+      \strng{authorfullhashraw}{d86c438c39698c3206070ebe3a425511}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{978}
+      \field{title}{Neural networks and deep learning}
+      \field{volume}{10}
+      \field{year}{2018}
+    \endentry
+    \entry{advancesInEvolutionaryAlgorithms}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0e261b2028d125cc67b6826ac922909d}{%
+           family={Ahn},
+           familyi={A\bibinitperiod},
+           given={Chang\bibnamedelima Wook},
+           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{0e261b2028d125cc67b6826ac922909d}
+      \strng{fullhash}{0e261b2028d125cc67b6826ac922909d}
+      \strng{fullhashraw}{0e261b2028d125cc67b6826ac922909d}
+      \strng{bibnamehash}{0e261b2028d125cc67b6826ac922909d}
+      \strng{authorbibnamehash}{0e261b2028d125cc67b6826ac922909d}
+      \strng{authornamehash}{0e261b2028d125cc67b6826ac922909d}
+      \strng{authorfullhash}{0e261b2028d125cc67b6826ac922909d}
+      \strng{authorfullhashraw}{0e261b2028d125cc67b6826ac922909d}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Advances in evolutionary algorithms}
+      \field{year}{2006}
+    \endentry
+    \entry{newGA}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=035969f7bfa1865c400ced28b795f2a5}{%
+           family={Alhijawi},
+           familyi={A\bibinitperiod},
+           given={Bushra},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=634c59b1f40815c6f53fdc013866ef4a}{%
+           family={Awajan},
+           familyi={A\bibinitperiod},
+           given={Arafat},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a90062525ba202f673df02fb2351d20e}
+      \strng{fullhash}{a90062525ba202f673df02fb2351d20e}
+      \strng{fullhashraw}{a90062525ba202f673df02fb2351d20e}
+      \strng{bibnamehash}{a90062525ba202f673df02fb2351d20e}
+      \strng{authorbibnamehash}{a90062525ba202f673df02fb2351d20e}
+      \strng{authornamehash}{a90062525ba202f673df02fb2351d20e}
+      \strng{authorfullhash}{a90062525ba202f673df02fb2351d20e}
+      \strng{authorfullhashraw}{a90062525ba202f673df02fb2351d20e}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Evolutionary Intelligence}
+      \field{month}{02}
+      \field{title}{Genetic algorithms: theory, genetic operators, solutions, and applications}
+      \field{volume}{17}
+      \field{year}{2023}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1007/s12065-023-00822-6
+      \endverb
+    \endentry
+    \entry{cowgc}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d63416cd251826617ff363068f70a2f0}{%
+           family={Alkafaween},
+           familyi={A\bibinitperiod},
+           given={Esra'a},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d63416cd251826617ff363068f70a2f0}
+      \strng{fullhash}{d63416cd251826617ff363068f70a2f0}
+      \strng{fullhashraw}{d63416cd251826617ff363068f70a2f0}
+      \strng{bibnamehash}{d63416cd251826617ff363068f70a2f0}
+      \strng{authorbibnamehash}{d63416cd251826617ff363068f70a2f0}
+      \strng{authornamehash}{d63416cd251826617ff363068f70a2f0}
+      \strng{authorfullhash}{d63416cd251826617ff363068f70a2f0}
+      \strng{authorfullhashraw}{d63416cd251826617ff363068f70a2f0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Novel Methods for Enhancing the Performance of Genetic Algorithms}
+      \field{volume}{abs/1801.02827}
+      \field{year}{2018}
+      \verb{eprint}
+      \verb 1801.02827
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1801.02827
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1801.02827
+      \endverb
+    \endentry
+    \entry{angeline1994evolutionary}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=3e7396d34f8e4bcb01eeb03f097a6bdb}{%
+           family={Angeline},
+           familyi={A\bibinitperiod},
+           given={Peter\bibnamedelima J},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=029c06ade9ed130e14a5b13ff3ee9785}{%
+           family={Saunders},
+           familyi={S\bibinitperiod},
+           given={Gregory\bibnamedelima M},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d264d15de1a7b88564cae3c2fb1c3173}{%
+           family={Pollack},
+           familyi={P\bibinitperiod},
+           given={Jordan\bibnamedelima B},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{029e563e8b9ac82a3dcf52b68e3d0c6e}
+      \strng{fullhash}{029e563e8b9ac82a3dcf52b68e3d0c6e}
+      \strng{fullhashraw}{029e563e8b9ac82a3dcf52b68e3d0c6e}
+      \strng{bibnamehash}{029e563e8b9ac82a3dcf52b68e3d0c6e}
+      \strng{authorbibnamehash}{029e563e8b9ac82a3dcf52b68e3d0c6e}
+      \strng{authornamehash}{029e563e8b9ac82a3dcf52b68e3d0c6e}
+      \strng{authorfullhash}{029e563e8b9ac82a3dcf52b68e3d0c6e}
+      \strng{authorfullhashraw}{029e563e8b9ac82a3dcf52b68e3d0c6e}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE transactions on Neural Networks}
+      \field{number}{1}
+      \field{title}{An evolutionary algorithm that constructs recurrent neural networks}
+      \field{volume}{5}
+      \field{year}{1994}
+      \field{pages}{54\bibrangedash 65}
+      \range{pages}{12}
+    \endentry
+    \entry{asseman2021accelerating}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=3e356bb7195c33c5863f6620cb86eee8}{%
+           family={Asseman},
+           familyi={A\bibinitperiod},
+           given={Alexis},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=34ec14c120315e908913531156e2fad3}{%
+           family={Antoine},
+           familyi={A\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=34061c5be9f65f71ab9666cd0fb45e60}{%
+           family={Ozcan},
+           familyi={O\bibinitperiod},
+           given={Ahmet\bibnamedelima S},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {ACM New York, NY, USA}%
+      }
+      \strng{namehash}{89600c7161e421b03ab7de5996473380}
+      \strng{fullhash}{89600c7161e421b03ab7de5996473380}
+      \strng{fullhashraw}{89600c7161e421b03ab7de5996473380}
+      \strng{bibnamehash}{89600c7161e421b03ab7de5996473380}
+      \strng{authorbibnamehash}{89600c7161e421b03ab7de5996473380}
+      \strng{authornamehash}{89600c7161e421b03ab7de5996473380}
+      \strng{authorfullhash}{89600c7161e421b03ab7de5996473380}
+      \strng{authorfullhashraw}{89600c7161e421b03ab7de5996473380}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Journal on Emerging Technologies in Computing Systems (JETC)}
+      \field{number}{2}
+      \field{title}{Accelerating deep neuroevolution on distributed FPGAs for reinforcement learning problems}
+      \field{volume}{17}
+      \field{year}{2021}
+      \field{pages}{1\bibrangedash 17}
+      \range{pages}{17}
+    \endentry
+    \entry{ayoub2009evolutionary}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=67bee84a0adb7c0fe9812c9a5b48e1ec}{%
+           family={Ayoub},
+           familyi={A\bibinitperiod},
+           given={Nasser},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ac0c489579b3709a9a302bddaf013ae4}{%
+           family={Elmoshi},
+           familyi={E\bibinitperiod},
+           given={Elsayed},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f38ba4499e2f3297daf6ebad9d392afb}{%
+           family={Seki},
+           familyi={S\bibinitperiod},
+           given={Hiroya},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5406aa2fb4d98054b9a1a0033c2e8959}{%
+           family={Naka},
+           familyi={N\bibinitperiod},
+           given={Yuji},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{5bc729ce0c740a0df9f703e6fedfff07}
+      \strng{fullhash}{6a42dd1fc5aacf049119fe37b6129137}
+      \strng{fullhashraw}{6a42dd1fc5aacf049119fe37b6129137}
+      \strng{bibnamehash}{5bc729ce0c740a0df9f703e6fedfff07}
+      \strng{authorbibnamehash}{5bc729ce0c740a0df9f703e6fedfff07}
+      \strng{authornamehash}{5bc729ce0c740a0df9f703e6fedfff07}
+      \strng{authorfullhash}{6a42dd1fc5aacf049119fe37b6129137}
+      \strng{authorfullhashraw}{6a42dd1fc5aacf049119fe37b6129137}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Energy Conversion and Management}
+      \field{number}{12}
+      \field{title}{Evolutionary algorithms approach for integrated bioenergy supply chains optimization}
+      \field{volume}{50}
+      \field{year}{2009}
+      \field{pages}{2944\bibrangedash 2955}
+      \range{pages}{12}
+    \endentry
+    \entry{back2012handbook}{book}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=63db21b1dd89fc12aac7791967820b87}{%
+           family={Bäck},
+           familyi={B\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fa2e077df2000de67ed6070a3fbd752d}{%
+           family={Kok},
+           familyi={K\bibinitperiod},
+           given={Joost\bibnamedelima N},
+           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=29046cb5dcac6c17da6803fc530790d0}{%
+           family={Rozenberg},
+           familyi={R\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer, Heidelberg}%
+      }
+      \strng{namehash}{3090bbc034835f55b2a787f63440d71c}
+      \strng{fullhash}{3090bbc034835f55b2a787f63440d71c}
+      \strng{fullhashraw}{3090bbc034835f55b2a787f63440d71c}
+      \strng{bibnamehash}{3090bbc034835f55b2a787f63440d71c}
+      \strng{authorbibnamehash}{3090bbc034835f55b2a787f63440d71c}
+      \strng{authornamehash}{3090bbc034835f55b2a787f63440d71c}
+      \strng{authorfullhash}{3090bbc034835f55b2a787f63440d71c}
+      \strng{authorfullhashraw}{3090bbc034835f55b2a787f63440d71c}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Handbook of natural computing}
+      \field{year}{2012}
+    \endentry
+    \entry{bautu2007adagep}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{un=1,uniquepart=given,hash=b6232eb5252df49eae32309cda446d75}{%
+           family={Bautu},
+           familyi={B\bibinitperiod},
+           given={Elena},
+           giveni={E\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=8fd5d14c23647cfdaaab4823468c8204}{%
+           family={Bautu},
+           familyi={B\bibinitperiod},
+           given={Andrei},
+           giveni={A\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=5e77dd757e43e428123a8ee57c54a5c9}{%
+           family={Luchian},
+           familyi={L\bibinitperiod},
+           given={Henri},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{bfae1ebadaae202b3be26ab868554c96}
+      \strng{fullhash}{bfae1ebadaae202b3be26ab868554c96}
+      \strng{fullhashraw}{bfae1ebadaae202b3be26ab868554c96}
+      \strng{bibnamehash}{bfae1ebadaae202b3be26ab868554c96}
+      \strng{authorbibnamehash}{bfae1ebadaae202b3be26ab868554c96}
+      \strng{authornamehash}{bfae1ebadaae202b3be26ab868554c96}
+      \strng{authorfullhash}{bfae1ebadaae202b3be26ab868554c96}
+      \strng{authorfullhashraw}{bfae1ebadaae202b3be26ab868554c96}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Ninth International Symposium on Symbolic and Numeric Algorithms for Scientific Computing (SYNASC 2007)}
+      \field{title}{Adagep-an adaptive gene expression programming algorithm}
+      \field{year}{2007}
+      \field{pages}{403\bibrangedash 406}
+      \range{pages}{4}
+    \endentry
+    \entry{bayat2022blasting}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=2cdb14842c3c850998301731f8186d2b}{%
+           family={Bayat},
+           familyi={B\bibinitperiod},
+           given={Parichehr},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3de758c4eda53588fc3a8ac177d42195}{%
+           family={Monjezi},
+           familyi={M\bibinitperiod},
+           given={Masoud},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=751765592db53296c328eb6fb6045fc1}{%
+           family={Mehrdanesh},
+           familyi={M\bibinitperiod},
+           given={Amirhossein},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=df7416b67a6248d7d673ce0fcc950051}{%
+           family={Khandelwal},
+           familyi={K\bibinitperiod},
+           given={Manoj},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{52338516ce125566d2cb034d26e40ee9}
+      \strng{fullhash}{1d3f924b16849155590bf10f40990a94}
+      \strng{fullhashraw}{1d3f924b16849155590bf10f40990a94}
+      \strng{bibnamehash}{52338516ce125566d2cb034d26e40ee9}
+      \strng{authorbibnamehash}{52338516ce125566d2cb034d26e40ee9}
+      \strng{authornamehash}{52338516ce125566d2cb034d26e40ee9}
+      \strng{authorfullhash}{1d3f924b16849155590bf10f40990a94}
+      \strng{authorfullhashraw}{1d3f924b16849155590bf10f40990a94}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Engineering with Computers}
+      \field{title}{Blasting pattern optimization using gene expression programming and grasshopper optimization algorithm to minimise blast-induced ground vibrations}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 10}
+      \range{pages}{10}
+    \endentry
+    \entry{bell2022applicationsgaussianmutationself}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dae36006ee4fdeda60fc31f9c859a162}{%
+           family={Bell},
+           familyi={B\bibinitperiod},
+           given={Okezue},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dae36006ee4fdeda60fc31f9c859a162}
+      \strng{fullhash}{dae36006ee4fdeda60fc31f9c859a162}
+      \strng{fullhashraw}{dae36006ee4fdeda60fc31f9c859a162}
+      \strng{bibnamehash}{dae36006ee4fdeda60fc31f9c859a162}
+      \strng{authorbibnamehash}{dae36006ee4fdeda60fc31f9c859a162}
+      \strng{authornamehash}{dae36006ee4fdeda60fc31f9c859a162}
+      \strng{authorfullhash}{dae36006ee4fdeda60fc31f9c859a162}
+      \strng{authorfullhashraw}{dae36006ee4fdeda60fc31f9c859a162}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.NE}
+      \field{eprinttype}{arXiv}
+      \field{title}{Applications of Gaussian Mutation for Self Adaptation in Evolutionary Genetic Algorithms}
+      \field{year}{2022}
+      \verb{eprint}
+      \verb 2201.00285
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2201.00285
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2201.00285
+      \endverb
+    \endentry
+    \entry{bishop1994neural}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ffd104efb1fd538b716a57b64de45570}{%
+           family={Bishop},
+           familyi={B\bibinitperiod},
+           given={Chris\bibnamedelima M},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Institute of Physics}%
+      }
+      \strng{namehash}{ffd104efb1fd538b716a57b64de45570}
+      \strng{fullhash}{ffd104efb1fd538b716a57b64de45570}
+      \strng{fullhashraw}{ffd104efb1fd538b716a57b64de45570}
+      \strng{bibnamehash}{ffd104efb1fd538b716a57b64de45570}
+      \strng{authorbibnamehash}{ffd104efb1fd538b716a57b64de45570}
+      \strng{authornamehash}{ffd104efb1fd538b716a57b64de45570}
+      \strng{authorfullhash}{ffd104efb1fd538b716a57b64de45570}
+      \strng{authorfullhashraw}{ffd104efb1fd538b716a57b64de45570}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Review of scientific instruments}
+      \field{number}{6}
+      \field{title}{Neural networks and their applications}
+      \field{volume}{65}
+      \field{year}{1994}
+      \field{pages}{1803\bibrangedash 1832}
+      \range{pages}{30}
+    \endentry
+    \entry{blickle1996comparison}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=94821843fad854ab5cc996ae634af80f}{%
+           family={Blickle},
+           familyi={B\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=443849b4c8bfc03386052ff0243f508c}{%
+           family={Thiele},
+           familyi={T\bibinitperiod},
+           given={Lothar},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{9bce1fccb2b26c8b8a8f59c5cd70afe4}
+      \strng{fullhash}{9bce1fccb2b26c8b8a8f59c5cd70afe4}
+      \strng{fullhashraw}{9bce1fccb2b26c8b8a8f59c5cd70afe4}
+      \strng{bibnamehash}{9bce1fccb2b26c8b8a8f59c5cd70afe4}
+      \strng{authorbibnamehash}{9bce1fccb2b26c8b8a8f59c5cd70afe4}
+      \strng{authornamehash}{9bce1fccb2b26c8b8a8f59c5cd70afe4}
+      \strng{authorfullhash}{9bce1fccb2b26c8b8a8f59c5cd70afe4}
+      \strng{authorfullhashraw}{9bce1fccb2b26c8b8a8f59c5cd70afe4}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Evolutionary Computation}
+      \field{number}{4}
+      \field{title}{A comparison of selection schemes used in evolutionary algorithms}
+      \field{volume}{4}
+      \field{year}{1996}
+      \field{pages}{361\bibrangedash 394}
+      \range{pages}{34}
+    \endentry
+    \entry{camburn2017design}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=4fc5f990f14cf2c005d0dbdb583d5653}{%
+           family={Camburn},
+           familyi={C\bibinitperiod},
+           given={Bradley},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=afd3a254df86efcf4c9a31145b36ddc6}{%
+           family={Viswanathan},
+           familyi={V\bibinitperiod},
+           given={Vimal},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=39cbfe3efefd9e0793a137f1417419a6}{%
+           family={Linsey},
+           familyi={L\bibinitperiod},
+           given={Julie},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=91b2c35c5abb75300d554ba6e98d4fe4}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=efd6c0ed9681efa0b24f66ac9cb66b55}{%
+           family={Jensen},
+           familyi={J\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2e5904fbad76f3e751f73b52f44846d4}{%
+           family={Crawford},
+           familyi={C\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6d333098edc72413e00b4173573142ec}{%
+           family={Otto},
+           familyi={O\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f23e5c089651541ea8441da997cbb53b}{%
+           family={Wood},
+           familyi={W\bibinitperiod},
+           given={Kristin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{332648860caa8a0b23e4c4e4c1b49cbd}
+      \strng{fullhash}{52fb54270059db19d0ededfacd74c9f9}
+      \strng{fullhashraw}{52fb54270059db19d0ededfacd74c9f9}
+      \strng{bibnamehash}{332648860caa8a0b23e4c4e4c1b49cbd}
+      \strng{authorbibnamehash}{332648860caa8a0b23e4c4e4c1b49cbd}
+      \strng{authornamehash}{332648860caa8a0b23e4c4e4c1b49cbd}
+      \strng{authorfullhash}{52fb54270059db19d0ededfacd74c9f9}
+      \strng{authorfullhashraw}{52fb54270059db19d0ededfacd74c9f9}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Design Science}
+      \field{title}{Design prototyping methods: state of the art in strategies, techniques, and guidelines}
+      \field{volume}{3}
+      \field{year}{2017}
+      \field{pages}{e13}
+      \range{pages}{-1}
+    \endentry
+    \entry{michaelCilliers}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=81b635e54e96b754e5fa51029cb2234d}{%
+           family={Cilliers},
+           familyi={C\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {University of Johannesburg}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \strng{namehash}{81b635e54e96b754e5fa51029cb2234d}
+      \strng{fullhash}{81b635e54e96b754e5fa51029cb2234d}
+      \strng{fullhashraw}{81b635e54e96b754e5fa51029cb2234d}
+      \strng{bibnamehash}{81b635e54e96b754e5fa51029cb2234d}
+      \strng{authorbibnamehash}{81b635e54e96b754e5fa51029cb2234d}
+      \strng{authornamehash}{81b635e54e96b754e5fa51029cb2234d}
+      \strng{authorfullhash}{81b635e54e96b754e5fa51029cb2234d}
+      \strng{authorfullhashraw}{81b635e54e96b754e5fa51029cb2234d}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{When working with evolutionary algorithms, a balance between exploration andexploitation has to be maintained. The main driver of exploration is the reproductionoperation, which is dependent on population diversity to enable effective exploration.The lack of population diversity can thus become a problem if explorationis required during the later stages of the algorithm. One example where thisis relevant is when working with dynamic environments. If a change occurs in theenvironment, the algorithm might require some exploration to adapt to the change.This research aims to demonstrate that if an algorithm is able to maintain populationdiversity during the latter of its execution, it will be able to adapt to changes moreeffectively. This research produced a set of novel algorithms to explore differentmethods of maintaining population diversity. The first group of developed algorithmsdraws inspiration from gene methylation by adding non-coding genes to thechromosome. The non-coding genes can then act as a reservoir of genetic diversityafter the algorithm converges and the diversity in the expressed genes diminishes.The second algorithm implemented parapatric speciation in an evolutionary algorithm.The algorithm attempts to divide the population into separate species, whichthen populate different areas of the search space. Testing of the developed algorithmshowed that it is possible to maintain more diversity in the latter generations of thealgorithm. The developed algorithms were also able to adapt more effectively tochange in the environment, indicating that the algorithms were able to use the increaseddiversity when required. Finally, the research showed that the maintainingof diversity is not the only option for allowing exploration in the latter stages of analgorithm. Algorithms that are less effective at maintaining diversity, but are able torapidly produce diversity when required are also able to shift focus to explorationwhen adapting to change in the environment.}
+      \field{title}{Maintaining population diversity in evolutionary algorithms via epigenetics and speciation}
+      \field{type}{phdthesis}
+      \field{year}{2022}
+      \keyw{Evolutionary computation;Species}
+    \endentry
+    \entry{neuron_model}{unknown}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=1e6db5ec188e1ce11f01ab44d395b94a}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Blake},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9ad414b1a99fdda8a318be7fae53d86c}{%
+           family={Peterson},
+           familyi={P\bibinitperiod},
+           given={Andre},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6dbf8867ef1c0505cff926fed9ae81d7}{%
+           family={Woldman},
+           familyi={W\bibinitperiod},
+           given={Wessel},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a3e8ef1a302614212959148ed24b9bd8}{%
+           family={Terry},
+           familyi={T\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{59dacdec24eee79097159d696b4dde14}
+      \strng{fullhash}{aff592e96d67f4722417c121e8c63b2d}
+      \strng{fullhashraw}{aff592e96d67f4722417c121e8c63b2d}
+      \strng{bibnamehash}{59dacdec24eee79097159d696b4dde14}
+      \strng{authorbibnamehash}{59dacdec24eee79097159d696b4dde14}
+      \strng{authornamehash}{59dacdec24eee79097159d696b4dde14}
+      \strng{authorfullhash}{aff592e96d67f4722417c121e8c63b2d}
+      \strng{authorfullhashraw}{aff592e96d67f4722417c121e8c63b2d}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{03}
+      \field{title}{Neural Field Models: historical perspectives and recent advances}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.48550/arXiv.2103.10554
+      \endverb
+    \endentry
+    \entry{cullinan2023clisde}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=72fba6e6c4a36a727090a276078bd316}{%
+           family={Cullinan},
+           familyi={C\bibinitperiod},
+           given={Michéle},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=006a7ca5d9e44192d6ac5d479d46ed94}{%
+           family={Coulter},
+           familyi={C\bibinitperiod},
+           given={Duncan},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed8b0ef5572972ec6a66340cfcd70a8b}{%
+           family={Appel},
+           familyi={A\bibinitperiod},
+           given={Jacques},
+           giveni={J\bibinitperiod},
+           givenun=0,
+           prefix={van},
+           prefixi={v\bibinitperiod},
+           prefixun=0}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{cb078627ac54ee11196f4f93655363dd}
+      \strng{fullhash}{cb078627ac54ee11196f4f93655363dd}
+      \strng{fullhashraw}{cb078627ac54ee11196f4f93655363dd}
+      \strng{bibnamehash}{cb078627ac54ee11196f4f93655363dd}
+      \strng{authorbibnamehash}{cb078627ac54ee11196f4f93655363dd}
+      \strng{authornamehash}{cb078627ac54ee11196f4f93655363dd}
+      \strng{authorfullhash}{cb078627ac54ee11196f4f93655363dd}
+      \strng{authorfullhashraw}{cb078627ac54ee11196f4f93655363dd}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2023 10th International Conference on Soft Computing \& Machine Intelligence (ISCMI)}
+      \field{title}{CLISDE: An Agent-Oriented Cladistic Island Genetic Algorithm}
+      \field{year}{2023}
+      \field{pages}{27\bibrangedash 33}
+      \range{pages}{7}
+    \endentry
+    \entry{d2014hyperneat}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b013bd36c59115b2dd199a74bc85151c}{%
+           family={D’Ambrosio},
+           familyi={D\bibinitperiod},
+           given={David\bibnamedelima B},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=36fd4665b25c44659a4fa727d6fb3a45}{%
+           family={Gauci},
+           familyi={G\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cd20c341249f4e0cd9cb16431e439823}{%
+           family={Stanley},
+           familyi={S\bibinitperiod},
+           given={Kenneth\bibnamedelima O},
+           giveni={K\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{b347f39e4ffeba05a9d6ed917f599a53}
+      \strng{fullhash}{b347f39e4ffeba05a9d6ed917f599a53}
+      \strng{fullhashraw}{b347f39e4ffeba05a9d6ed917f599a53}
+      \strng{bibnamehash}{b347f39e4ffeba05a9d6ed917f599a53}
+      \strng{authorbibnamehash}{b347f39e4ffeba05a9d6ed917f599a53}
+      \strng{authornamehash}{b347f39e4ffeba05a9d6ed917f599a53}
+      \strng{authorfullhash}{b347f39e4ffeba05a9d6ed917f599a53}
+      \strng{authorfullhashraw}{b347f39e4ffeba05a9d6ed917f599a53}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Growing Adaptive Machines: Combining Development and Learning in Artificial Neural Networks}
+      \field{title}{HyperNEAT: The first five years}
+      \field{year}{2014}
+      \field{pages}{159\bibrangedash 185}
+      \range{pages}{27}
+    \endentry
+    \entry{das2010differential}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b13f70f10b47e61a49da643cf791dbb8}{%
+           family={Das},
+           familyi={D\bibinitperiod},
+           given={Swagatam},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d94afbc27d84d6e232201b6f0b6938ca}{%
+           family={Suganthan},
+           familyi={S\bibinitperiod},
+           given={Ponnuthurai\bibnamedelima Nagaratnam},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{7bdfc8caf921440b2e4844db69e60fe9}
+      \strng{fullhash}{7bdfc8caf921440b2e4844db69e60fe9}
+      \strng{fullhashraw}{7bdfc8caf921440b2e4844db69e60fe9}
+      \strng{bibnamehash}{7bdfc8caf921440b2e4844db69e60fe9}
+      \strng{authorbibnamehash}{7bdfc8caf921440b2e4844db69e60fe9}
+      \strng{authornamehash}{7bdfc8caf921440b2e4844db69e60fe9}
+      \strng{authorfullhash}{7bdfc8caf921440b2e4844db69e60fe9}
+      \strng{authorfullhashraw}{7bdfc8caf921440b2e4844db69e60fe9}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE transactions on evolutionary computation}
+      \field{number}{1}
+      \field{title}{Differential evolution: A survey of the state-of-the-art}
+      \field{volume}{15}
+      \field{year}{2010}
+      \field{pages}{4\bibrangedash 31}
+      \range{pages}{28}
+    \endentry
+    \entry{dawkins1981selfish}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e4bf161272e948cc189fac2d9b7415a5}{%
+           family={Dawkins},
+           familyi={D\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Bantam Books New York, NY}%
+      }
+      \strng{namehash}{e4bf161272e948cc189fac2d9b7415a5}
+      \strng{fullhash}{e4bf161272e948cc189fac2d9b7415a5}
+      \strng{fullhashraw}{e4bf161272e948cc189fac2d9b7415a5}
+      \strng{bibnamehash}{e4bf161272e948cc189fac2d9b7415a5}
+      \strng{authorbibnamehash}{e4bf161272e948cc189fac2d9b7415a5}
+      \strng{authornamehash}{e4bf161272e948cc189fac2d9b7415a5}
+      \strng{authorfullhash}{e4bf161272e948cc189fac2d9b7415a5}
+      \strng{authorfullhashraw}{e4bf161272e948cc189fac2d9b7415a5}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The mind’s I: Fantasies and reflections on self and soul}
+      \field{title}{Selfish genes and selfish memes}
+      \field{year}{1981}
+      \field{pages}{124\bibrangedash 144}
+      \range{pages}{21}
+    \endentry
+    \entry{kmeancluster}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c40603e7956e020566ebeebf61741516}{%
+           family={Deng},
+           familyi={D\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=2,uniquepart=given,hash=621013bf54d3546375ad71f17f020b5b}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod},
+           givenun=2}}%
+        {{un=1,uniquepart=given,hash=5f9f7dfcdfd7130ea773bb087369a7e1}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Deyun},
+           giveni={D\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{eb8d70368ba57408e2bdeab3b3b6b392}
+      \strng{fullhash}{eb8d70368ba57408e2bdeab3b3b6b392}
+      \strng{fullhashraw}{eb8d70368ba57408e2bdeab3b3b6b392}
+      \strng{bibnamehash}{eb8d70368ba57408e2bdeab3b3b6b392}
+      \strng{authorbibnamehash}{eb8d70368ba57408e2bdeab3b3b6b392}
+      \strng{authornamehash}{eb8d70368ba57408e2bdeab3b3b6b392}
+      \strng{authorfullhash}{eb8d70368ba57408e2bdeab3b3b6b392}
+      \strng{authorfullhashraw}{eb8d70368ba57408e2bdeab3b3b6b392}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mathematical Problems in Engineering}
+      \field{month}{10}
+      \field{title}{An Improved Genetic Algorithm with Initial Population Strategy for Symmetric TSP}
+      \field{volume}{2015}
+      \field{year}{2015}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1155/2015/212794
+      \endverb
+    \endentry
+    \entry{diaz2007initial}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=964e7d1158ad3815e0441063549517a3}{%
+           family={Diaz-Gomez},
+           familyi={D\bibinithyphendelim G\bibinitperiod},
+           given={Pedro\bibnamedelima A},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bffef048c09bdaef0992d1f155e0376e}{%
+           family={Hougen},
+           familyi={H\bibinitperiod},
+           given={Dean\bibnamedelima F},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3377a11de6c1fb18c77def8e1b35d169}
+      \strng{fullhash}{3377a11de6c1fb18c77def8e1b35d169}
+      \strng{fullhashraw}{3377a11de6c1fb18c77def8e1b35d169}
+      \strng{bibnamehash}{3377a11de6c1fb18c77def8e1b35d169}
+      \strng{authorbibnamehash}{3377a11de6c1fb18c77def8e1b35d169}
+      \strng{authornamehash}{3377a11de6c1fb18c77def8e1b35d169}
+      \strng{authorfullhash}{3377a11de6c1fb18c77def8e1b35d169}
+      \strng{authorfullhashraw}{3377a11de6c1fb18c77def8e1b35d169}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Gem}
+      \field{title}{Initial population for genetic algorithms: A metric approach.}
+      \field{year}{2007}
+      \field{pages}{43\bibrangedash 49}
+      \range{pages}{7}
+    \endentry
+    \entry{dulebenets2018self}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=2c736bbdf77c046f5a14a7032fa0a5f1}{%
+           family={Dulebenets},
+           familyi={D\bibinitperiod},
+           given={Maxim\bibnamedelima A},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5fd2c74d7418e7b335bfa160691f876e}{%
+           family={Kavoosi},
+           familyi={K\bibinitperiod},
+           given={Masoud},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eae934ccb3de684a3fb724d7a250fa2b}{%
+           family={Abioye},
+           familyi={A\bibinitperiod},
+           given={Olumide},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7b6851dd8c7c8fc838600818326edbb3}{%
+           family={Pasha},
+           familyi={P\bibinitperiod},
+           given={Junayed},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{739019db1836def147f090420dacafdf}
+      \strng{fullhash}{9d39943885fb0c8b82985af83dedb5cf}
+      \strng{fullhashraw}{9d39943885fb0c8b82985af83dedb5cf}
+      \strng{bibnamehash}{739019db1836def147f090420dacafdf}
+      \strng{authorbibnamehash}{739019db1836def147f090420dacafdf}
+      \strng{authornamehash}{739019db1836def147f090420dacafdf}
+      \strng{authorfullhash}{9d39943885fb0c8b82985af83dedb5cf}
+      \strng{authorfullhashraw}{9d39943885fb0c8b82985af83dedb5cf}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Algorithms}
+      \field{number}{7}
+      \field{title}{A self-adaptive evolutionary algorithm for the berth scheduling problem: Towards efficient parameter control}
+      \field{volume}{11}
+      \field{year}{2018}
+      \field{pages}{100}
+      \range{pages}{1}
+    \endentry
+    \entry{book_introduction_to_evolutionary_computing}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=37f918f86142087e36a5d91ce7026b2c}{%
+           family={Eiben},
+           familyi={E\bibinitperiod},
+           given={A.\bibnamedelimi E.},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b47eb5ad45408b648d676ed21620290}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={James\bibnamedelima E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Publishing Company, Incorporated}%
+      }
+      \strng{namehash}{52fb2341a73181ce78a365eaba87a259}
+      \strng{fullhash}{52fb2341a73181ce78a365eaba87a259}
+      \strng{fullhashraw}{52fb2341a73181ce78a365eaba87a259}
+      \strng{bibnamehash}{52fb2341a73181ce78a365eaba87a259}
+      \strng{authorbibnamehash}{52fb2341a73181ce78a365eaba87a259}
+      \strng{authornamehash}{52fb2341a73181ce78a365eaba87a259}
+      \strng{authorfullhash}{52fb2341a73181ce78a365eaba87a259}
+      \strng{authorfullhashraw}{52fb2341a73181ce78a365eaba87a259}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The overall structure of this new edition is three-tier: Part I presents the basics, Part II is concerned with methodological issues, and Part III discusses advanced topics. In the second edition the authors have reorganized the material to focus on problems, how to represent them, and then how to choose and design algorithms for different representations. They also added a chapter on problems, reflecting the overall book focus on problem-solvers, a chapter on parameter tuning, which they combined with the parameter control and "how-to" chapters into a methodological part, and finally a chapter on evolutionary robotics with an outlook on possible exciting developments in this field. The book is suitable for undergraduate and graduate courses in artificial intelligence and computational intelligence, and for self-study by practitioners and researchers engaged with all aspects of bioinspired design and optimization.}
+      \field{edition}{2nd}
+      \field{isbn}{3662448734}
+      \field{title}{Introduction to Evolutionary Computing}
+      \field{year}{2015}
+    \endentry
+    \entry{elsken2019neural}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=17831398c93648de0ce8c5bcfbbc9784}{%
+           family={Elsken},
+           familyi={E\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=21923fb486ef4c63bad4c8fcac6cc124}{%
+           family={Metzen},
+           familyi={M\bibinitperiod},
+           given={Jan\bibnamedelima Hendrik},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=528d4af87fd2ecf5fb8a22db913ce088}{%
+           family={Hutter},
+           familyi={H\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ed1f11ecdd12a620b5f6316dbe235ed3}
+      \strng{fullhash}{ed1f11ecdd12a620b5f6316dbe235ed3}
+      \strng{fullhashraw}{ed1f11ecdd12a620b5f6316dbe235ed3}
+      \strng{bibnamehash}{ed1f11ecdd12a620b5f6316dbe235ed3}
+      \strng{authorbibnamehash}{ed1f11ecdd12a620b5f6316dbe235ed3}
+      \strng{authornamehash}{ed1f11ecdd12a620b5f6316dbe235ed3}
+      \strng{authorfullhash}{ed1f11ecdd12a620b5f6316dbe235ed3}
+      \strng{authorfullhashraw}{ed1f11ecdd12a620b5f6316dbe235ed3}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{number}{55}
+      \field{title}{Neural architecture search: A survey}
+      \field{volume}{20}
+      \field{year}{2019}
+      \field{pages}{1\bibrangedash 21}
+      \range{pages}{21}
+    \endentry
+    \entry{engelbrecht2007computational}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cdfa42fa0d55ed542c98192ec849360f}{%
+           family={Engelbrecht},
+           familyi={E\bibinitperiod},
+           given={Andries\bibnamedelima P},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{cdfa42fa0d55ed542c98192ec849360f}
+      \strng{fullhash}{cdfa42fa0d55ed542c98192ec849360f}
+      \strng{fullhashraw}{cdfa42fa0d55ed542c98192ec849360f}
+      \strng{bibnamehash}{cdfa42fa0d55ed542c98192ec849360f}
+      \strng{authorbibnamehash}{cdfa42fa0d55ed542c98192ec849360f}
+      \strng{authornamehash}{cdfa42fa0d55ed542c98192ec849360f}
+      \strng{authorfullhash}{cdfa42fa0d55ed542c98192ec849360f}
+      \strng{authorfullhashraw}{cdfa42fa0d55ed542c98192ec849360f}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Computational intelligence: an introduction}
+      \field{year}{2007}
+    \endentry
+    \entry{ferreira2006gene}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=443d476923f8ad0997333820f71b2958}{%
+           family={Ferreira},
+           familyi={F\bibinitperiod},
+           given={Cândida},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{443d476923f8ad0997333820f71b2958}
+      \strng{fullhash}{443d476923f8ad0997333820f71b2958}
+      \strng{fullhashraw}{443d476923f8ad0997333820f71b2958}
+      \strng{bibnamehash}{443d476923f8ad0997333820f71b2958}
+      \strng{authorbibnamehash}{443d476923f8ad0997333820f71b2958}
+      \strng{authornamehash}{443d476923f8ad0997333820f71b2958}
+      \strng{authorfullhash}{443d476923f8ad0997333820f71b2958}
+      \strng{authorfullhashraw}{443d476923f8ad0997333820f71b2958}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Gene expression programming: mathematical modeling by an artificial intelligence}
+      \field{volume}{21}
+      \field{year}{2006}
+    \endentry
+    \entry{Gen2023}{inbook}{}{}
+      \name{author}{2}{}{%
+        {{un=2,uniquepart=given,hash=cda827ec7da921538663a82033c89621}{%
+           family={Gen},
+           familyi={G\bibinitperiod},
+           given={Mitsuo},
+           giveni={M\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=fb72b03bb0004672eb40dd00cb76bdcd}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Lin},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=f1cacd0a51fe343b269c5b8b6123071f}{%
+           family={Pham},
+           familyi={P\bibinitperiod},
+           given={Hoang},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Springer London}%
+      }
+      \strng{namehash}{0387754d5c6db8c0dd592058d490cce6}
+      \strng{fullhash}{0387754d5c6db8c0dd592058d490cce6}
+      \strng{fullhashraw}{0387754d5c6db8c0dd592058d490cce6}
+      \strng{bibnamehash}{0387754d5c6db8c0dd592058d490cce6}
+      \strng{authorbibnamehash}{0387754d5c6db8c0dd592058d490cce6}
+      \strng{authornamehash}{0387754d5c6db8c0dd592058d490cce6}
+      \strng{authorfullhash}{0387754d5c6db8c0dd592058d490cce6}
+      \strng{authorfullhashraw}{0387754d5c6db8c0dd592058d490cce6}
+      \strng{editorbibnamehash}{f1cacd0a51fe343b269c5b8b6123071f}
+      \strng{editornamehash}{f1cacd0a51fe343b269c5b8b6123071f}
+      \strng{editorfullhash}{f1cacd0a51fe343b269c5b8b6123071f}
+      \strng{editorfullhashraw}{f1cacd0a51fe343b269c5b8b6123071f}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The first part of this chapter describes the foundation of genetic algorithms. It includes hybrid genetic algorithms, adaptive genetic algorithms, and fuzzy logic controllers. After a short introduction to genetic algorithms, the second part describes combinatorial optimization problems including the knapsack problem, the minimum spanning tree problem, the set-covering problem, the bin-packing problem, and the traveling-salesman problem; these are combinatorial optimization problems which are characterized by a finite number of feasible solutions. The third part describes network design problems. Network design and routing are important issues in the building and expansion of computer networks. In this part, the shortest-path problem, maximum-flow problem, minimum-cost-flow problem, centralized network design, and multistage process planning problem are introduced. These problems are typical network problems and have been studied for a long time. The fourth section describes scheduling problems. Many scheduling problems from manufacturing industries are quite complex in nature and very difficult to solve by conventional optimization techniques. In this part the flow-shop sequencing problem, job-shop scheduling, the resource-constrained project scheduling problem, and multiprocessor scheduling are introduced. The fifth part introduces the reliability design problem, including simple genetic algorithms for reliability optimization, reliability design with redundant units and alternatives, network reliability design, and tree-based network topology design. The sixth part describes logistic problems including the linear transportation problem, the multiobjective transportation problem, the bicriteria transportation problem with fuzzy coefficients, and supply chain management network design. Finally, the last part describes location and allocation problems including the location-allocation problem, capacitated plant-location problem, and obstacle location-allocation problem.}
+      \field{booktitle}{Springer Handbook of Engineering Statistics}
+      \field{isbn}{978-1-4471-7503-2}
+      \field{title}{Genetic Algorithms and Their Applications}
+      \field{year}{2023}
+      \field{pages}{635\bibrangedash 674}
+      \range{pages}{40}
+      \verb{doi}
+      \verb 10.1007/978-1-4471-7503-2_33
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-1-4471-7503-2_33
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-1-4471-7503-2_33
+      \endverb
+    \endentry
+    \entry{gregar2023research}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=203ef8654aec7bbce9a672e2142f3791}{%
+           family={Gregar},
+           familyi={G\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{203ef8654aec7bbce9a672e2142f3791}
+      \strng{fullhash}{203ef8654aec7bbce9a672e2142f3791}
+      \strng{fullhashraw}{203ef8654aec7bbce9a672e2142f3791}
+      \strng{bibnamehash}{203ef8654aec7bbce9a672e2142f3791}
+      \strng{authorbibnamehash}{203ef8654aec7bbce9a672e2142f3791}
+      \strng{authornamehash}{203ef8654aec7bbce9a672e2142f3791}
+      \strng{authorfullhash}{203ef8654aec7bbce9a672e2142f3791}
+      \strng{authorfullhashraw}{203ef8654aec7bbce9a672e2142f3791}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Research Design}
+      \field{title}{Research design (qualitative, quantitative and mixed methods approaches)}
+      \field{volume}{8}
+      \field{year}{2023}
+    \endentry
+    \entry{gurney2018introduction}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5fd79101950d60c82fe4d9f0111f6e91}{%
+           family={Gurney},
+           familyi={G\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {CRC press}%
+      }
+      \strng{namehash}{5fd79101950d60c82fe4d9f0111f6e91}
+      \strng{fullhash}{5fd79101950d60c82fe4d9f0111f6e91}
+      \strng{fullhashraw}{5fd79101950d60c82fe4d9f0111f6e91}
+      \strng{bibnamehash}{5fd79101950d60c82fe4d9f0111f6e91}
+      \strng{authorbibnamehash}{5fd79101950d60c82fe4d9f0111f6e91}
+      \strng{authornamehash}{5fd79101950d60c82fe4d9f0111f6e91}
+      \strng{authorfullhash}{5fd79101950d60c82fe4d9f0111f6e91}
+      \strng{authorfullhashraw}{5fd79101950d60c82fe4d9f0111f6e91}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An introduction to neural networks}
+      \field{year}{2018}
+    \endentry
+    \entry{guzek2014multi}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=9db54acb02a5dd8c7fc3806905317ffe}{%
+           family={Guzek},
+           familyi={G\bibinitperiod},
+           given={Mateusz},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=293cea6c703cb67473b9dcb01705a7a9}{%
+           family={Pecero},
+           familyi={P\bibinitperiod},
+           given={Johnatan\bibnamedelima E},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9e202f91be5ebdb3ae4773943bce07a3}{%
+           family={Dorronsoro},
+           familyi={D\bibinitperiod},
+           given={Bernabé},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=621c7bb433850f08e6e3d584bb626940}{%
+           family={Bouvry},
+           familyi={B\bibinitperiod},
+           given={Pascal},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{bcb6a093bdac020c387b03e37400696f}
+      \strng{fullhash}{75b83a2e1cf899c1e4745b19c82c4eaa}
+      \strng{fullhashraw}{75b83a2e1cf899c1e4745b19c82c4eaa}
+      \strng{bibnamehash}{bcb6a093bdac020c387b03e37400696f}
+      \strng{authorbibnamehash}{bcb6a093bdac020c387b03e37400696f}
+      \strng{authornamehash}{bcb6a093bdac020c387b03e37400696f}
+      \strng{authorfullhash}{75b83a2e1cf899c1e4745b19c82c4eaa}
+      \strng{authorfullhashraw}{75b83a2e1cf899c1e4745b19c82c4eaa}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Applied Soft Computing}
+      \field{title}{Multi-objective evolutionary algorithms for energy-aware scheduling on distributed computing systems}
+      \field{volume}{24}
+      \field{year}{2014}
+      \field{pages}{432\bibrangedash 446}
+      \range{pages}{15}
+    \endentry
+    \entry{haynes2012exponential}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d1a986be410259344e5293c3c000471d}{%
+           family={Haynes},
+           familyi={H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dd83e349b8a0df9051dd18d2e488bdbf}{%
+           family={Corns},
+           familyi={C\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a58c90d8659407645027ef1373bd3b46}{%
+           family={Venayagamoorthy},
+           familyi={V\bibinitperiod},
+           given={Ganesh\bibnamedelima Kumar},
+           giveni={G\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{84117227ad83674b043c86c716062a8d}
+      \strng{fullhash}{84117227ad83674b043c86c716062a8d}
+      \strng{fullhashraw}{84117227ad83674b043c86c716062a8d}
+      \strng{bibnamehash}{84117227ad83674b043c86c716062a8d}
+      \strng{authorbibnamehash}{84117227ad83674b043c86c716062a8d}
+      \strng{authornamehash}{84117227ad83674b043c86c716062a8d}
+      \strng{authorfullhash}{84117227ad83674b043c86c716062a8d}
+      \strng{authorfullhashraw}{84117227ad83674b043c86c716062a8d}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2012 IEEE Congress on Evolutionary Computation}
+      \field{title}{An exponential moving average algorithm}
+      \field{year}{2012}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+    \endentry
+    \entry{hevner2004design}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=e054261c7f1739e1ba1db0a45e385c1b}{%
+           family={Hevner},
+           familyi={H\bibinitperiod},
+           given={Alan\bibnamedelima R},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5aec260b5b1381edc4b8ff6755f2d543}{%
+           family={March},
+           familyi={M\bibinitperiod},
+           given={Salvatore\bibnamedelima T},
+           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c518c214dc9e77148493e9ea47f505ab}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Jinsoo},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=65565df90d4793da7a2f20e5e1b07345}{%
+           family={Ram},
+           familyi={R\bibinitperiod},
+           given={Sudha},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{77b3350005135e016e7a83431f326d8f}
+      \strng{fullhash}{b163bef761d9a2c79a3d232595321775}
+      \strng{fullhashraw}{b163bef761d9a2c79a3d232595321775}
+      \strng{bibnamehash}{77b3350005135e016e7a83431f326d8f}
+      \strng{authorbibnamehash}{77b3350005135e016e7a83431f326d8f}
+      \strng{authornamehash}{77b3350005135e016e7a83431f326d8f}
+      \strng{authorfullhash}{b163bef761d9a2c79a3d232595321775}
+      \strng{authorfullhashraw}{b163bef761d9a2c79a3d232595321775}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{MIS quarterly}
+      \field{title}{Design science in information systems research}
+      \field{year}{2004}
+      \field{pages}{75\bibrangedash 105}
+      \range{pages}{31}
+    \endentry
+    \entry{gaussianMutation}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=64e33c7e948c6cc44ed78c0dda63717b}{%
+           family={Hinterding},
+           familyi={H\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{64e33c7e948c6cc44ed78c0dda63717b}
+      \strng{fullhash}{64e33c7e948c6cc44ed78c0dda63717b}
+      \strng{fullhashraw}{64e33c7e948c6cc44ed78c0dda63717b}
+      \strng{bibnamehash}{64e33c7e948c6cc44ed78c0dda63717b}
+      \strng{authorbibnamehash}{64e33c7e948c6cc44ed78c0dda63717b}
+      \strng{authornamehash}{64e33c7e948c6cc44ed78c0dda63717b}
+      \strng{authorfullhash}{64e33c7e948c6cc44ed78c0dda63717b}
+      \strng{authorfullhashraw}{64e33c7e948c6cc44ed78c0dda63717b}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of 1995 IEEE International Conference on Evolutionary Computation}
+      \field{title}{Gaussian mutation and self-adaption for numeric genetic algorithms}
+      \field{volume}{1}
+      \field{year}{1995}
+      \field{pages}{384\bibrangedash}
+      \range{pages}{-1}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:30756203
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:30756203
+      \endverb
+    \endentry
+    \entry{igel2003neuroevolution}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7848f2716625f371de810c3dbdf1d904}{%
+           family={Igel},
+           familyi={I\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{7848f2716625f371de810c3dbdf1d904}
+      \strng{fullhash}{7848f2716625f371de810c3dbdf1d904}
+      \strng{fullhashraw}{7848f2716625f371de810c3dbdf1d904}
+      \strng{bibnamehash}{7848f2716625f371de810c3dbdf1d904}
+      \strng{authorbibnamehash}{7848f2716625f371de810c3dbdf1d904}
+      \strng{authornamehash}{7848f2716625f371de810c3dbdf1d904}
+      \strng{authorfullhash}{7848f2716625f371de810c3dbdf1d904}
+      \strng{authorfullhashraw}{7848f2716625f371de810c3dbdf1d904}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The 2003 Congress on Evolutionary Computation, 2003. CEC'03.}
+      \field{title}{Neuroevolution for reinforcement learning using evolution strategies}
+      \field{volume}{4}
+      \field{year}{2003}
+      \field{pages}{2588\bibrangedash 2595}
+      \range{pages}{8}
+    \endentry
+    \entry{koc2021uml}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=61fe19f938cd9dbff832b87c0ff7722d}{%
+           family={Koc},
+           familyi={K\bibinitperiod},
+           given={Hatice},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f069e03ba20b6116013b3c2bdeb7e096}{%
+           family={Erdoğan},
+           familyi={E\bibinitperiod},
+           given={Ali\bibnamedelima Mert},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b772ac69a0db61d3900944e4e4691644}{%
+           family={Barjakly},
+           familyi={B\bibinitperiod},
+           given={Yousef},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fadc8ce08b147677555e495498936737}{%
+           family={Peker},
+           familyi={P\bibinitperiod},
+           given={Serhat},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{9b6a7c32c3ba7e5959153ef07084fe68}
+      \strng{fullhash}{a0ec1f6e8d5d2f29bb5172b634cad6be}
+      \strng{fullhashraw}{a0ec1f6e8d5d2f29bb5172b634cad6be}
+      \strng{bibnamehash}{9b6a7c32c3ba7e5959153ef07084fe68}
+      \strng{authorbibnamehash}{9b6a7c32c3ba7e5959153ef07084fe68}
+      \strng{authornamehash}{9b6a7c32c3ba7e5959153ef07084fe68}
+      \strng{authorfullhash}{a0ec1f6e8d5d2f29bb5172b634cad6be}
+      \strng{authorfullhashraw}{a0ec1f6e8d5d2f29bb5172b634cad6be}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings}
+      \field{number}{1}
+      \field{title}{UML diagrams in software engineering research: a systematic literature review}
+      \field{volume}{74}
+      \field{year}{2021}
+      \field{pages}{13}
+      \range{pages}{1}
+    \endentry
+    \entry{kowaliw2014growing}{book}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=cdb1d0dff8783713e3047829d3acc2c8}{%
+           family={Kowaliw},
+           familyi={K\bibinitperiod},
+           given={Taras},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b45732988f7d23cdef939aba7865dab5}{%
+           family={Bredeche},
+           familyi={B\bibinitperiod},
+           given={Nicholas},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=354d7f4444d2ce013f0557758d97d4da}{%
+           family={Doursat},
+           familyi={D\bibinitperiod},
+           given={René},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{12b23e07c59e99f980d7b06bccc86d38}
+      \strng{fullhash}{12b23e07c59e99f980d7b06bccc86d38}
+      \strng{fullhashraw}{12b23e07c59e99f980d7b06bccc86d38}
+      \strng{bibnamehash}{12b23e07c59e99f980d7b06bccc86d38}
+      \strng{authorbibnamehash}{12b23e07c59e99f980d7b06bccc86d38}
+      \strng{authornamehash}{12b23e07c59e99f980d7b06bccc86d38}
+      \strng{authorfullhash}{12b23e07c59e99f980d7b06bccc86d38}
+      \strng{authorfullhashraw}{12b23e07c59e99f980d7b06bccc86d38}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Growing Adaptive Machines}
+      \field{year}{2014}
+    \endentry
+    \entry{koza1994genetic}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d241153844d58a4b82a895968a24006f}{%
+           family={Koza},
+           familyi={K\bibinitperiod},
+           given={John\bibnamedelima R},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{d241153844d58a4b82a895968a24006f}
+      \strng{fullhash}{d241153844d58a4b82a895968a24006f}
+      \strng{fullhashraw}{d241153844d58a4b82a895968a24006f}
+      \strng{bibnamehash}{d241153844d58a4b82a895968a24006f}
+      \strng{authorbibnamehash}{d241153844d58a4b82a895968a24006f}
+      \strng{authornamehash}{d241153844d58a4b82a895968a24006f}
+      \strng{authorfullhash}{d241153844d58a4b82a895968a24006f}
+      \strng{authorfullhashraw}{d241153844d58a4b82a895968a24006f}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Statistics and computing}
+      \field{title}{Genetic programming as a means for programming computers by natural selection}
+      \field{volume}{4}
+      \field{year}{1994}
+      \field{pages}{87\bibrangedash 112}
+      \range{pages}{26}
+    \endentry
+    \entry{okramergeneticalgorithms}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e3c484f4645ee26b259ed57397784c05}{%
+           family={Kramer},
+           familyi={K\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e3c484f4645ee26b259ed57397784c05}
+      \strng{fullhash}{e3c484f4645ee26b259ed57397784c05}
+      \strng{fullhashraw}{e3c484f4645ee26b259ed57397784c05}
+      \strng{bibnamehash}{e3c484f4645ee26b259ed57397784c05}
+      \strng{authorbibnamehash}{e3c484f4645ee26b259ed57397784c05}
+      \strng{authornamehash}{e3c484f4645ee26b259ed57397784c05}
+      \strng{authorfullhash}{e3c484f4645ee26b259ed57397784c05}
+      \strng{authorfullhashraw}{e3c484f4645ee26b259ed57397784c05}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-319-52155-8}
+      \field{month}{01}
+      \field{title}{Genetic Algorithm Essentials}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1007/978-3-319-52156-5
+      \endverb
+    \endentry
+    \entry{kusy2013application}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=2a0cc121685b2c39ceafeedfd7880cd0}{%
+           family={Kusy},
+           familyi={K\bibinitperiod},
+           given={Maciej},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2320517925dafc369714e1aeb8040841}{%
+           family={Obrzut},
+           familyi={O\bibinitperiod},
+           given={Bogdan},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=db26f6ff896eed0f752d355dae285881}{%
+           family={Kluska},
+           familyi={K\bibinitperiod},
+           given={Jacek},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{e3e0314f59a0c3a6d5e59218e4cb703c}
+      \strng{fullhash}{e3e0314f59a0c3a6d5e59218e4cb703c}
+      \strng{fullhashraw}{e3e0314f59a0c3a6d5e59218e4cb703c}
+      \strng{bibnamehash}{e3e0314f59a0c3a6d5e59218e4cb703c}
+      \strng{authorbibnamehash}{e3e0314f59a0c3a6d5e59218e4cb703c}
+      \strng{authornamehash}{e3e0314f59a0c3a6d5e59218e4cb703c}
+      \strng{authorfullhash}{e3e0314f59a0c3a6d5e59218e4cb703c}
+      \strng{authorfullhashraw}{e3e0314f59a0c3a6d5e59218e4cb703c}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Medical \& biological engineering \& computing}
+      \field{title}{Application of gene expression programming and neural networks to predict adverse events of radical hysterectomy in cervical cancer patients}
+      \field{volume}{51}
+      \field{year}{2013}
+      \field{pages}{1357\bibrangedash 1365}
+      \range{pages}{9}
+    \endentry
+    \entry{tsp}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=f13b38513c72c1aa48b3c3f6fd46bae0}{%
+           family={Larranaga},
+           familyi={L\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a164155a903f7beb2217338ed2de423f}{%
+           family={Kuijpers},
+           familyi={K\bibinitperiod},
+           given={Cindy},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=13e925be69e8277029db61b6003e2f7b}{%
+           family={Murga},
+           familyi={M\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d7406ddb152cc9229fe26dec618ed82c}{%
+           family={Inza},
+           familyi={I\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b6db60ce58e672737b8f53523bb5a6f4}{%
+           family={Dizdarevic},
+           familyi={D\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b1ee90806d671e4c57e59eb8f16f529a}
+      \strng{fullhash}{a3f3d18925d3542d38bbb171a14c2762}
+      \strng{fullhashraw}{a3f3d18925d3542d38bbb171a14c2762}
+      \strng{bibnamehash}{b1ee90806d671e4c57e59eb8f16f529a}
+      \strng{authorbibnamehash}{b1ee90806d671e4c57e59eb8f16f529a}
+      \strng{authornamehash}{b1ee90806d671e4c57e59eb8f16f529a}
+      \strng{authorfullhash}{a3f3d18925d3542d38bbb171a14c2762}
+      \strng{authorfullhashraw}{a3f3d18925d3542d38bbb171a14c2762}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Artificial Intelligence Review}
+      \field{month}{01}
+      \field{title}{Genetic Algorithms for the Travelling Salesman Problem: A Review of Representations and Operators}
+      \field{volume}{13}
+      \field{year}{1999}
+      \field{pages}{129\bibrangedash 170}
+      \range{pages}{42}
+      \verb{doi}
+      \verb 10.1023/A:1006529012972
+      \endverb
+    \endentry
+    \entry{intelligentOptimization}{book}{}{}
+      \name{author}{3}{}{%
+        {{un=1,uniquepart=given,hash=a36cbc89ef35b23668096b1a89c93909}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Changhe},
+           giveni={C\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=450d1c94e56f7ca1d1db16d8a57ed38d}{%
+           family={(Shoufe)},
+           familyi={(\bibinitperiod},
+           given={Changhe/Han\bibnamedelima Li},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2bef1e0588cc0414d61893e8942c2469}{%
+           family={Zeng},
+           familyi={Z\bibinitperiod},
+           given={Sanyou},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{07a830666318b096c1a0f35e55e52433}
+      \strng{fullhash}{07a830666318b096c1a0f35e55e52433}
+      \strng{fullhashraw}{07a830666318b096c1a0f35e55e52433}
+      \strng{bibnamehash}{07a830666318b096c1a0f35e55e52433}
+      \strng{authorbibnamehash}{07a830666318b096c1a0f35e55e52433}
+      \strng{authornamehash}{07a830666318b096c1a0f35e55e52433}
+      \strng{authorfullhash}{07a830666318b096c1a0f35e55e52433}
+      \strng{authorfullhashraw}{07a830666318b096c1a0f35e55e52433}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Intelligent Optimization}
+      \field{year}{2024}
+    \endentry
+    \entry{basicsOfEvolutionaryComputing}{inbook}{}{}
+      \name{author}{4}{ul=2}{%
+        {{un=1,uniquepart=given,hash=a36cbc89ef35b23668096b1a89c93909}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Changhe},
+           giveni={C\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=b635898fc18ae40f9e9aaa53ef83f520}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Shoufei},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2bef1e0588cc0414d61893e8942c2469}{%
+           family={Zeng},
+           familyi={Z\bibinitperiod},
+           given={Sanyou},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fc4b12c51aa082bb15046ae978538a93}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Shengxiang},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Singapore}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature Singapore}%
+      }
+      \strng{namehash}{8dc0d4172dfbeae4eb2a930873f2ceff}
+      \strng{fullhash}{5a74e245a11238e72f38b5518ba9ddb4}
+      \strng{fullhashraw}{5a74e245a11238e72f38b5518ba9ddb4}
+      \strng{bibnamehash}{8dc0d4172dfbeae4eb2a930873f2ceff}
+      \strng{authorbibnamehash}{8dc0d4172dfbeae4eb2a930873f2ceff}
+      \strng{authornamehash}{8dc0d4172dfbeae4eb2a930873f2ceff}
+      \strng{authorfullhash}{5a74e245a11238e72f38b5518ba9ddb4}
+      \strng{authorfullhashraw}{5a74e245a11238e72f38b5518ba9ddb4}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This chapter mainly introduces some basic concepts and components about evolutionary algorithms (EAs). A brief origination and history of evolutionary computation (EC)Evolutionary computation is reviewed, including some biological processes that have inspired researchers. Classic evolutionary procedures, including representation, selection, and reproduction, are described in detail.}
+      \field{booktitle}{Intelligent Optimization: Principles, Algorithms and Applications}
+      \field{isbn}{978-981-97-3286-9}
+      \field{title}{Basics of Evolutionary Computation Algorithms}
+      \field{year}{2024}
+      \field{pages}{63\bibrangedash 92}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.1007/978-981-97-3286-9_4
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-981-97-3286-9_4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-981-97-3286-9_4
+      \endverb
+    \endentry
+    \entry{li2005prefix}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{un=1,uniquepart=given,hash=86d8cd66cb62928ca1ec636d8cd2e11c}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=1b6a5374dc43ebd1eea018ae95e6d12f}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Chi},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=51e2541cd6c7a441449e2c84a04e1f9d}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Weimin},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=177df5d833db708dc066bd8637fcab72}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={Peter\bibnamedelima C},
+           giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{284665cdb8fdaad5646c78846ea3b2ae}
+      \strng{fullhash}{fb2dbd905bd74030648a46f023da22cd}
+      \strng{fullhashraw}{fb2dbd905bd74030648a46f023da22cd}
+      \strng{bibnamehash}{284665cdb8fdaad5646c78846ea3b2ae}
+      \strng{authorbibnamehash}{284665cdb8fdaad5646c78846ea3b2ae}
+      \strng{authornamehash}{284665cdb8fdaad5646c78846ea3b2ae}
+      \strng{authorfullhash}{fb2dbd905bd74030648a46f023da22cd}
+      \strng{authorfullhashraw}{fb2dbd905bd74030648a46f023da22cd}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Late Breaking Paper at the Genetic and Evolutionary Computation Conference (GECCO), Washington, DC}
+      \field{title}{Prefix gene expression programming}
+      \field{year}{2005}
+    \endentry
+    \entry{links2002alex}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=22b2c4c0bfae7407605d988a789f23fe}{%
+           family={Links},
+           familyi={L\bibinitperiod},
+           given={Alex\bibnamedelima Fraser},
+           giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=356914b37698e989f2d02cf823c46f6d}{%
+           family={BookDust},
+           familyi={B\bibinitperiod},
+           given={In\bibnamedelima MemoriamObituaryRemembranceMemory},
+           giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Citeseer}%
+      }
+      \strng{namehash}{6e6ff327834808b85513e269e7f067b9}
+      \strng{fullhash}{6e6ff327834808b85513e269e7f067b9}
+      \strng{fullhashraw}{6e6ff327834808b85513e269e7f067b9}
+      \strng{bibnamehash}{6e6ff327834808b85513e269e7f067b9}
+      \strng{authorbibnamehash}{6e6ff327834808b85513e269e7f067b9}
+      \strng{authornamehash}{6e6ff327834808b85513e269e7f067b9}
+      \strng{authorfullhash}{6e6ff327834808b85513e269e7f067b9}
+      \strng{authorfullhashraw}{6e6ff327834808b85513e269e7f067b9}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Evolutionary Computation}
+      \field{number}{5}
+      \field{title}{Alex S. Fraser}
+      \field{volume}{6}
+      \field{year}{2002}
+    \endentry
+    \entry{liu2021survey}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=2,uniquepart=given,hash=8d653530adf7764c340b39f40589f11d}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yuqiao},
+           giveni={Y\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=b1d0386668fd4af80d900f6a7b74dc16}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Yanan},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5ef459c2d19ba2eb901e63e3eb6e2d20}{%
+           family={Xue},
+           familyi={X\bibinitperiod},
+           given={Bing},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e678527db27127baf2e337470c642bc4}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Mengjie},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=023cb79fd21d96133d36fc2f01d0d2a3}{%
+           family={Yen},
+           familyi={Y\bibinitperiod},
+           given={Gary\bibnamedelima G},
+           giveni={G\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7006035934832c990d8c991c2a7814e1}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Kay\bibnamedelima Chen},
+           giveni={K\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{2de748607016a54b2c690e8dd6497aac}
+      \strng{fullhash}{5603917c498cdeb98c4d54e13076075f}
+      \strng{fullhashraw}{5603917c498cdeb98c4d54e13076075f}
+      \strng{bibnamehash}{2de748607016a54b2c690e8dd6497aac}
+      \strng{authorbibnamehash}{2de748607016a54b2c690e8dd6497aac}
+      \strng{authornamehash}{2de748607016a54b2c690e8dd6497aac}
+      \strng{authorfullhash}{5603917c498cdeb98c4d54e13076075f}
+      \strng{authorfullhashraw}{5603917c498cdeb98c4d54e13076075f}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE transactions on neural networks and learning systems}
+      \field{number}{2}
+      \field{title}{A survey on evolutionary neural architecture search}
+      \field{volume}{34}
+      \field{year}{2021}
+      \field{pages}{550\bibrangedash 570}
+      \range{pages}{21}
+    \endentry
+    \entry{luke2002lexicographic}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=fc0da695d3774401949060e332fa8677}{%
+           family={Luke},
+           familyi={L\bibinitperiod},
+           given={Sean},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=260f0debd711f664fa547f9317daf0f2}{%
+           family={Panait},
+           familyi={P\bibinitperiod},
+           given={Liviu},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{275df99dc250c897443c8824d14890db}
+      \strng{fullhash}{275df99dc250c897443c8824d14890db}
+      \strng{fullhashraw}{275df99dc250c897443c8824d14890db}
+      \strng{bibnamehash}{275df99dc250c897443c8824d14890db}
+      \strng{authorbibnamehash}{275df99dc250c897443c8824d14890db}
+      \strng{authornamehash}{275df99dc250c897443c8824d14890db}
+      \strng{authorfullhash}{275df99dc250c897443c8824d14890db}
+      \strng{authorfullhashraw}{275df99dc250c897443c8824d14890db}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 4th Annual Conference on Genetic and Evolutionary Computation}
+      \field{title}{Lexicographic parsimony pressure}
+      \field{year}{2002}
+      \field{pages}{829\bibrangedash 836}
+      \range{pages}{8}
+    \endentry
+    \entry{initialPopulation}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c09d1dcd09c55853cd2fbf84f20a6733}{%
+           family={Maaranen},
+           familyi={M\bibinitperiod},
+           given={Heikki},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=20376f7658e6889e42babc850cadbf3c}{%
+           family={Miettinen},
+           familyi={M\bibinitperiod},
+           given={Kaisa},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4720d4be26b281708644fc70d6a28db2}{%
+           family={Penttinen},
+           familyi={P\bibinitperiod},
+           given={Antti},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{69132b22729d397e6c16f4854999af58}
+      \strng{fullhash}{69132b22729d397e6c16f4854999af58}
+      \strng{fullhashraw}{69132b22729d397e6c16f4854999af58}
+      \strng{bibnamehash}{69132b22729d397e6c16f4854999af58}
+      \strng{authorbibnamehash}{69132b22729d397e6c16f4854999af58}
+      \strng{authornamehash}{69132b22729d397e6c16f4854999af58}
+      \strng{authorfullhash}{69132b22729d397e6c16f4854999af58}
+      \strng{authorfullhashraw}{69132b22729d397e6c16f4854999af58}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Global Optimization}
+      \field{title}{On initial populations of a genetic algorithm for continuous optimization problems}
+      \field{volume}{37}
+      \field{year}{2007}
+      \field{pages}{405\bibrangedash 436}
+      \range{pages}{32}
+    \endentry
+    \entry{malik2016application}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=1,uniquepart=given,hash=366ccf81c5036b2ff394fcee9607069d}{%
+           family={Malik},
+           familyi={M\bibinitperiod},
+           given={Hasmat},
+           giveni={H\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=a40d2cb180c072bb969a1efd60b4430a}{%
+           family={Mishra},
+           familyi={M\bibinitperiod},
+           given={Sukumar},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{0ac69cd2e4dd6b829cc4aee852e34d5a}
+      \strng{fullhash}{0ac69cd2e4dd6b829cc4aee852e34d5a}
+      \strng{fullhashraw}{0ac69cd2e4dd6b829cc4aee852e34d5a}
+      \strng{bibnamehash}{0ac69cd2e4dd6b829cc4aee852e34d5a}
+      \strng{authorbibnamehash}{0ac69cd2e4dd6b829cc4aee852e34d5a}
+      \strng{authornamehash}{0ac69cd2e4dd6b829cc4aee852e34d5a}
+      \strng{authorfullhash}{0ac69cd2e4dd6b829cc4aee852e34d5a}
+      \strng{authorfullhashraw}{0ac69cd2e4dd6b829cc4aee852e34d5a}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Industry Applications}
+      \field{number}{6}
+      \field{title}{Application of gene expression programming (GEP) in power transformers fault diagnosis using DGA}
+      \field{volume}{52}
+      \field{year}{2016}
+      \field{pages}{4556\bibrangedash 4565}
+      \range{pages}{10}
+    \endentry
+    \entry{malik2014preventing}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=1,uniquepart=given,hash=51c753b0214957876662cdea96a924b0}{%
+           family={Malik},
+           familyi={M\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=b1e80ce3a698721d3ae68f86285d432f}{%
+           family={Wadhwa},
+           familyi={W\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{45f95c723ca9650c4886a12f2a6bb9e2}
+      \strng{fullhash}{45f95c723ca9650c4886a12f2a6bb9e2}
+      \strng{fullhashraw}{45f95c723ca9650c4886a12f2a6bb9e2}
+      \strng{bibnamehash}{45f95c723ca9650c4886a12f2a6bb9e2}
+      \strng{authorbibnamehash}{45f95c723ca9650c4886a12f2a6bb9e2}
+      \strng{authornamehash}{45f95c723ca9650c4886a12f2a6bb9e2}
+      \strng{authorfullhash}{45f95c723ca9650c4886a12f2a6bb9e2}
+      \strng{authorfullhashraw}{45f95c723ca9650c4886a12f2a6bb9e2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Advanced Research in Computer Science and Software Engineering}
+      \field{number}{6}
+      \field{title}{Preventing premature convergence in genetic algorithm using DGCA and elitist technique}
+      \field{volume}{4}
+      \field{year}{2014}
+    \endentry
+    \entry{mazari2016prediction}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d71911a3dd5ff78f7df1c0b26c80a61f}{%
+           family={Mazari},
+           familyi={M\bibinitperiod},
+           given={Mehran},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=125c227609cb2186a41cfa5380f3c647}{%
+           family={Rodriguez},
+           familyi={R\bibinitperiod},
+           given={Daniel\bibnamedelima D},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{eb93692f1cc130371966d4bb0b442cb2}
+      \strng{fullhash}{eb93692f1cc130371966d4bb0b442cb2}
+      \strng{fullhashraw}{eb93692f1cc130371966d4bb0b442cb2}
+      \strng{bibnamehash}{eb93692f1cc130371966d4bb0b442cb2}
+      \strng{authorbibnamehash}{eb93692f1cc130371966d4bb0b442cb2}
+      \strng{authornamehash}{eb93692f1cc130371966d4bb0b442cb2}
+      \strng{authorfullhash}{eb93692f1cc130371966d4bb0b442cb2}
+      \strng{authorfullhashraw}{eb93692f1cc130371966d4bb0b442cb2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Traffic and Transportation Engineering (English Edition)}
+      \field{number}{5}
+      \field{title}{Prediction of pavement roughness using a hybrid gene expression programming-neural network technique}
+      \field{volume}{3}
+      \field{year}{2016}
+      \field{pages}{448\bibrangedash 455}
+      \range{pages}{8}
+    \endentry
+    \entry{meyer2007self}{incollection}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=739b8786b1dcc97b46fc67fc9a7690d0}{%
+           family={Meyer-Nieberg},
+           familyi={M\bibinithyphendelim N\bibinitperiod},
+           given={Silja},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=695e551c7bda7f41c62840003f872fdb}{%
+           family={Beyer},
+           familyi={B\bibinitperiod},
+           given={Hans-Georg},
+           giveni={H\bibinithyphendelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{90c49770c7dfb5cc0573ba3221fb398c}
+      \strng{fullhash}{90c49770c7dfb5cc0573ba3221fb398c}
+      \strng{fullhashraw}{90c49770c7dfb5cc0573ba3221fb398c}
+      \strng{bibnamehash}{90c49770c7dfb5cc0573ba3221fb398c}
+      \strng{authorbibnamehash}{90c49770c7dfb5cc0573ba3221fb398c}
+      \strng{authornamehash}{90c49770c7dfb5cc0573ba3221fb398c}
+      \strng{authorfullhash}{90c49770c7dfb5cc0573ba3221fb398c}
+      \strng{authorfullhashraw}{90c49770c7dfb5cc0573ba3221fb398c}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Parameter setting in evolutionary algorithms}
+      \field{title}{Self-adaptation in evolutionary algorithms}
+      \field{year}{2007}
+      \field{pages}{47\bibrangedash 75}
+      \range{pages}{29}
+    \endentry
+    \entry{evolutionaryComputingAndNeuralNetworks}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c424204a9da2927d4d0c77bc4716d175}{%
+           family={Mirjalili},
+           familyi={M\bibinitperiod},
+           given={Seyedali},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Publishing Company, Incorporated}%
+      }
+      \strng{namehash}{c424204a9da2927d4d0c77bc4716d175}
+      \strng{fullhash}{c424204a9da2927d4d0c77bc4716d175}
+      \strng{fullhashraw}{c424204a9da2927d4d0c77bc4716d175}
+      \strng{bibnamehash}{c424204a9da2927d4d0c77bc4716d175}
+      \strng{authorbibnamehash}{c424204a9da2927d4d0c77bc4716d175}
+      \strng{authornamehash}{c424204a9da2927d4d0c77bc4716d175}
+      \strng{authorfullhash}{c424204a9da2927d4d0c77bc4716d175}
+      \strng{authorfullhashraw}{c424204a9da2927d4d0c77bc4716d175}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This book introduces readers to the fundamentals of artificial neural networks, with a special emphasis on evolutionary algorithms. At first, the book offers a literature review of several well-regarded evolutionary algorithms, including particle swarm and ant colony optimization, genetic algorithms and biogeography-based optimization. It then proposes evolutionary version of several types of neural networks such as feed forward neural networks, radial basis function networks, as well as recurrent neural networks and multi-later perceptron. Most of the challenges that have to be addressed when training artificial neural networks using evolutionary algorithms are discussed in detail. The book also demonstrates the application of the proposed algorithms for several purposes such as classification, clustering, approximation, and prediction problems. It provides a tutorial on how to design, adapt, and evaluate artificial neural networks as well, and includes source codes for most of the proposed techniques as supplementary materials.}
+      \field{edition}{1st}
+      \field{isbn}{3319930249}
+      \field{title}{Evolutionary Algorithms and Neural Networks: Theory and Applications}
+      \field{year}{2018}
+    \endentry
+    \entry{mitchell1998introduction}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3042c3dfb21b9c9089a0aa657bce4f3b}{%
+           family={Mitchell},
+           familyi={M\bibinitperiod},
+           given={Melanie},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MIT press}%
+      }
+      \strng{namehash}{3042c3dfb21b9c9089a0aa657bce4f3b}
+      \strng{fullhash}{3042c3dfb21b9c9089a0aa657bce4f3b}
+      \strng{fullhashraw}{3042c3dfb21b9c9089a0aa657bce4f3b}
+      \strng{bibnamehash}{3042c3dfb21b9c9089a0aa657bce4f3b}
+      \strng{authorbibnamehash}{3042c3dfb21b9c9089a0aa657bce4f3b}
+      \strng{authornamehash}{3042c3dfb21b9c9089a0aa657bce4f3b}
+      \strng{authorfullhash}{3042c3dfb21b9c9089a0aa657bce4f3b}
+      \strng{authorfullhashraw}{3042c3dfb21b9c9089a0aa657bce4f3b}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An introduction to genetic algorithms}
+      \field{year}{1998}
+    \endentry
+    \entry{mwaura2009adaptive}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d7d2599d80c0c86abdfd0098a690b532}{%
+           family={Mwaura},
+           familyi={M\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=653b145c126b5a2cbbfc2a70509d7054}{%
+           family={Keedwell},
+           familyi={K\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dd8586124215592c8c3f1953493fd398}
+      \strng{fullhash}{dd8586124215592c8c3f1953493fd398}
+      \strng{fullhashraw}{dd8586124215592c8c3f1953493fd398}
+      \strng{bibnamehash}{dd8586124215592c8c3f1953493fd398}
+      \strng{authorbibnamehash}{dd8586124215592c8c3f1953493fd398}
+      \strng{authornamehash}{dd8586124215592c8c3f1953493fd398}
+      \strng{authorfullhash}{dd8586124215592c8c3f1953493fd398}
+      \strng{authorfullhashraw}{dd8586124215592c8c3f1953493fd398}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the AISB, Edinburgh, UK}
+      \field{title}{Adaptive gene expression programming using a simple feedback heuristic}
+      \field{year}{2009}
+    \endentry
+    \entry{neri2012memetic}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e0da1965cc64f17278cb41e38d9692e9}{%
+           family={Neri},
+           familyi={N\bibinitperiod},
+           given={Ferrante},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=583f6e5b3c448041b353b3b3bcc0576f}{%
+           family={Cotta},
+           familyi={C\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{19e6e78e1ca128ee791effb77bfad6d8}
+      \strng{fullhash}{19e6e78e1ca128ee791effb77bfad6d8}
+      \strng{fullhashraw}{19e6e78e1ca128ee791effb77bfad6d8}
+      \strng{bibnamehash}{19e6e78e1ca128ee791effb77bfad6d8}
+      \strng{authorbibnamehash}{19e6e78e1ca128ee791effb77bfad6d8}
+      \strng{authornamehash}{19e6e78e1ca128ee791effb77bfad6d8}
+      \strng{authorfullhash}{19e6e78e1ca128ee791effb77bfad6d8}
+      \strng{authorfullhashraw}{19e6e78e1ca128ee791effb77bfad6d8}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Swarm and Evolutionary Computation}
+      \field{title}{Memetic algorithms and memetic computing optimization: A literature review}
+      \field{volume}{2}
+      \field{year}{2012}
+      \field{pages}{1\bibrangedash 14}
+      \range{pages}{14}
+    \endentry
+    \entry{nielsen2015neural}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c33d1709da4aeda3565cdabb50b0b55a}{%
+           family={Nielsen},
+           familyi={N\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Determination Press}%
+      }
+      \strng{namehash}{c33d1709da4aeda3565cdabb50b0b55a}
+      \strng{fullhash}{c33d1709da4aeda3565cdabb50b0b55a}
+      \strng{fullhashraw}{c33d1709da4aeda3565cdabb50b0b55a}
+      \strng{bibnamehash}{c33d1709da4aeda3565cdabb50b0b55a}
+      \strng{authorbibnamehash}{c33d1709da4aeda3565cdabb50b0b55a}
+      \strng{authornamehash}{c33d1709da4aeda3565cdabb50b0b55a}
+      \strng{authorfullhash}{c33d1709da4aeda3565cdabb50b0b55a}
+      \strng{authorfullhashraw}{c33d1709da4aeda3565cdabb50b0b55a}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Neural networks and deep learning}
+      \field{year}{2015}
+    \endentry
+    \entry{nikitin2022automated}{article}{}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=17f387a5c7521afb3dec94034f8a66bc}{%
+           family={Nikitin},
+           familyi={N\bibinitperiod},
+           given={Nikolay\bibnamedelima O},
+           giveni={N\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee0ebcae092f955428e7d23165e00f9c}{%
+           family={Vychuzhanin},
+           familyi={V\bibinitperiod},
+           given={Pavel},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=75b9f3a0a85b556480baa400653ccb65}{%
+           family={Sarafanov},
+           familyi={S\bibinitperiod},
+           given={Mikhail},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=49b224565aff9013493f5cf9e6ee012a}{%
+           family={Polonskaia},
+           familyi={P\bibinitperiod},
+           given={Iana\bibnamedelima S},
+           giveni={I\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c89b8f81df6443b3c95bcdd33fa7b1e1}{%
+           family={Revin},
+           familyi={R\bibinitperiod},
+           given={Ilia},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d33b2682de7b28cc20cbd8cef0607b3e}{%
+           family={Barabanova},
+           familyi={B\bibinitperiod},
+           given={Irina\bibnamedelima V},
+           giveni={I\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e868f4ac18cc40753200cf4ad3f336d4}{%
+           family={Maximov},
+           familyi={M\bibinitperiod},
+           given={Gleb},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d1f8799229571c60b448dc07429d9d3d}{%
+           family={Kalyuzhnaya},
+           familyi={K\bibinitperiod},
+           given={Anna\bibnamedelima V},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b44db07b0bac3b4f174aa6a9279ed80e}{%
+           family={Boukhanovsky},
+           familyi={B\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{60c4a16d2372b455b2675f34b1fe9543}
+      \strng{fullhash}{d5effd93e3320a59b3e222e4394ab759}
+      \strng{fullhashraw}{d5effd93e3320a59b3e222e4394ab759}
+      \strng{bibnamehash}{60c4a16d2372b455b2675f34b1fe9543}
+      \strng{authorbibnamehash}{60c4a16d2372b455b2675f34b1fe9543}
+      \strng{authornamehash}{60c4a16d2372b455b2675f34b1fe9543}
+      \strng{authorfullhash}{d5effd93e3320a59b3e222e4394ab759}
+      \strng{authorfullhashraw}{d5effd93e3320a59b3e222e4394ab759}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Future Generation Computer Systems}
+      \field{title}{Automated evolutionary approach for the design of composite machine learning pipelines}
+      \field{volume}{127}
+      \field{year}{2022}
+      \field{pages}{109\bibrangedash 125}
+      \range{pages}{17}
+    \endentry
+    \entry{nunamaker1990systems}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=56b83ed179c42c01bce51c43eba8f1bf}{%
+           family={Nunamaker\bibnamedelima Jr},
+           familyi={N\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Jay\bibnamedelima F},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5c794858c4ce4838fa4349d9f82ee177}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Minder},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=89781a6d77c554c7e38229ef7ca5aaec}{%
+           family={Purdin},
+           familyi={P\bibinitperiod},
+           given={Titus\bibnamedelima DM},
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{b9b5a1c03379231e796f386ffc49dde7}
+      \strng{fullhash}{b9b5a1c03379231e796f386ffc49dde7}
+      \strng{fullhashraw}{b9b5a1c03379231e796f386ffc49dde7}
+      \strng{bibnamehash}{b9b5a1c03379231e796f386ffc49dde7}
+      \strng{authorbibnamehash}{b9b5a1c03379231e796f386ffc49dde7}
+      \strng{authornamehash}{b9b5a1c03379231e796f386ffc49dde7}
+      \strng{authorfullhash}{b9b5a1c03379231e796f386ffc49dde7}
+      \strng{authorfullhashraw}{b9b5a1c03379231e796f386ffc49dde7}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of management information systems}
+      \field{number}{3}
+      \field{title}{Systems development in information systems research}
+      \field{volume}{7}
+      \field{year}{1990}
+      \field{pages}{89\bibrangedash 106}
+      \range{pages}{18}
+    \endentry
+    \entry{o2009riccardo}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d7a16e5a99d0675e26beeb210adba0b0}{%
+           family={O’Neill},
+           familyi={O\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{d7a16e5a99d0675e26beeb210adba0b0}
+      \strng{fullhash}{d7a16e5a99d0675e26beeb210adba0b0}
+      \strng{fullhashraw}{d7a16e5a99d0675e26beeb210adba0b0}
+      \strng{bibnamehash}{d7a16e5a99d0675e26beeb210adba0b0}
+      \strng{authorbibnamehash}{d7a16e5a99d0675e26beeb210adba0b0}
+      \strng{authornamehash}{d7a16e5a99d0675e26beeb210adba0b0}
+      \strng{authorfullhash}{d7a16e5a99d0675e26beeb210adba0b0}
+      \strng{authorfullhashraw}{d7a16e5a99d0675e26beeb210adba0b0}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Riccardo Poli, William B. Langdon, Nicholas F. McPhee: A Field Guide to Genetic Programming: Lulu. com, 2008, 250 pp, ISBN 978-1-4092-0073-4}
+      \field{year}{2009}
+    \endentry
+    \entry{olivier2009information}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=037a05e47645c92d0137f9c0b782fc59}{%
+           family={Olivier},
+           familyi={O\bibinitperiod},
+           given={Martin\bibnamedelima S},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Van Schaik}%
+      }
+      \strng{namehash}{037a05e47645c92d0137f9c0b782fc59}
+      \strng{fullhash}{037a05e47645c92d0137f9c0b782fc59}
+      \strng{fullhashraw}{037a05e47645c92d0137f9c0b782fc59}
+      \strng{bibnamehash}{037a05e47645c92d0137f9c0b782fc59}
+      \strng{authorbibnamehash}{037a05e47645c92d0137f9c0b782fc59}
+      \strng{authornamehash}{037a05e47645c92d0137f9c0b782fc59}
+      \strng{authorfullhash}{037a05e47645c92d0137f9c0b782fc59}
+      \strng{authorfullhashraw}{037a05e47645c92d0137f9c0b782fc59}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Information technology research: A practical guide for computer science and informatics}
+      \field{year}{2009}
+    \endentry
+    \entry{peng2018neat}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{un=2,uniquepart=given,hash=6e0ee183fd05adafc2ed7076fe074a78}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Yiming},
+           giveni={Y\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=293c31f46eb012efc4b2449215c92484}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Gang},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=729750915330be98acbc4ebe5a72d683}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Harman},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e678527db27127baf2e337470c642bc4}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Mengjie},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4a53e034e23046eda8a32a97da1bccce}
+      \strng{fullhash}{7ea3c9a2c968a2076e621f98b279a8ad}
+      \strng{fullhashraw}{7ea3c9a2c968a2076e621f98b279a8ad}
+      \strng{bibnamehash}{4a53e034e23046eda8a32a97da1bccce}
+      \strng{authorbibnamehash}{4a53e034e23046eda8a32a97da1bccce}
+      \strng{authornamehash}{4a53e034e23046eda8a32a97da1bccce}
+      \strng{authorfullhash}{7ea3c9a2c968a2076e621f98b279a8ad}
+      \strng{authorfullhashraw}{7ea3c9a2c968a2076e621f98b279a8ad}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Genetic and Evolutionary Computation Conference}
+      \field{title}{NEAT for large-scale reinforcement learning through evolutionary feature learning and policy gradient search}
+      \field{year}{2018}
+      \field{pages}{490\bibrangedash 497}
+      \range{pages}{8}
+    \endentry
+    \entry{peng2014improved}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=2,uniquepart=given,hash=c1f85c2c304cd89749b4c3eddf540037}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={YuZhong},
+           giveni={Y\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=28e80f01ce65382c0a0f0e45d8dce4bd}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={ChangAn},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4528ef7609085cd66ec9de8bb9ae81e8}{%
+           family={Qin},
+           familyi={Q\bibinitperiod},
+           given={Xiao},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=afaf256e2722dbe9d2602b19dac7fb34}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={JiangTao},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b603eea65612211e8dc8a98897b56c69}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={YaBing},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{9d3a26881cf198bc2fe07cd878065faa}
+      \strng{fullhash}{15fd8156f6f9d8b5c20cbf74a9711ab0}
+      \strng{fullhashraw}{15fd8156f6f9d8b5c20cbf74a9711ab0}
+      \strng{bibnamehash}{9d3a26881cf198bc2fe07cd878065faa}
+      \strng{authorbibnamehash}{9d3a26881cf198bc2fe07cd878065faa}
+      \strng{authornamehash}{9d3a26881cf198bc2fe07cd878065faa}
+      \strng{authorfullhash}{15fd8156f6f9d8b5c20cbf74a9711ab0}
+      \strng{authorfullhashraw}{15fd8156f6f9d8b5c20cbf74a9711ab0}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neurocomputing}
+      \field{title}{An improved gene expression programming approach for symbolic regression problems}
+      \field{volume}{137}
+      \field{year}{2014}
+      \field{pages}{293\bibrangedash 301}
+      \range{pages}{9}
+    \endentry
+    \entry{alainsanaEvolutionaryAlgorithms}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=42d04f2166ab67153d96a923fb2659e1}{%
+           family={Petrowski},
+           familyi={P\bibinitperiod},
+           given={Alain},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6915c5f90a18a2f7f7c791cc77ba8523}{%
+           family={Ben\bibnamedelima Hamida},
+           familyi={B\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Sana},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b8eaafb9ae05af695d5a2b5786dc1d86}
+      \strng{fullhash}{b8eaafb9ae05af695d5a2b5786dc1d86}
+      \strng{fullhashraw}{b8eaafb9ae05af695d5a2b5786dc1d86}
+      \strng{bibnamehash}{b8eaafb9ae05af695d5a2b5786dc1d86}
+      \strng{authorbibnamehash}{b8eaafb9ae05af695d5a2b5786dc1d86}
+      \strng{authornamehash}{b8eaafb9ae05af695d5a2b5786dc1d86}
+      \strng{authorfullhash}{b8eaafb9ae05af695d5a2b5786dc1d86}
+      \strng{authorfullhashraw}{b8eaafb9ae05af695d5a2b5786dc1d86}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{Evolutionary Algorithms}
+      \field{year}{2016}
+    \endentry
+    \entry{pham2018efficient}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=c7225c8adf8195ef056d44ae3f589af2}{%
+           family={Pham},
+           familyi={P\bibinitperiod},
+           given={Hieu},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6b728e19dcf7c79ec66659b547cb402b}{%
+           family={Guan},
+           familyi={G\bibinitperiod},
+           given={Melody},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=91aafc93e68e8c6a55e8cd804c2acaf2}{%
+           family={Zoph},
+           familyi={Z\bibinitperiod},
+           given={Barret},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=841a83a4bb5e622d6e1bde4818879016}{%
+           family={Le},
+           familyi={L\bibinitperiod},
+           given={Quoc},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62f954323339abeba6c6a240e9d2855b}{%
+           family={Dean},
+           familyi={D\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{698d8338d68987ca0b859bbfbf29cb74}
+      \strng{fullhash}{fe7ca1770c1c640bb03b073accefb4ed}
+      \strng{fullhashraw}{fe7ca1770c1c640bb03b073accefb4ed}
+      \strng{bibnamehash}{698d8338d68987ca0b859bbfbf29cb74}
+      \strng{authorbibnamehash}{698d8338d68987ca0b859bbfbf29cb74}
+      \strng{authornamehash}{698d8338d68987ca0b859bbfbf29cb74}
+      \strng{authorfullhash}{fe7ca1770c1c640bb03b073accefb4ed}
+      \strng{authorfullhashraw}{fe7ca1770c1c640bb03b073accefb4ed}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International conference on machine learning}
+      \field{title}{Efficient neural architecture search via parameters sharing}
+      \field{year}{2018}
+      \field{pages}{4095\bibrangedash 4104}
+      \range{pages}{10}
+    \endentry
+    \entry{rachmawati2009multiobjective}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7d75bd84083bf146cc152a67652ae394}{%
+           family={Rachmawati},
+           familyi={R\bibinitperiod},
+           given={Lily},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6e4bd82eb383577889d7cd6ac1c21237}{%
+           family={Srinivasan},
+           familyi={S\bibinitperiod},
+           given={Dipti},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{5e51a4200d57d68808ab3c7292939fb9}
+      \strng{fullhash}{5e51a4200d57d68808ab3c7292939fb9}
+      \strng{fullhashraw}{5e51a4200d57d68808ab3c7292939fb9}
+      \strng{bibnamehash}{5e51a4200d57d68808ab3c7292939fb9}
+      \strng{authorbibnamehash}{5e51a4200d57d68808ab3c7292939fb9}
+      \strng{authornamehash}{5e51a4200d57d68808ab3c7292939fb9}
+      \strng{authorfullhash}{5e51a4200d57d68808ab3c7292939fb9}
+      \strng{authorfullhashraw}{5e51a4200d57d68808ab3c7292939fb9}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Evolutionary Computation}
+      \field{number}{4}
+      \field{title}{Multiobjective evolutionary algorithm with controllable focus on the knees of the Pareto front}
+      \field{volume}{13}
+      \field{year}{2009}
+      \field{pages}{810\bibrangedash 824}
+      \range{pages}{15}
+    \endentry
+    \entry{hgt}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=20530d8198e7d9e3a5e299c86e1c1e06}{%
+           family={Rafaj{ł}owicz},
+           familyi={R\bibinitperiod},
+           given={Wojciech},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{6}{}{%
+        {{hash=319c90dbab4770105bef1ad41c76ff26}{%
+           family={Rutkowski},
+           familyi={R\bibinitperiod},
+           given={Leszek},
+           giveni={L\bibinitperiod}}}%
+        {{hash=ee058c7fc9e22e74ca2a2892a90db9c8}{%
+           family={Scherer},
+           familyi={S\bibinitperiod},
+           given={Rafa{ł}},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7cff342c9aef0b229766ef4d365367a6}{%
+           family={Korytkowski},
+           familyi={K\bibinitperiod},
+           given={Marcin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=39780bf561ecea3f3fd53ead57031446}{%
+           family={Pedrycz},
+           familyi={P\bibinitperiod},
+           given={Witold},
+           giveni={W\bibinitperiod}}}%
+        {{hash=c5bcd7b0efd9233a872ba517e005eaf8}{%
+           family={Tadeusiewicz},
+           familyi={T\bibinitperiod},
+           given={Ryszard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7e296cdb5ebbdc731c9b3df3664dcd80}{%
+           family={Zurada},
+           familyi={Z\bibinitperiod},
+           given={Jacek\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{20530d8198e7d9e3a5e299c86e1c1e06}
+      \strng{fullhash}{20530d8198e7d9e3a5e299c86e1c1e06}
+      \strng{fullhashraw}{20530d8198e7d9e3a5e299c86e1c1e06}
+      \strng{bibnamehash}{20530d8198e7d9e3a5e299c86e1c1e06}
+      \strng{authorbibnamehash}{20530d8198e7d9e3a5e299c86e1c1e06}
+      \strng{authornamehash}{20530d8198e7d9e3a5e299c86e1c1e06}
+      \strng{authorfullhash}{20530d8198e7d9e3a5e299c86e1c1e06}
+      \strng{authorfullhashraw}{20530d8198e7d9e3a5e299c86e1c1e06}
+      \strng{editorbibnamehash}{fac5804e0e889a9dde2d9aa7476a3599}
+      \strng{editornamehash}{fac5804e0e889a9dde2d9aa7476a3599}
+      \strng{editorfullhash}{be75de67100f42ece7026b394e7b279c}
+      \strng{editorfullhashraw}{be75de67100f42ece7026b394e7b279c}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A horizontal (or lateral) gene transfer, well known in biology is used as an additional mutation factor in genetic algorithms used for optimization. Numerical results indicate the usefulness of this concept for problems of moderate size.}
+      \field{booktitle}{Artificial Intelligence and Soft Computing}
+      \field{isbn}{978-3-319-91253-0}
+      \field{title}{Horizontal Gene Transfer as a Method of Increasing Variability in Genetic Algorithms}
+      \field{year}{2018}
+      \field{pages}{505\bibrangedash 513}
+      \range{pages}{9}
+    \endentry
+    \entry{ren2021comprehensive}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=ea994c055f8a76f92def910c6be5c657}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Pengzhen},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4947418db2e4fd2f63afbefb66511ab1}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Yun},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=92fa5955af28e77359c28dcdd2a05845}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Xiaojun},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0c155d6dd75feaae111ee0eaf65d5f4f}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Po-Yao},
+           giveni={P\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fb1583081b552d17e0ca63eef1a0aad2}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Zhihui},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=380c49395293074c7302a362bae865ff}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xiaojiang},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=03d3e23852937fa39b0e34246c4ecd1d}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {ACM New York, NY, USA}%
+      }
+      \strng{namehash}{e016cd22063a3212848107ec3337aa40}
+      \strng{fullhash}{9165dd828d396884ff2f77403a7af6e7}
+      \strng{fullhashraw}{9165dd828d396884ff2f77403a7af6e7}
+      \strng{bibnamehash}{e016cd22063a3212848107ec3337aa40}
+      \strng{authorbibnamehash}{e016cd22063a3212848107ec3337aa40}
+      \strng{authornamehash}{e016cd22063a3212848107ec3337aa40}
+      \strng{authorfullhash}{9165dd828d396884ff2f77403a7af6e7}
+      \strng{authorfullhashraw}{9165dd828d396884ff2f77403a7af6e7}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Computing Surveys (CSUR)}
+      \field{number}{4}
+      \field{title}{A comprehensive survey of neural architecture search: Challenges and solutions}
+      \field{volume}{54}
+      \field{year}{2021}
+      \field{pages}{1\bibrangedash 34}
+      \range{pages}{34}
+    \endentry
+    \entry{risi2015neuroevolution}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ac3851112edf82ed4ab22929459e0622}{%
+           family={Risi},
+           familyi={R\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cbd110b21df9b90cd72ce148aa04de7f}{%
+           family={Togelius},
+           familyi={T\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{f0767c339470aae331c8fa1cc9c8620e}
+      \strng{fullhash}{f0767c339470aae331c8fa1cc9c8620e}
+      \strng{fullhashraw}{f0767c339470aae331c8fa1cc9c8620e}
+      \strng{bibnamehash}{f0767c339470aae331c8fa1cc9c8620e}
+      \strng{authorbibnamehash}{f0767c339470aae331c8fa1cc9c8620e}
+      \strng{authornamehash}{f0767c339470aae331c8fa1cc9c8620e}
+      \strng{authorfullhash}{f0767c339470aae331c8fa1cc9c8620e}
+      \strng{authorfullhashraw}{f0767c339470aae331c8fa1cc9c8620e}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Computational Intelligence and AI in Games}
+      \field{number}{1}
+      \field{title}{Neuroevolution in games: State of the art and open challenges}
+      \field{volume}{9}
+      \field{year}{2015}
+      \field{pages}{25\bibrangedash 41}
+      \range{pages}{17}
+    \endentry
+    \entry{rothlauf2009representations}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f0070402391d472a1d3fb22db9ea61af}{%
+           family={Rothlauf},
+           familyi={R\bibinitperiod},
+           given={Franz},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f0070402391d472a1d3fb22db9ea61af}
+      \strng{fullhash}{f0070402391d472a1d3fb22db9ea61af}
+      \strng{fullhashraw}{f0070402391d472a1d3fb22db9ea61af}
+      \strng{bibnamehash}{f0070402391d472a1d3fb22db9ea61af}
+      \strng{authorbibnamehash}{f0070402391d472a1d3fb22db9ea61af}
+      \strng{authornamehash}{f0070402391d472a1d3fb22db9ea61af}
+      \strng{authorfullhash}{f0070402391d472a1d3fb22db9ea61af}
+      \strng{authorfullhashraw}{f0070402391d472a1d3fb22db9ea61af}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 11th Annual Conference Companion on Genetic and Evolutionary Computation Conference: Late Breaking Papers}
+      \field{title}{Representations for evolutionary algorithms}
+      \field{year}{2009}
+      \field{pages}{3131\bibrangedash 3156}
+      \range{pages}{26}
+    \endentry
+    \entry{russell2016artificial}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=18ee0a7bfc995f40254c9d425c977a49}{%
+           family={Russell},
+           familyi={R\bibinitperiod},
+           given={Stuart\bibnamedelima J},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5de798d5fa3c0236c0478134cd23f52a}{%
+           family={Norvig},
+           familyi={N\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{a4f50258a14156905c8d2b1b4704be30}
+      \strng{fullhash}{a4f50258a14156905c8d2b1b4704be30}
+      \strng{fullhashraw}{a4f50258a14156905c8d2b1b4704be30}
+      \strng{bibnamehash}{a4f50258a14156905c8d2b1b4704be30}
+      \strng{authorbibnamehash}{a4f50258a14156905c8d2b1b4704be30}
+      \strng{authornamehash}{a4f50258a14156905c8d2b1b4704be30}
+      \strng{authorfullhash}{a4f50258a14156905c8d2b1b4704be30}
+      \strng{authorfullhashraw}{a4f50258a14156905c8d2b1b4704be30}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Artificial intelligence: a modern approach}
+      \field{year}{2016}
+    \endentry
+    \entry{sabar2019self}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=54344bea0d03a33403802338d10f5d18}{%
+           family={Sabar},
+           familyi={S\bibinitperiod},
+           given={Nasser\bibnamedelima R},
+           giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bf22673fc57fcd012c70497df67c62ab}{%
+           family={Bhaskar},
+           familyi={B\bibinitperiod},
+           given={Ashish},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=51261267283e33061d5183ef9553e000}{%
+           family={Chung},
+           familyi={C\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3290363b13fb8fe48d42820551199505}{%
+           family={Turky},
+           familyi={T\bibinitperiod},
+           given={Ayad},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=76a611bfd6a7f5ae5ac7c14099585a43}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Andy},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{e355b531c420cbfec4a4ed97f9893846}
+      \strng{fullhash}{0f667afe2c3dae2db9973d605c806686}
+      \strng{fullhashraw}{0f667afe2c3dae2db9973d605c806686}
+      \strng{bibnamehash}{e355b531c420cbfec4a4ed97f9893846}
+      \strng{authorbibnamehash}{e355b531c420cbfec4a4ed97f9893846}
+      \strng{authornamehash}{e355b531c420cbfec4a4ed97f9893846}
+      \strng{authorfullhash}{0f667afe2c3dae2db9973d605c806686}
+      \strng{authorfullhashraw}{0f667afe2c3dae2db9973d605c806686}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Swarm and evolutionary computation}
+      \field{title}{A self-adaptive evolutionary algorithm for dynamic vehicle routing problems with traffic congestion}
+      \field{volume}{44}
+      \field{year}{2019}
+      \field{pages}{1018\bibrangedash 1027}
+      \range{pages}{10}
+    \endentry
+    \entry{satman2020machine}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=912e601af93cc1fe66696c703ca7397e}{%
+           family={Satman},
+           familyi={S\bibinitperiod},
+           given={Mehmet\bibnamedelima Hakan},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=438152bcd2632c559d2209aff7d36ee9}{%
+           family={Akadal},
+           familyi={A\bibinitperiod},
+           given={Emre},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Bahad{ı}r Fatih YILDIRIM}%
+      }
+      \strng{namehash}{0836af081e28715c9f8e856df78ec0ff}
+      \strng{fullhash}{0836af081e28715c9f8e856df78ec0ff}
+      \strng{fullhashraw}{0836af081e28715c9f8e856df78ec0ff}
+      \strng{bibnamehash}{0836af081e28715c9f8e856df78ec0ff}
+      \strng{authorbibnamehash}{0836af081e28715c9f8e856df78ec0ff}
+      \strng{authornamehash}{0836af081e28715c9f8e856df78ec0ff}
+      \strng{authorfullhash}{0836af081e28715c9f8e856df78ec0ff}
+      \strng{authorfullhashraw}{0836af081e28715c9f8e856df78ec0ff}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Alphanumeric Journal}
+      \field{number}{1}
+      \field{title}{Machine coded compact genetic algorithms for real parameter optimization problems}
+      \field{volume}{8}
+      \field{year}{2020}
+      \field{pages}{43\bibrangedash 58}
+      \range{pages}{16}
+    \endentry
+    \entry{segura2016importance}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=af036593850a522dfc1e7fe8b267fa4a}{%
+           family={Segura},
+           familyi={S\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6e38212b7c4f9267b6d6b6156bc40063}{%
+           family={Aguirre},
+           familyi={A\bibinitperiod},
+           given={Arturo\bibnamedelima Hernández},
+           giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=da34b7e68aa2c0c3d09c10e92c12b7b2}{%
+           family={Peña},
+           familyi={P\bibinitperiod},
+           given={Sergio\bibnamedelimb Ivvan\bibnamedelima Valdez},
+           giveni={S\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=67b5b1eabccf7db671527dc7c9d68175}{%
+           family={Rionda},
+           familyi={R\bibinitperiod},
+           given={Salvador\bibnamedelima Botello},
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{c9c059a83cb9979670af681356957555}
+      \strng{fullhash}{02c85a423c7963e2bf6ec0bb2d3d4708}
+      \strng{fullhashraw}{02c85a423c7963e2bf6ec0bb2d3d4708}
+      \strng{bibnamehash}{c9c059a83cb9979670af681356957555}
+      \strng{authorbibnamehash}{c9c059a83cb9979670af681356957555}
+      \strng{authornamehash}{c9c059a83cb9979670af681356957555}
+      \strng{authorfullhash}{02c85a423c7963e2bf6ec0bb2d3d4708}
+      \strng{authorfullhashraw}{02c85a423c7963e2bf6ec0bb2d3d4708}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{NEO 2015: Results of the Numerical and Evolutionary Optimization Workshop NEO 2015 held at September 23-25 2015 in Tijuana, Mexico}
+      \field{title}{The importance of proper diversity management in evolutionary algorithms for combinatorial optimization}
+      \field{year}{2016}
+      \field{pages}{121\bibrangedash 148}
+      \range{pages}{28}
+    \endentry
+    \entry{sharma2017activation}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=2,uniquepart=given,hash=1a9ba99937a36acb679ef24b0648eeec}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Sagar},
+           giveni={S\bibinitperiod},
+           givenun=2}}%
+        {{un=2,uniquepart=given,hash=02b76ea846825e9079301c2264e967fd}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=2a981cdebb500cb081aee6ab3896c41c}{%
+           family={Athaiya},
+           familyi={A\bibinitperiod},
+           given={Anidhya},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{37065766f46d4cb23db895ce6a0ad8da}
+      \strng{fullhash}{37065766f46d4cb23db895ce6a0ad8da}
+      \strng{fullhashraw}{37065766f46d4cb23db895ce6a0ad8da}
+      \strng{bibnamehash}{37065766f46d4cb23db895ce6a0ad8da}
+      \strng{authorbibnamehash}{37065766f46d4cb23db895ce6a0ad8da}
+      \strng{authornamehash}{37065766f46d4cb23db895ce6a0ad8da}
+      \strng{authorfullhash}{37065766f46d4cb23db895ce6a0ad8da}
+      \strng{authorfullhashraw}{37065766f46d4cb23db895ce6a0ad8da}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Towards Data Sci}
+      \field{number}{12}
+      \field{title}{Activation functions in neural networks}
+      \field{volume}{6}
+      \field{year}{2017}
+      \field{pages}{310\bibrangedash 316}
+      \range{pages}{7}
+    \endentry
+    \entry{shen2021neural}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=2cd3ea243f4dcf2b2a4b31d163fcf02e}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={Zuowei},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95dd161ce8bc7b2e13eca6f4d1cdb27f}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Haizhao},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8afc4ab7847325cd880db35b89f6be37}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Shijun},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{9355daaa02aea63c6f101bbe6fdcdd70}
+      \strng{fullhash}{9355daaa02aea63c6f101bbe6fdcdd70}
+      \strng{fullhashraw}{9355daaa02aea63c6f101bbe6fdcdd70}
+      \strng{bibnamehash}{9355daaa02aea63c6f101bbe6fdcdd70}
+      \strng{authorbibnamehash}{9355daaa02aea63c6f101bbe6fdcdd70}
+      \strng{authornamehash}{9355daaa02aea63c6f101bbe6fdcdd70}
+      \strng{authorfullhash}{9355daaa02aea63c6f101bbe6fdcdd70}
+      \strng{authorfullhashraw}{9355daaa02aea63c6f101bbe6fdcdd70}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neural Networks}
+      \field{title}{Neural network approximation: Three hidden layers are enough}
+      \field{volume}{141}
+      \field{year}{2021}
+      \field{pages}{160\bibrangedash 173}
+      \range{pages}{14}
+    \endentry
+    \entry{shukla2015comparative}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=6a2d1e7bddfd2f0239d0f14660850be5}{%
+           family={Shukla},
+           familyi={S\bibinitperiod},
+           given={Anupriya},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5434aef9fc225a500ad519bd394a62b3}{%
+           family={Pandey},
+           familyi={P\bibinitperiod},
+           given={Hari\bibnamedelima Mohan},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4b89b831a6858a6f2e7035fe6052ecd9}{%
+           family={Mehrotra},
+           familyi={M\bibinitperiod},
+           given={Deepti},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{c652dd09d101b314c7bfafee3f93bb78}
+      \strng{fullhash}{c652dd09d101b314c7bfafee3f93bb78}
+      \strng{fullhashraw}{c652dd09d101b314c7bfafee3f93bb78}
+      \strng{bibnamehash}{c652dd09d101b314c7bfafee3f93bb78}
+      \strng{authorbibnamehash}{c652dd09d101b314c7bfafee3f93bb78}
+      \strng{authornamehash}{c652dd09d101b314c7bfafee3f93bb78}
+      \strng{authorfullhash}{c652dd09d101b314c7bfafee3f93bb78}
+      \strng{authorfullhashraw}{c652dd09d101b314c7bfafee3f93bb78}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2015 international conference on futuristic trends on computational analysis and knowledge management (ABLAZE)}
+      \field{title}{Comparative review of selection techniques in genetic algorithm}
+      \field{year}{2015}
+      \field{pages}{515\bibrangedash 519}
+      \range{pages}{5}
+    \endentry
+    \entry{slowik2020evolutionary}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8ad4aff00bfb81d67a4444fecd5c14fd}{%
+           family={Slowik},
+           familyi={S\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3039c3acf463ea395b4fb6b861742d18}{%
+           family={Kwasnicka},
+           familyi={K\bibinitperiod},
+           given={Halina},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{286e82d2f140c11f2c158b71e22b819c}
+      \strng{fullhash}{286e82d2f140c11f2c158b71e22b819c}
+      \strng{fullhashraw}{286e82d2f140c11f2c158b71e22b819c}
+      \strng{bibnamehash}{286e82d2f140c11f2c158b71e22b819c}
+      \strng{authorbibnamehash}{286e82d2f140c11f2c158b71e22b819c}
+      \strng{authornamehash}{286e82d2f140c11f2c158b71e22b819c}
+      \strng{authorfullhash}{286e82d2f140c11f2c158b71e22b819c}
+      \strng{authorfullhashraw}{286e82d2f140c11f2c158b71e22b819c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neural Computing and Applications}
+      \field{title}{Evolutionary algorithms and their applications to engineering problems}
+      \field{volume}{32}
+      \field{year}{2020}
+      \field{pages}{12363\bibrangedash 12379}
+      \range{pages}{17}
+    \endentry
+    \entry{stanley2019designing}{article}{}{}
+      \name{author}{4}{ul=2}{%
+        {{un=0,uniquepart=base,hash=cd20c341249f4e0cd9cb16431e439823}{%
+           family={Stanley},
+           familyi={S\bibinitperiod},
+           given={Kenneth\bibnamedelima O},
+           giveni={K\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ec864655608cdb84e55422b0797b6419}{%
+           family={Clune},
+           familyi={C\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5367165912539f2cda5ace6976c571c1}{%
+           family={Lehman},
+           familyi={L\bibinitperiod},
+           given={Joel},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=70ad9af6f97993f2ea5c1f65e1985520}{%
+           family={Miikkulainen},
+           familyi={M\bibinitperiod},
+           given={Risto},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group UK London}%
+      }
+      \strng{namehash}{5311239b4a5d6750d2f312c3c49715d3}
+      \strng{fullhash}{d963956c92cabd611726e9eb6e07dd4c}
+      \strng{fullhashraw}{d963956c92cabd611726e9eb6e07dd4c}
+      \strng{bibnamehash}{5311239b4a5d6750d2f312c3c49715d3}
+      \strng{authorbibnamehash}{5311239b4a5d6750d2f312c3c49715d3}
+      \strng{authornamehash}{5311239b4a5d6750d2f312c3c49715d3}
+      \strng{authorfullhash}{d963956c92cabd611726e9eb6e07dd4c}
+      \strng{authorfullhashraw}{d963956c92cabd611726e9eb6e07dd4c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature Machine Intelligence}
+      \field{number}{1}
+      \field{title}{Designing neural networks through neuroevolution}
+      \field{volume}{1}
+      \field{year}{2019}
+      \field{pages}{24\bibrangedash 35}
+      \range{pages}{12}
+    \endentry
+    \entry{stanley2009hypercube}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=cd20c341249f4e0cd9cb16431e439823}{%
+           family={Stanley},
+           familyi={S\bibinitperiod},
+           given={Kenneth\bibnamedelima O},
+           giveni={K\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2a78211448d164871fbccbc9ff30052d}{%
+           family={D'Ambrosio},
+           familyi={D\bibinitperiod},
+           given={David\bibnamedelima B},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=36fd4665b25c44659a4fa727d6fb3a45}{%
+           family={Gauci},
+           familyi={G\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press One Rogers Street, Cambridge, MA 02142-1209, USA journals-info~…}%
+      }
+      \strng{namehash}{28ac610f4751c7960cf72aa390650af9}
+      \strng{fullhash}{28ac610f4751c7960cf72aa390650af9}
+      \strng{fullhashraw}{28ac610f4751c7960cf72aa390650af9}
+      \strng{bibnamehash}{28ac610f4751c7960cf72aa390650af9}
+      \strng{authorbibnamehash}{28ac610f4751c7960cf72aa390650af9}
+      \strng{authornamehash}{28ac610f4751c7960cf72aa390650af9}
+      \strng{authorfullhash}{28ac610f4751c7960cf72aa390650af9}
+      \strng{authorfullhashraw}{28ac610f4751c7960cf72aa390650af9}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Artificial life}
+      \field{number}{2}
+      \field{title}{A hypercube-based encoding for evolving large-scale neural networks}
+      \field{volume}{15}
+      \field{year}{2009}
+      \field{pages}{185\bibrangedash 212}
+      \range{pages}{28}
+    \endentry
+    \entry{stanley2002evolving}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cd20c341249f4e0cd9cb16431e439823}{%
+           family={Stanley},
+           familyi={S\bibinitperiod},
+           given={Kenneth\bibnamedelima O},
+           giveni={K\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=70ad9af6f97993f2ea5c1f65e1985520}{%
+           family={Miikkulainen},
+           familyi={M\bibinitperiod},
+           given={Risto},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{3546041f24ccbba148011c7ca7e4a95c}
+      \strng{fullhash}{3546041f24ccbba148011c7ca7e4a95c}
+      \strng{fullhashraw}{3546041f24ccbba148011c7ca7e4a95c}
+      \strng{bibnamehash}{3546041f24ccbba148011c7ca7e4a95c}
+      \strng{authorbibnamehash}{3546041f24ccbba148011c7ca7e4a95c}
+      \strng{authornamehash}{3546041f24ccbba148011c7ca7e4a95c}
+      \strng{authorfullhash}{3546041f24ccbba148011c7ca7e4a95c}
+      \strng{authorfullhashraw}{3546041f24ccbba148011c7ca7e4a95c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Evolutionary computation}
+      \field{number}{2}
+      \field{title}{Evolving neural networks through augmenting topologies}
+      \field{volume}{10}
+      \field{year}{2002}
+      \field{pages}{99\bibrangedash 127}
+      \range{pages}{29}
+    \endentry
+    \entry{storn1995differential}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=87ff7bd4305b95a067c44bc7243d8128}{%
+           family={Storn},
+           familyi={S\bibinitperiod},
+           given={Rainer},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=96e607982973d9cb076455039a368fa5}{%
+           family={Price},
+           familyi={P\bibinitperiod},
+           given={Kenneth},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5dfb836e07d40eb2d1cef5fbe8334415}
+      \strng{fullhash}{5dfb836e07d40eb2d1cef5fbe8334415}
+      \strng{fullhashraw}{5dfb836e07d40eb2d1cef5fbe8334415}
+      \strng{bibnamehash}{5dfb836e07d40eb2d1cef5fbe8334415}
+      \strng{authorbibnamehash}{5dfb836e07d40eb2d1cef5fbe8334415}
+      \strng{authornamehash}{5dfb836e07d40eb2d1cef5fbe8334415}
+      \strng{authorfullhash}{5dfb836e07d40eb2d1cef5fbe8334415}
+      \strng{authorfullhashraw}{5dfb836e07d40eb2d1cef5fbe8334415}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International computer science institute}
+      \field{title}{Differential evolution-a simple and efficient adaptive scheme for global optimization over continuous spaces}
+      \field{year}{1995}
+    \endentry
+    \entry{suzuki2011artificial}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bfefbf3b827bbdebc3f660587233b2e8}{%
+           family={Suzuki},
+           familyi={S\bibinitperiod},
+           given={Kenji},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {BoD--Books on Demand}%
+      }
+      \strng{namehash}{bfefbf3b827bbdebc3f660587233b2e8}
+      \strng{fullhash}{bfefbf3b827bbdebc3f660587233b2e8}
+      \strng{fullhashraw}{bfefbf3b827bbdebc3f660587233b2e8}
+      \strng{bibnamehash}{bfefbf3b827bbdebc3f660587233b2e8}
+      \strng{authorbibnamehash}{bfefbf3b827bbdebc3f660587233b2e8}
+      \strng{authornamehash}{bfefbf3b827bbdebc3f660587233b2e8}
+      \strng{authorfullhash}{bfefbf3b827bbdebc3f660587233b2e8}
+      \strng{authorfullhashraw}{bfefbf3b827bbdebc3f660587233b2e8}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Artificial neural networks: methodological advances and biomedical applications}
+      \field{year}{2011}
+    \endentry
+    \entry{THARWAT2021100952}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8db62a7cd281329eb4a66a0b4b986be8}{%
+           family={Tharwat},
+           familyi={T\bibinitperiod},
+           given={Alaa},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=39e3746155c30560bafa318f0e454887}{%
+           family={Schenck},
+           familyi={S\bibinitperiod},
+           given={Wolfram},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dc0a8e4e7df6cd713a6f378c21c0e828}
+      \strng{fullhash}{dc0a8e4e7df6cd713a6f378c21c0e828}
+      \strng{fullhashraw}{dc0a8e4e7df6cd713a6f378c21c0e828}
+      \strng{bibnamehash}{dc0a8e4e7df6cd713a6f378c21c0e828}
+      \strng{authorbibnamehash}{dc0a8e4e7df6cd713a6f378c21c0e828}
+      \strng{authornamehash}{dc0a8e4e7df6cd713a6f378c21c0e828}
+      \strng{authorfullhash}{dc0a8e4e7df6cd713a6f378c21c0e828}
+      \strng{authorfullhashraw}{dc0a8e4e7df6cd713a6f378c21c0e828}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The population initialization step is a common step in the majority (or even all) of evolutionary algorithms (EAs). There are many population initialization techniques. Due to the limited population size and the high dimensionality of many problems, there is little chance to cover the promising regions in the search space. From different perspectives, this paper compares the stochastic and deterministic population initialization techniques through comparing five of the well-known population initializers: Random number generator (RNG), Latin Hypercube, Sobol, Halton, and Kronecker. Due to the presence of many constraints in real-world applications, in this paper, we are focusing only on single-objective constrained optimization problems. Specifically, the goal is to investigate if there is a significant difference between these population initialization methods. In this paper, we explain theoretically and mathematically these different population initialization techniques. Moreover, different illustrative examples and visualizations are introduced to explain the behavior of each technique and compare different techniques from different perspectives. The results show that due to the high uniformity of the low-discrepancy sequences such as the Halton and Sobol sequences, the generated points using these sequences are more evenly distributed over the space than RNG, which is the commonly used technique for initializing the populations in EAs. Practically, using a set of benchmark functions, we investigate the use of each population initialization technique for initializing different population-based evolutionary algorithms. The results of our experiments prove that with sufficient numbers of iterations, the EAs are not sensitive to the initialization methods and there are no significant differences between the mentioned population initialization methods. Further, the low discrepancy methods enhance the exploration ability of EAs in early iterations.}
+      \field{issn}{2210-6502}
+      \field{journaltitle}{Swarm and Evolutionary Computation}
+      \field{title}{Population initialization techniques for evolutionary algorithms for single-objective constrained optimization problems: Deterministic vs. stochastic techniques}
+      \field{volume}{67}
+      \field{year}{2021}
+      \field{pages}{100952}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.swevo.2021.100952
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2210650221001140
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2210650221001140
+      \endverb
+      \keyw{Evolutionary algorithms,Population initialization,Swarm optimization algorithms,Random number generation,Sobol method,Halton sampling technique,Latin Hypercube}
+    \endentry
+    \entry{odv}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=ae606e00beaa587a4ba33a88030bba19}{%
+           family={{Victer Paul}},
+           familyi={V\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1525a562ae6e7b31db37a97604590f3b}{%
+           family={Ramalingam},
+           familyi={R\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0d12389e0342eea2efa0e68b1a955ef4}{%
+           family={Baskaran},
+           familyi={B\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2898e57dae810b725a1e6ae61c5e4013}{%
+           family={Dhavachelvan},
+           familyi={D\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=edc034c854563b8f5cc682327d5ea436}{%
+           family={Vivekanandan},
+           familyi={V\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1622f8bb7d1d1bef8023710605961df8}{%
+           family={Subramanian},
+           familyi={S\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{02c62c4b2511e0e5013bb3a44cc9d045}
+      \strng{fullhash}{499a7a8443afbb800fd3873c5f7d5622}
+      \strng{fullhashraw}{499a7a8443afbb800fd3873c5f7d5622}
+      \strng{bibnamehash}{02c62c4b2511e0e5013bb3a44cc9d045}
+      \strng{authorbibnamehash}{02c62c4b2511e0e5013bb3a44cc9d045}
+      \strng{authornamehash}{02c62c4b2511e0e5013bb3a44cc9d045}
+      \strng{authorfullhash}{499a7a8443afbb800fd3873c5f7d5622}
+      \strng{authorfullhashraw}{499a7a8443afbb800fd3873c5f7d5622}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Genetic Algorithm (GA) is a popular heuristic method for dealing complex problems with very large search space. Among various phases of GA, the initial phase of population seeding plays an important role in deciding the span of GA to achieve the best fit w.r.t. the time. In other words, the quality of individual solutions generated in the initial population phase plays a critical role in determining the quality of final optimal solution. The traditional GA with random population seeding technique is quite simple and of course efficient to some extent; however, the population may contain poor quality individuals which take long time to converge with optimal solution. On the other hand, the hybrid population seeding techniques which have the benefit of good quality individuals and fast convergence lacks in terms of randomness, individual diversity and ability to converge with global optimal solution. This motivates to design a population seeding technique with multifaceted features of randomness, individual diversity and good quality. In this paper, an efficient Ordered Distance Vector (ODV) based population seeding technique has been proposed for permutation-coded GA using an elitist service transfer approach. One of the famous combinatorial hard problems of Traveling Salesman Problem (TSP) is being chosen as the testbed and the experiments are performed on different sized benchmark TSP instances obtained from standard TSPLIB [54]. The experimental results advocate that the proposed technique outperforms the existing popular initialization methods in terms of convergence rate, error rate and convergence time.}
+      \field{issn}{1877-7503}
+      \field{journaltitle}{Journal of Computational Science}
+      \field{note}{Empowering Science through Computing + BioInspired Computing}
+      \field{number}{2}
+      \field{title}{A new population seeding technique for permutation-coded Genetic Algorithm: Service transfer approach}
+      \field{volume}{5}
+      \field{year}{2014}
+      \field{pages}{277\bibrangedash 297}
+      \range{pages}{21}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jocs.2013.05.009
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1877750313000744
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1877750313000744
+      \endverb
+      \keyw{Genetic Algorithm,Population seeding technique,Traveling Salesman Problem,Order distance vector,Combinatorial problem}
+    \endentry
+    \entry{importance_of_bias}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{un=1,uniquepart=given,hash=b4498581d8d507b44c4979ecbd5ef4cd}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Shengjie},
+           giveni={S\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=dc84af730bfa0a75783610aaff4f9e65}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Tianyi},
+           giveni={T\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=0e284097865f61b75b0b6bba6f066b8c}{%
+           family={Bilmes},
+           familyi={B\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{6e83b692c96f550331557457bd1e7476}
+      \strng{fullhash}{6e83b692c96f550331557457bd1e7476}
+      \strng{fullhashraw}{6e83b692c96f550331557457bd1e7476}
+      \strng{bibnamehash}{6e83b692c96f550331557457bd1e7476}
+      \strng{authorbibnamehash}{6e83b692c96f550331557457bd1e7476}
+      \strng{authornamehash}{6e83b692c96f550331557457bd1e7476}
+      \strng{authorfullhash}{6e83b692c96f550331557457bd1e7476}
+      \strng{authorfullhashraw}{6e83b692c96f550331557457bd1e7476}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on Machine Learning}
+      \field{title}{Bias also matters: Bias attribution for deep neural network explanation}
+      \field{year}{2019}
+      \field{pages}{6659\bibrangedash 6667}
+      \range{pages}{9}
+    \endentry
+    \entry{improvedGepnn}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{un=1,uniquepart=given,hash=906fe69a3545fb0603b82caf815a6292}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Weihong},
+           giveni={W\bibinitperiod},
+           givenun=1}}%
+        {{un=1,uniquepart=given,hash=6f9b0f4098737e4fb361a9ec240ebdb4}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Qu},
+           giveni={Q\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=23c5e7c6d661e213cb606fab9a1ef77e}{%
+           family={Qi},
+           familyi={Q\bibinitperiod},
+           given={Xing},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=cc30b85bab8526d527b3e2ff5a9a7205}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Lishan},
+           giveni={L\bibinitperiod}}}%
+        {{hash=45441c1dec3c18a8929df148f167f1be}{%
+           family={Cai},
+           familyi={C\bibinitperiod},
+           given={Zhihua},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=4aa07b69c55f8b47f44cfc761619ce4e}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Xuesong},
+           giveni={X\bibinitperiod}}}%
+        {{hash=bc6c6f66f139beef784a50d9f1485019}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{4054d7de6141773ecb038aedfa5a623e}
+      \strng{fullhash}{4054d7de6141773ecb038aedfa5a623e}
+      \strng{fullhashraw}{4054d7de6141773ecb038aedfa5a623e}
+      \strng{bibnamehash}{4054d7de6141773ecb038aedfa5a623e}
+      \strng{authorbibnamehash}{4054d7de6141773ecb038aedfa5a623e}
+      \strng{authornamehash}{4054d7de6141773ecb038aedfa5a623e}
+      \strng{authorfullhash}{4054d7de6141773ecb038aedfa5a623e}
+      \strng{authorfullhashraw}{4054d7de6141773ecb038aedfa5a623e}
+      \strng{editorbibnamehash}{050d10a7bdd23be685aac07ee0f16b8b}
+      \strng{editornamehash}{050d10a7bdd23be685aac07ee0f16b8b}
+      \strng{editorfullhash}{46d1a5e6d940ef092568fa65026ce211}
+      \strng{editorfullhashraw}{46d1a5e6d940ef092568fa65026ce211}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Gene Expression Programming(GEP) is a kind of heuristic method based on evolutionary computation theory. Basic GEP method has been proved to be powerful in symbolic regression and data mining tasks. However, GEP's potential for neural network learning has not been well studied. In this paper, we prove that basic GEP neural network(GEPNN) is unable to solve difficult regression and classification problems. Based on our proof, we propose an extended method for evolving neural network with GEP. The extended GEPNN is used in function finding and classification problems. Results on multiple learning methods show the effectiveness of our method.}
+      \field{booktitle}{Advances in Computation and Intelligence}
+      \field{isbn}{978-3-540-92137-0}
+      \field{title}{Gene Expression Programming Neural Network for Regression and Classification}
+      \field{year}{2008}
+      \field{pages}{212\bibrangedash 219}
+      \range{pages}{8}
+    \endentry
+    \entry{handsOnGeneticAlgorithms}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c9b2c2ce01597a4480ef5f4879c0349a}{%
+           family={Wirsansky},
+           familyi={W\bibinitperiod},
+           given={Eyal},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Sciendo}%
+      }
+      \strng{namehash}{c9b2c2ce01597a4480ef5f4879c0349a}
+      \strng{fullhash}{c9b2c2ce01597a4480ef5f4879c0349a}
+      \strng{fullhashraw}{c9b2c2ce01597a4480ef5f4879c0349a}
+      \strng{bibnamehash}{c9b2c2ce01597a4480ef5f4879c0349a}
+      \strng{authorbibnamehash}{c9b2c2ce01597a4480ef5f4879c0349a}
+      \strng{authornamehash}{c9b2c2ce01597a4480ef5f4879c0349a}
+      \strng{authorfullhash}{c9b2c2ce01597a4480ef5f4879c0349a}
+      \strng{authorfullhashraw}{c9b2c2ce01597a4480ef5f4879c0349a}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Hands-On Genetic Algorithms with Python}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.0000/9781805121572
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.0000/9781805121572
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.0000/9781805121572
+      \endverb
+    \endentry
+    \entry{xue2003pareto}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1e94a9c61c164f012799086c2c418235}{%
+           family={Xue},
+           familyi={X\bibinitperiod},
+           given={Feng},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=346459c28a9a9aeac867e6f162ee54cd}{%
+           family={Sanderson},
+           familyi={S\bibinitperiod},
+           given={Arthur\bibnamedelima C},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5f59526510368ba8b57ca98fb3b74d77}{%
+           family={Graves},
+           familyi={G\bibinitperiod},
+           given={Robert\bibnamedelima J},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{e3cafa6cdce364bc9c58557bace19b20}
+      \strng{fullhash}{e3cafa6cdce364bc9c58557bace19b20}
+      \strng{fullhashraw}{e3cafa6cdce364bc9c58557bace19b20}
+      \strng{bibnamehash}{e3cafa6cdce364bc9c58557bace19b20}
+      \strng{authorbibnamehash}{e3cafa6cdce364bc9c58557bace19b20}
+      \strng{authornamehash}{e3cafa6cdce364bc9c58557bace19b20}
+      \strng{authorfullhash}{e3cafa6cdce364bc9c58557bace19b20}
+      \strng{authorfullhashraw}{e3cafa6cdce364bc9c58557bace19b20}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The 2003 Congress on Evolutionary Computation, 2003. CEC'03.}
+      \field{title}{Pareto-based multi-objective differential evolution}
+      \field{volume}{2}
+      \field{year}{2003}
+      \field{pages}{862\bibrangedash 869}
+      \range{pages}{8}
+    \endentry
+    \entry{young2015optimizing}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=1acfaf8c57452a049203ab4796967274}{%
+           family={Young},
+           familyi={Y\bibinitperiod},
+           given={Steven\bibnamedelima R},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eb2c77b43363ded4e6b9c8ac42166092}{%
+           family={Rose},
+           familyi={R\bibinitperiod},
+           given={Derek\bibnamedelima C},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7d035cbe5a5ca90b34afe1f1b2085b29}{%
+           family={Karnowski},
+           familyi={K\bibinitperiod},
+           given={Thomas\bibnamedelima P},
+           giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=70549ec5bf888f281de04501731cd38c}{%
+           family={Lim},
+           familyi={L\bibinitperiod},
+           given={Seung-Hwan},
+           giveni={S\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=def4c88cbf9c4c572ffcd815a5ac81c3}{%
+           family={Patton},
+           familyi={P\bibinitperiod},
+           given={Robert\bibnamedelima M},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5276766d3c95ee468fd900646c4ef4aa}
+      \strng{fullhash}{29f554b1304cfb5f251e37326bbae9d3}
+      \strng{fullhashraw}{29f554b1304cfb5f251e37326bbae9d3}
+      \strng{bibnamehash}{5276766d3c95ee468fd900646c4ef4aa}
+      \strng{authorbibnamehash}{5276766d3c95ee468fd900646c4ef4aa}
+      \strng{authornamehash}{5276766d3c95ee468fd900646c4ef4aa}
+      \strng{authorfullhash}{29f554b1304cfb5f251e37326bbae9d3}
+      \strng{authorfullhashraw}{29f554b1304cfb5f251e37326bbae9d3}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the workshop on machine learning in high-performance computing environments}
+      \field{title}{Optimizing deep learning hyper-parameters through an evolutionary algorithm}
+      \field{year}{2015}
+      \field{pages}{1\bibrangedash 5}
+      \range{pages}{5}
+    \endentry
+    \entry{yu2010introduction}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=89b6a98b2f62d3ddfdac44ef9126d99c}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={X.},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=2,uniquepart=given,hash=95127a02f2439a5a93691757780ec4c7}{%
+           family={Gen},
+           familyi={G\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=2}}%
+      }
+      \list{publisher}{1}{%
+        {Springer London}%
+      }
+      \strng{namehash}{e5d9d4f8112006bf3ebcef934bebbf87}
+      \strng{fullhash}{e5d9d4f8112006bf3ebcef934bebbf87}
+      \strng{fullhashraw}{e5d9d4f8112006bf3ebcef934bebbf87}
+      \strng{bibnamehash}{e5d9d4f8112006bf3ebcef934bebbf87}
+      \strng{authorbibnamehash}{e5d9d4f8112006bf3ebcef934bebbf87}
+      \strng{authornamehash}{e5d9d4f8112006bf3ebcef934bebbf87}
+      \strng{authorfullhash}{e5d9d4f8112006bf3ebcef934bebbf87}
+      \strng{authorfullhashraw}{e5d9d4f8112006bf3ebcef934bebbf87}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781849961295}
+      \field{series}{Decision Engineering}
+      \field{title}{Introduction to Evolutionary Algorithms}
+      \field{year}{2010}
+      \verb{urlraw}
+      \verb https://books.google.co.za/books?id=rHQf_2Dx2ucC
+      \endverb
+      \verb{url}
+      \verb https://books.google.co.za/books?id=rHQf_2Dx2ucC
+      \endverb
+    \endentry
+    \entry{crossoverMethods}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c72ea5a80eb640d9f63888b18a1a1b3e}{%
+           family={Zainuddin},
+           familyi={Z\bibinitperiod},
+           given={Farah\bibnamedelima Ayiesya},
+           giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=57b010974ae2b55e3e11496a33dab17b}{%
+           family={Abd\bibnamedelima Samad},
+           familyi={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Md\bibnamedelima Fahmi},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e6887787c1d99b8773ba1535d5356239}{%
+           family={Tunggal},
+           familyi={T\bibinitperiod},
+           given={Durian},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{68145ffc78416bebe8a7e17d92a883f0}
+      \strng{fullhash}{68145ffc78416bebe8a7e17d92a883f0}
+      \strng{fullhashraw}{68145ffc78416bebe8a7e17d92a883f0}
+      \strng{bibnamehash}{68145ffc78416bebe8a7e17d92a883f0}
+      \strng{authorbibnamehash}{68145ffc78416bebe8a7e17d92a883f0}
+      \strng{authornamehash}{68145ffc78416bebe8a7e17d92a883f0}
+      \strng{authorfullhash}{68145ffc78416bebe8a7e17d92a883f0}
+      \strng{authorfullhashraw}{68145ffc78416bebe8a7e17d92a883f0}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Advanced Science and Technology}
+      \field{number}{6s}
+      \field{title}{A review of crossover methods and problem representation of genetic algorithm in recent engineering applications}
+      \field{volume}{29}
+      \field{year}{2020}
+      \field{pages}{759\bibrangedash 769}
+      \range{pages}{11}
+    \endentry
+    \entry{zheng2012multi}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=15d86db5d9f2331dfc7b70f41b48f874}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Yifei},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=360e45871d227ae4df69ad728e794420}{%
+           family={Jia},
+           familyi={J\bibinitperiod},
+           given={Lixin},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=69f50773ec0cb8dd6a2bdea14a419d0c}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Hui},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b55e180daeabee4325712b3ace88af0e}
+      \strng{fullhash}{b55e180daeabee4325712b3ace88af0e}
+      \strng{fullhashraw}{b55e180daeabee4325712b3ace88af0e}
+      \strng{bibnamehash}{b55e180daeabee4325712b3ace88af0e}
+      \strng{authorbibnamehash}{b55e180daeabee4325712b3ace88af0e}
+      \strng{authornamehash}{b55e180daeabee4325712b3ace88af0e}
+      \strng{authorfullhash}{b55e180daeabee4325712b3ace88af0e}
+      \strng{authorfullhashraw}{b55e180daeabee4325712b3ace88af0e}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Information Technology and Control}
+      \field{number}{3}
+      \field{title}{Multi-objective gene expression programming for clustering}
+      \field{volume}{41}
+      \field{year}{2012}
+      \field{pages}{283\bibrangedash 294}
+      \range{pages}{12}
+    \endentry
+    \entry{zhong2017gene}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=df5756195db713e535a6436856ff7e9d}{%
+           family={Zhong},
+           familyi={Z\bibinitperiod},
+           given={Jinghui},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cb755bee69000df3845c5ddfb760b090}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Liang},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3da15e59c78ba32cb39f54b427a8b8bc}{%
+           family={Ong},
+           familyi={O\bibinitperiod},
+           given={Yew-Soon},
+           giveni={Y\bibinithyphendelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{025ccda6cddfdb235388a6b90c69b0ea}
+      \strng{fullhash}{025ccda6cddfdb235388a6b90c69b0ea}
+      \strng{fullhashraw}{025ccda6cddfdb235388a6b90c69b0ea}
+      \strng{bibnamehash}{025ccda6cddfdb235388a6b90c69b0ea}
+      \strng{authorbibnamehash}{025ccda6cddfdb235388a6b90c69b0ea}
+      \strng{authornamehash}{025ccda6cddfdb235388a6b90c69b0ea}
+      \strng{authorfullhash}{025ccda6cddfdb235388a6b90c69b0ea}
+      \strng{authorfullhashraw}{025ccda6cddfdb235388a6b90c69b0ea}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Computational Intelligence Magazine}
+      \field{number}{3}
+      \field{title}{Gene expression programming: A survey}
+      \field{volume}{12}
+      \field{year}{2017}
+      \field{pages}{54\bibrangedash 72}
+      \range{pages}{19}
+    \endentry
+    \entry{ZHOU201132}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=1,uniquepart=given,hash=ce8b86330f85d8629691a29d87373157}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Aimin},
+           giveni={A\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=fa886493db16b269c911fae342318fe2}{%
+           family={Qu},
+           familyi={Q\bibinitperiod},
+           given={Bo-Yang},
+           giveni={B\bibinithyphendelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9b1528d0b6c9bc88bfd8c569f290bcec}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Hui},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f5ce384617af726018312e1291c02446}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Shi-Zheng},
+           giveni={S\bibinithyphendelim Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d94afbc27d84d6e232201b6f0b6938ca}{%
+           family={Suganthan},
+           familyi={S\bibinitperiod},
+           given={Ponnuthurai\bibnamedelima Nagaratnam},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2e22db866fa79372f07034ed0140d0e}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Qingfu},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{45622d3a39f01318512af31c8d4e1022}
+      \strng{fullhash}{d63a735efe498ab0edc1c9ecc30c1cfa}
+      \strng{fullhashraw}{d63a735efe498ab0edc1c9ecc30c1cfa}
+      \strng{bibnamehash}{45622d3a39f01318512af31c8d4e1022}
+      \strng{authorbibnamehash}{45622d3a39f01318512af31c8d4e1022}
+      \strng{authornamehash}{45622d3a39f01318512af31c8d4e1022}
+      \strng{authorfullhash}{d63a735efe498ab0edc1c9ecc30c1cfa}
+      \strng{authorfullhashraw}{d63a735efe498ab0edc1c9ecc30c1cfa}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A multiobjective optimization problem involves several conflicting objectives and has a set of Pareto optimal solutions. By evolving a population of solutions, multiobjective evolutionary algorithms (MOEAs) are able to approximate the Pareto optimal set in a single run. MOEAs have attracted a lot of research effort during the last 20 years, and they are still one of the hottest research areas in the field of evolutionary computation. This paper surveys the development of MOEAs primarily during the last eight years. It covers algorithmic frameworks such as decomposition-based MOEAs (MOEA/Ds), memetic MOEAs, coevolutionary MOEAs, selection and offspring reproduction operators, MOEAs with specific search methods, MOEAs for multimodal problems, constraint handling and MOEAs, computationally expensive multiobjective optimization problems (MOPs), dynamic MOPs, noisy MOPs, combinatorial and discrete MOPs, benchmark problems, performance indicators, and applications. In addition, some future research issues are also presented.}
+      \field{issn}{2210-6502}
+      \field{journaltitle}{Swarm and Evolutionary Computation}
+      \field{number}{1}
+      \field{title}{Multiobjective evolutionary algorithms: A survey of the state of the art}
+      \field{volume}{1}
+      \field{year}{2011}
+      \field{pages}{32\bibrangedash 49}
+      \range{pages}{18}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.swevo.2011.03.001
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2210650211000058
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2210650211000058
+      \endverb
+      \keyw{Multiobjective optimization,Evolutionary multiobjective optimization,Multiobjective evolutionary algorithms,Multicriteria decision making}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -4,7 +4,7 @@ Chromosome : +weight_genes: List[List[WeightSymbol]]
 Chromosome : +weight_genes_lookup: List[List[float]]
 Chromosome : +fitness: float
 Chromosome : +adjusted_fitness: float
-Chromosome : +innovation_number_composition: dict[int, List[tuple[List[str], List[float]]]]
+Chromosome : +innovation_number_composition: List[dict[int, List[tuple[List[str], List[float]]]]]
 Chromosome : +clone(self: Chromosome): Chromosome
 
 Chromosome "1" *-- "many" Symbol : contains
